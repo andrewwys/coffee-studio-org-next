@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: main
   repo: coffeewya/coffee-studio-next-ts
   base_url: https://coffee-studio-next-ts.netlify.app/
 media_folder: public/uploads
