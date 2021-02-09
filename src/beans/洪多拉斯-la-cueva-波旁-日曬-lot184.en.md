@@ -5,6 +5,7 @@ description: |-
   Orange blossoms, Tangerine, Peach, Black Tea
   Orange blossoms, Tangerine, Peach, Black Tea
   Orange blossoms, Tangerine, Peach, Black Tea
+image: /uploads/coffee-bean-delivery-hong-kong_0.jpg
 process: Natural
 flavors: Orange blossoms | Tangerine | Peach | Black Tea
 price: 220

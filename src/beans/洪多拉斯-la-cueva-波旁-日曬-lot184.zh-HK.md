@@ -6,6 +6,7 @@ description: |-
   橙花、橘子、杏桃、紅茶
   橙花、橘子、杏桃、紅茶
   橙花、橘子、杏桃、紅茶
+image: /uploads/coffee-bean-delivery-hong-kong_0.jpg
 process: 日曬
 flavors: 橙花 | 橘子 | 杏桃 | 紅茶
 price: 220
