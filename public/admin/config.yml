@@ -34,18 +34,19 @@ collections:
           i18n: duplicate,
         }
       - {
-          label: 'Title (English)',
+          label: 'Title',
           name: 'title',
           widget: 'string',
-          i18n: duplicate,
+          i18n: true,
         }
       - {
           label: 'Description',
           name: 'description',
           widget: 'text',
           i18n: true,
+          required: false,
         }
-      - { label: 'Image', name: 'image', widget: 'image', i18n: duplicate }
+      - { label: 'Image', name: 'image', widget: 'image', i18n: duplicate  required: false, }
       - { label: 'Process', name: 'process', widget: 'string', i18n: true }
       - { label: 'Flavors', name: 'flavors', widget: 'string', i18n: true }
       - {
@@ -65,92 +66,72 @@ collections:
       - {
           label: 'Sweetness',
           name: 'sweetness',
-          widget: 'number',
+          widget: 'select',
           i18n: duplicate,
-          value_type: 'int',
-          min: 1,
-          max: 10,
+          options: [ 1, 2, 3, 4, 5 ], 
         }
       - {
           label: 'Acidity',
           name: 'acidity',
-          widget: 'number',
+          widget: 'select',
           i18n: duplicate,
-          value_type: 'int',
-          min: 1,
-          max: 10,
+          options: [ 1, 2, 3, 4, 5 ], 
         }
       - {
           label: 'Bitterness',
           name: 'bitterness',
-          widget: 'number',
+          widget: 'select',
           i18n: duplicate,
-          value_type: 'int',
-          min: 1,
-          max: 10,
+          options: [ 1, 2, 3, 4, 5 ], 
         }
       - {
           label: 'Body',
           name: 'body',
-          widget: 'number',
+          widget: 'select',
           i18n: duplicate,
-          value_type: 'int',
-          min: 1,
-          max: 10,
+          options: [ 1, 2, 3, 4, 5 ], 
         }
       - {
           label: 'Finish',
           name: 'finish',
-          widget: 'number',
+          widget: 'select',
           i18n: duplicate,
-          value_type: 'int',
-          min: 1,
-          max: 10,
+          options: [ 1, 2, 3, 4, 5 ], 
         }
       - {
           label: 'Floral',
           name: 'floral',
-          widget: 'number',
+          widget: 'select',
           i18n: duplicate,
-          value_type: 'int',
-          min: 1,
-          max: 10,
+          options: [ 1, 2, 3, 4, 5 ], 
         }
       - {
           label: 'Herbs',
           name: 'herbs',
-          widget: 'number',
+          widget: 'select',
           i18n: duplicate,
-          value_type: 'int',
-          min: 1,
-          max: 10,
+          options: [1, 2, 3, 4, 5], 
         }
       - {
           label: 'Fruits',
           name: 'fruits',
-          widget: 'number',
+          widget: 'select',
           i18n: duplicate,
-          value_type: 'int',
-          min: 1,
-          max: 10,
+          options: [1, 2, 3, 4, 5], 
         }
       - {
           label: 'Nuts',
           name: 'nuts',
-          widget: 'number',
+          widget: 'select',
           i18n: duplicate,
-          value_type: 'int',
-          min: 1,
-          max: 10,
+          options: [1, 2, 3, 4, 5], 
         }
       - {
           label: 'Spices',
           name: 'spices',
-          widget: 'number',
+          widget: 'select',
           i18n: duplicate,
-          value_type: 'int',
-          min: 1,
-          max: 10,
+          options: [1, 2, 3, 4, 5], 
         }
 
   - name: 'pages'
