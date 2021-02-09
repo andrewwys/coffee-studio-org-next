@@ -8,7 +8,7 @@ public_folder: /uploads
 # publish_mode: editorial_workflow
 locale: zh-HK
 i18n:
-  structure: multiple_files
+  structure: single_files
   locales: [zh-HK, en]
   default_locale: zh-HK
 
@@ -21,25 +21,23 @@ collections:
     i18n: true
     fields:
       - {
-          label: 'Template Key',
-          name: 'templateKey',
-          widget: 'hidden',
-          default: 'product-page.template',
-        }
-      - {
           label: 'Product ID',
           name: 'pid',
           value_type: 'int',
           widget: 'number',
           i18n: duplicate,
         }
-      - { label: 'Title', name: 'title', widget: 'string', i18n: true }
+      - {
+          label: 'Title (en)',
+          name: 'title',
+          widget: 'string',
+          i18n: duplicate,
+        }
       - {
           label: 'Description',
           name: 'description',
           widget: 'text',
           i18n: true,
-          required: false,
         }
       - {
           label: 'Image',
