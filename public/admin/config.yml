@@ -69,70 +69,70 @@ collections:
           name: 'sweetness',
           widget: 'select',
           i18n: duplicate,
-          options: [1, 2, 3, 4, 5],
+          options: ['1', '2', '3', '4', '5'],
         }
       - {
           label: 'Acidity',
           name: 'acidity',
           widget: 'select',
           i18n: duplicate,
-          options: [1, 2, 3, 4, 5],
+          options: ['1', '2', '3', '4', '5'],
         }
       - {
           label: 'Bitterness',
           name: 'bitterness',
           widget: 'select',
           i18n: duplicate,
-          options: [1, 2, 3, 4, 5],
+          options: ['1', '2', '3', '4', '5'],
         }
       - {
           label: 'Body',
           name: 'body',
           widget: 'select',
           i18n: duplicate,
-          options: [1, 2, 3, 4, 5],
+          options: ['1', '2', '3', '4', '5'],
         }
       - {
           label: 'Finish',
           name: 'finish',
           widget: 'select',
           i18n: duplicate,
-          options: [1, 2, 3, 4, 5],
+          options: ['1', '2', '3', '4', '5'],
         }
       - {
           label: 'Floral',
           name: 'floral',
           widget: 'select',
           i18n: duplicate,
-          options: [1, 2, 3, 4, 5],
+          options: ['1', '2', '3', '4', '5'],
         }
       - {
           label: 'Herbs',
           name: 'herbs',
           widget: 'select',
           i18n: duplicate,
-          options: [1, 2, 3, 4, 5],
+          options: ['1', '2', '3', '4', '5'],
         }
       - {
           label: 'Fruits',
           name: 'fruits',
           widget: 'select',
           i18n: duplicate,
-          options: [1, 2, 3, 4, 5],
+          options: ['1', '2', '3', '4', '5'],
         }
       - {
           label: 'Nuts',
           name: 'nuts',
           widget: 'select',
           i18n: duplicate,
-          options: [1, 2, 3, 4, 5],
+          options: ['1', '2', '3', '4', '5'],
         }
       - {
           label: 'Spices',
           name: 'spices',
           widget: 'select',
           i18n: duplicate,
-          options: [1, 2, 3, 4, 5],
+          options: ['1', '2', '3', '4', '5'],
         }
 
   - name: 'pages'
