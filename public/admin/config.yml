@@ -26,7 +26,25 @@ collections:
           widget: 'hidden',
           default: 'product-page.template',
         }
-      - { label: 'Name', name: 'name', widget: 'string', i18n: true }
+      - {
+          label: 'Product ID',
+          name: 'pid',
+          value_type: 'int',
+          widget: 'number',
+          i18n: duplicate,
+        }
+      - {
+          label: 'Title (English)',
+          name: 'title',
+          widget: 'string',
+          i18n: duplicate,
+        }
+      - {
+          label: 'Description',
+          name: 'description',
+          widget: 'text',
+          i18n: true,
+        }
       - { label: 'Image', name: 'image', widget: 'image', i18n: duplicate }
       - { label: 'Process', name: 'process', widget: 'string', i18n: true }
       - { label: 'Flavors', name: 'flavors', widget: 'string', i18n: true }
@@ -41,6 +59,7 @@ collections:
           label: 'Weight(g)',
           name: 'weight',
           widget: 'number',
+          default: 200,
           i18n: duplicate,
         }
       - {
