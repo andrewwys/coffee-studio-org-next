@@ -6,14 +6,19 @@ backend:
 media_folder: public/uploads
 public_folder: /uploads
 # publish_mode: editorial_workflow
-locale: 'zh-hk'
+locale: zh-HK
+i18n:
+  structure: multiple_files
+  locales: [zh-HK, en]
+  default_locale: zh-HK
 
 collections:
-  - name: 'products'
-    label: 'Products'
-    label_singular: 'Product'
-    folder: 'src/pages/products'
+  - name: 'beans'
+    label: 'Beans'
+    label_singular: 'Bean'
+    folder: 'src/beans'
     create: true
+    i18n: true
     fields:
       - {
           label: 'Template Key',
@@ -21,10 +26,113 @@ collections:
           widget: 'hidden',
           default: 'product-page.template',
         }
-      - { label: 'Name', name: 'title', widget: 'string' }
-      - { label: 'Image', name: 'image', widget: 'image' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Ingredients', name: 'ingredients', widget: 'list' }
+      - { label: 'Name', name: 'name', widget: 'string', i18n: true }
+      - { label: 'Image', name: 'image', widget: 'image', i18n: duplicate }
+      - { label: 'Process', name: 'process', widget: 'string', i18n: true }
+      - { label: 'Flavors', name: 'flavors', widget: 'string', i18n: true }
+      - {
+          label: 'Price',
+          name: 'price',
+          widget: 'number',
+          i18n: duplicate,
+          min: 1,
+        }
+      - {
+          label: 'Weight(g)',
+          name: 'weight',
+          widget: 'number',
+          i18n: duplicate,
+        }
+      - {
+          label: 'Sweetness',
+          name: 'sweetness',
+          widget: 'number',
+          i18n: duplicate,
+          value_type: 'int',
+          min: 1,
+          max: 10,
+        }
+      - {
+          label: 'Acidity',
+          name: 'acidity',
+          widget: 'number',
+          i18n: duplicate,
+          value_type: 'int',
+          min: 1,
+          max: 10,
+        }
+      - {
+          label: 'Bitterness',
+          name: 'bitterness',
+          widget: 'number',
+          i18n: duplicate,
+          value_type: 'int',
+          min: 1,
+          max: 10,
+        }
+      - {
+          label: 'Body',
+          name: 'body',
+          widget: 'number',
+          i18n: duplicate,
+          value_type: 'int',
+          min: 1,
+          max: 10,
+        }
+      - {
+          label: 'Finish',
+          name: 'finish',
+          widget: 'number',
+          i18n: duplicate,
+          value_type: 'int',
+          min: 1,
+          max: 10,
+        }
+      - {
+          label: 'Floral',
+          name: 'floral',
+          widget: 'number',
+          i18n: duplicate,
+          value_type: 'int',
+          min: 1,
+          max: 10,
+        }
+      - {
+          label: 'Herbs',
+          name: 'herbs',
+          widget: 'number',
+          i18n: duplicate,
+          value_type: 'int',
+          min: 1,
+          max: 10,
+        }
+      - {
+          label: 'Fruits',
+          name: 'fruits',
+          widget: 'number',
+          i18n: duplicate,
+          value_type: 'int',
+          min: 1,
+          max: 10,
+        }
+      - {
+          label: 'Nuts',
+          name: 'nuts',
+          widget: 'number',
+          i18n: duplicate,
+          value_type: 'int',
+          min: 1,
+          max: 10,
+        }
+      - {
+          label: 'Spices',
+          name: 'spices',
+          widget: 'number',
+          i18n: duplicate,
+          value_type: 'int',
+          min: 1,
+          max: 10,
+        }
 
   - name: 'pages'
     label: 'Pages'
