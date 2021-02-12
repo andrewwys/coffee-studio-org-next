@@ -83,7 +83,6 @@ collections:
           widget: 'number',
           value_type: 'float',
           i18n: duplicate,
-          min: 1,
         }
       - {
           label: '價錢(500g)',
@@ -91,7 +90,6 @@ collections:
           widget: 'number',
           value_type: 'float',
           i18n: duplicate,
-          min: 1,
         }
       - {
           label: '價錢(1kg)',
@@ -99,7 +97,6 @@ collections:
           value_type: 'float',
           widget: 'number',
           i18n: duplicate,
-          min: 1,
         }
       - {
           label: '價錢(掛耳)',
@@ -107,7 +104,6 @@ collections:
           widget: 'number',
           value_type: 'float',
           i18n: duplicate,
-          min: 1,
         }
       - {
           label: '甜度',

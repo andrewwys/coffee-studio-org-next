@@ -5,14 +5,31 @@ import Layout from '../../components/layout'
 
 const ProductDetails = ({fm}) => {
   if (!fm) return <></>
+  const { country, display_name, process, flavors_main, flavors_desc, description, image, price_200g, price_500g, price_1kg, price_dripbag, sweetness, acidity, body, finish, floral, fruits, nuts, sugars} = fm;
   return (
     <Layout pageTitle={`${fm.title}`}>
       <Link href="/">
         <a>Back to homepage</a>
       </Link>
+      <img src={image}/>
       <div>
-        <h1>{fm.title}</h1>
-        <p>By {fm.flavors}</p>
+        <div>{country}</div>
+        <h3>{display_name}</h3>
+        <div>{process}</div>
+        <div className='favors-wrapper' style={{display: 'flex'}}>
+          {flavors_main.map((flavor)=>(
+          <div className='flavor' key={flavor.toString()}>{flavor}</div>
+        ))}
+        </div> 
+      </div>
+      <div>{description}</div>
+      <div>{flavors_desc}</div>
+      <div className='prices'>
+        {`200g: HKD${price_200g} 500g:   HKD${price_500g}    1kg: HKD${price_1kg}    Dripbag: HKD${price_dripbag}`}
+      </div>
+      <div className='flavor-chart'>
+        <div>{`花香 ${floral}    水果 ${fruits}    堅果 ${nuts}    糖香 ${sugars}`}</div>
+        <div>{`酸度 ${acidity}    甜度 ${sweetness}    醇厚 ${body}    餘韻 ${finish}`}</div>
       </div>
     </Layout>
   );
@@ -21,7 +38,7 @@ const ProductDetails = ({fm}) => {
 export async function getStaticProps({ ...ctx }) {
   const { productName } = ctx.params
 
-  const content = await import(`../../src/beans/${productName}.md`)
+  const content = await import(`../../src/beans/hk/${productName}.md`)
   const data = matter(content.default)
 
   return {
@@ -40,7 +57,7 @@ export async function getStaticPaths() {
       return slug
     })
     return data
-  })(require.context('../../src/beans', true, /\.md$/))
+  })(require.context('../../src/beans/hk', true, /\.md$/))
 
   const paths = productSlugs.map((slug) => `/products/${slug}`)
 
