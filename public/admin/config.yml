@@ -114,12 +114,18 @@ collections:
           name: 'sweetness',
           widget: 'select',
           i18n: duplicate,
+          # options: ['1', '2', '3', '4', '5']
           options:
-          - { label: "1", value: 1 }
-          - { label: "2", value: 2 }
-          - { label: "3", value: 3 }
-          - { label: "4", value: 4 }
-          - { label: "5", value: 5 }
+          - label: '1'
+            value: 1
+          - label: '2'
+            value: 2
+          - label: '3'
+            value: 3
+          - label: '4'
+            value: 4
+          - label: '5'
+            value: 5
         }
       - {
           label: '酸度',
@@ -127,11 +133,16 @@ collections:
           widget: 'select',
           i18n: duplicate,
           options:
-          - { label: "1", value: 1 }
-          - { label: "2", value: 2 }
-          - { label: "3", value: 3 }
-          - { label: "4", value: 4 }
-          - { label: "5", value: 5 }
+          - label: '1'
+            value: 1
+          - label: '2'
+            value: 2
+          - label: '3'
+            value: 3
+          - label: '4'
+            value: 4
+          - label: '5'
+            value: 5
         }
       - {
           label: '醇厚',
@@ -139,11 +150,16 @@ collections:
           widget: 'select',
           i18n: duplicate,
           options:
-          - { label: "1", value: 1 }
-          - { label: "2", value: 2 }
-          - { label: "3", value: 3 }
-          - { label: "4", value: 4 }
-          - { label: "5", value: 5 }
+          - label: '1'
+            value: 1
+          - label: '2'
+            value: 2
+          - label: '3'
+            value: 3
+          - label: '4'
+            value: 4
+          - label: '5'
+            value: 5
         }
       - {
           label: '餘韻',
@@ -151,11 +167,16 @@ collections:
           widget: 'select',
           i18n: duplicate,
           options:
-          - { label: "1", value: 1 }
-          - { label: "2", value: 2 }
-          - { label: "3", value: 3 }
-          - { label: "4", value: 4 }
-          - { label: "5", value: 5 }
+          - label: '1'
+            value: 1
+          - label: '2'
+            value: 2
+          - label: '3'
+            value: 3
+          - label: '4'
+            value: 4
+          - label: '5'
+            value: 5
         }
       - {
           label: '花香',
@@ -163,11 +184,16 @@ collections:
           widget: 'select',
           i18n: duplicate,
           options:
-          - { label: "1", value: 1 }
-          - { label: "2", value: 2 }
-          - { label: "3", value: 3 }
-          - { label: "4", value: 4 }
-          - { label: "5", value: 5 }
+          - label: '1'
+            value: 1
+          - label: '2'
+            value: 2
+          - label: '3'
+            value: 3
+          - label: '4'
+            value: 4
+          - label: '5'
+            value: 5
         }
       - {
           label: '水果',
@@ -175,11 +201,16 @@ collections:
           widget: 'select',
           i18n: duplicate,
           options:
-          - { label: "1", value: 1 }
-          - { label: "2", value: 2 }
-          - { label: "3", value: 3 }
-          - { label: "4", value: 4 }
-          - { label: "5", value: 5 }
+          - label: '1'
+            value: 1
+          - label: '2'
+            value: 2
+          - label: '3'
+            value: 3
+          - label: '4'
+            value: 4
+          - label: '5'
+            value: 5
         }
       - {
           label: '堅果',
@@ -187,11 +218,16 @@ collections:
           widget: 'select',
           i18n: duplicate,
           options:
-          - { label: "1", value: 1 }
-          - { label: "2", value: 2 }
-          - { label: "3", value: 3 }
-          - { label: "4", value: 4 }
-          - { label: "5", value: 5 }
+          - label: '1'
+            value: 1
+          - label: '2'
+            value: 2
+          - label: '3'
+            value: 3
+          - label: '4'
+            value: 4
+          - label: '5'
+            value: 5
         }
       - {
           label: '糖香',
@@ -199,11 +235,16 @@ collections:
           widget: 'select',
           i18n: duplicate,
           options:
-          - { label: "1", value: 1 }
-          - { label: "2", value: 2 }
-          - { label: "3", value: 3 }
-          - { label: "4", value: 4 }
-          - { label: "5", value: 5 }
+          - label: '1'
+            value: 1
+          - label: '2'
+            value: 2
+          - label: '3'
+            value: 3
+          - label: '4'
+            value: 4
+          - label: '5'
+            value: 5
         }
 
   - name: 'pages'

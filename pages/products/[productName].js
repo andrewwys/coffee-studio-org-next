@@ -4,7 +4,6 @@ import matter from 'gray-matter'
 import Layout from '../../components/layout'
 
 const ProductDetails = ({fm}) => {
-  console.log(fm);
   if (!fm) return <></>
   return (
     <Layout pageTitle={`${fm.en.title}`}>
@@ -20,7 +19,6 @@ const ProductDetails = ({fm}) => {
 }
 
 export async function getStaticProps({ ...ctx }) {
-  console.log('context: ', ctx);
   const { productName } = ctx.params
 
   const content = await import(`../../src/beans/${productName}.md`)
