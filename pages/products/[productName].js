@@ -6,13 +6,13 @@ import Layout from '../../components/layout'
 const ProductDetails = ({fm}) => {
   if (!fm) return <></>
   return (
-    <Layout pageTitle={`${fm.en.title}`}>
+    <Layout pageTitle={`${fm.title}`}>
       <Link href="/">
         <a>Back to homepage</a>
       </Link>
       <div>
-        <h1>{fm.en.title}</h1>
-        <p>By {fm.en.flavors}</p>
+        <h1>{fm.title}</h1>
+        <p>By {fm.flavors}</p>
       </div>
     </Layout>
   );
