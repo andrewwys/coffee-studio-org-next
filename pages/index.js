@@ -1,21 +1,23 @@
-import Head from 'next/head'
+import Layout from '../components/layout'
+// import bean from '../src/beans/ethiopia-hunkute-sidamo-g1-natural.md'
 
-export default function Home() {
+export default function Home({title, description}) {
   return (
-    <div>
-      <Head>
-        <title>Coffee Studio</title>
-        <link rel="icon" href="/favicon.ico" />
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-      </Head>
-
+    <Layout pageTitle={title}>
       <main>
-        <h1>Buy coffee here!</h1>
+        <h1>{description}</h1>
       </main>
-
-      <footer>
-        {'this is a footer'}
-      </footer>
-    </div>
+    </Layout>
   )
+}
+
+
+export async function getStaticProps() {
+  const configData = await import(`../siteConfig.json`)
+  return {
+    props: {
+      title: configData.title,
+      description: configData.description,
+    },
+  }
 }

@@ -8,9 +8,9 @@ public_folder: /uploads
 # publish_mode: editorial_workflow
 locale: zh-HK
 i18n:
-  structure: single_file
-  locales: [zh-HK, en]
-  default_locale: zh-HK
+  structure: multiple_folders
+  locales: [hk, en]
+  default_locale: hk
 
 collections:
   - name: 'beans'
@@ -21,23 +21,54 @@ collections:
     i18n: true
     fields:
       - {
-          label: 'Product ID',
+          label: 'Product-ID(不可重複)',
           name: 'pid',
           value_type: 'int',
           widget: 'number',
           i18n: duplicate,
         }
       - {
-          label: 'Title (en)',
+          label: 'Title (英文,不可重複)',
           name: 'title',
           widget: 'string',
           i18n: duplicate,
         }
+      - { label: '國家', name: 'country', widget: 'string', i18n: true }
       - {
-          label: 'Description',
+          label: '顯示名字(地區/莊園/級別)',
+          name: 'display_name',
+          widget: 'string',
+          i18n: true,
+        }
+      - { label: '處理', name: 'process', widget: 'string', i18n: true }
+      - {
+          label: '主要風味',
+          name: 'flavors_main',
+          widget: 'list',
+          min: 1,
+          max: 5,
+          i18n: true,
+        }
+      - {
+          label: '風味描述',
+          name: 'flavors_desc',
+          widget: 'text',
+          i18n: true,
+          required: false,
+        }
+      - {
+          label: '精選',
+          name: 'highlight',
+          widget: 'boolean',
+          default: false,
+          i18n: duplicate,
+        }
+      - {
+          label: '簡介',
           name: 'description',
           widget: 'text',
           i18n: true,
+          required: false,
         }
       - {
           label: 'Image',
@@ -46,91 +77,133 @@ collections:
           i18n: duplicate,
           required: false,
         }
-      - { label: 'Process', name: 'process', widget: 'string', i18n: true }
-      - { label: 'Flavors', name: 'flavors', widget: 'string', i18n: true }
       - {
-          label: 'Price',
-          name: 'price',
+          label: '價錢(200g)',
+          name: 'price_200g',
+          widget: 'number',
+          value_type: 'float',
+          i18n: duplicate,
+          min: 1,
+        }
+      - {
+          label: '價錢(500g)',
+          name: 'price_500g',
+          widget: 'number',
+          value_type: 'float',
+          i18n: duplicate,
+          min: 1,
+        }
+      - {
+          label: '價錢(1kg)',
+          name: 'price_1kg',
+          value_type: 'float',
           widget: 'number',
           i18n: duplicate,
           min: 1,
         }
       - {
-          label: 'Weight(g)',
-          name: 'weight',
+          label: '價錢(掛耳)',
+          name: 'price_dripbag',
           widget: 'number',
-          default: 200,
+          value_type: 'float',
           i18n: duplicate,
+          min: 1,
         }
       - {
-          label: 'Sweetness',
+          label: '甜度',
           name: 'sweetness',
           widget: 'select',
           i18n: duplicate,
-          options: ['1', '2', '3', '4', '5'],
+          options:
+          - { label: "1", value: 1 }
+          - { label: "2", value: 2 }
+          - { label: "3", value: 3 }
+          - { label: "4", value: 4 }
+          - { label: "5", value: 5 }
         }
       - {
-          label: 'Acidity',
+          label: '酸度',
           name: 'acidity',
           widget: 'select',
           i18n: duplicate,
-          options: ['1', '2', '3', '4', '5'],
+          options:
+          - { label: "1", value: 1 }
+          - { label: "2", value: 2 }
+          - { label: "3", value: 3 }
+          - { label: "4", value: 4 }
+          - { label: "5", value: 5 }
         }
       - {
-          label: 'Bitterness',
-          name: 'bitterness',
-          widget: 'select',
-          i18n: duplicate,
-          options: ['1', '2', '3', '4', '5'],
-        }
-      - {
-          label: 'Body',
+          label: '醇厚',
           name: 'body',
           widget: 'select',
           i18n: duplicate,
-          options: ['1', '2', '3', '4', '5'],
+          options:
+          - { label: "1", value: 1 }
+          - { label: "2", value: 2 }
+          - { label: "3", value: 3 }
+          - { label: "4", value: 4 }
+          - { label: "5", value: 5 }
         }
       - {
-          label: 'Finish',
+          label: '餘韻',
           name: 'finish',
           widget: 'select',
           i18n: duplicate,
-          options: ['1', '2', '3', '4', '5'],
+          options:
+          - { label: "1", value: 1 }
+          - { label: "2", value: 2 }
+          - { label: "3", value: 3 }
+          - { label: "4", value: 4 }
+          - { label: "5", value: 5 }
         }
       - {
-          label: 'Floral',
+          label: '花香',
           name: 'floral',
           widget: 'select',
           i18n: duplicate,
-          options: ['1', '2', '3', '4', '5'],
+          options:
+          - { label: "1", value: 1 }
+          - { label: "2", value: 2 }
+          - { label: "3", value: 3 }
+          - { label: "4", value: 4 }
+          - { label: "5", value: 5 }
         }
       - {
-          label: 'Herbs',
-          name: 'herbs',
-          widget: 'select',
-          i18n: duplicate,
-          options: ['1', '2', '3', '4', '5'],
-        }
-      - {
-          label: 'Fruits',
+          label: '水果',
           name: 'fruits',
           widget: 'select',
           i18n: duplicate,
-          options: ['1', '2', '3', '4', '5'],
+          options:
+          - { label: "1", value: 1 }
+          - { label: "2", value: 2 }
+          - { label: "3", value: 3 }
+          - { label: "4", value: 4 }
+          - { label: "5", value: 5 }
         }
       - {
-          label: 'Nuts',
+          label: '堅果',
           name: 'nuts',
           widget: 'select',
           i18n: duplicate,
-          options: ['1', '2', '3', '4', '5'],
+          options:
+          - { label: "1", value: 1 }
+          - { label: "2", value: 2 }
+          - { label: "3", value: 3 }
+          - { label: "4", value: 4 }
+          - { label: "5", value: 5 }
         }
       - {
-          label: 'Spices',
-          name: 'spices',
+          label: '糖香',
+          name: 'sugars',
           widget: 'select',
           i18n: duplicate,
-          options: ['1', '2', '3', '4', '5'],
+          options:
+          - { label: "1", value: 1 }
+          - { label: "2", value: 2 }
+          - { label: "3", value: 3 }
+          - { label: "4", value: 4 }
+          - { label: "5", value: 5 }
         }
 
   - name: 'pages'
