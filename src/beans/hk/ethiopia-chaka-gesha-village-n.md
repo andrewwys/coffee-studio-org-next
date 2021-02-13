@@ -1,6 +1,7 @@
 ---
 pid: 1001
 title: Ethiopia Chaka Gesha Village N
+category: 'SO'
 country: 埃塞俄比亞
 display_name: 查卡藝妓村 Lot 19/004
 process: 日曬

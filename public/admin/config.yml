@@ -33,6 +33,13 @@ collections:
           widget: 'string',
           i18n: duplicate,
         }
+      - {
+          label: '產品分類',
+          name: 'category',
+          widget: 'select',
+          i18n: duplicate,
+          options: ['SO', 'Blend'],
+        }
       - { label: '國家', name: 'country', widget: 'string', i18n: true }
       - {
           label: '顯示名字(地區/莊園/級別)',
