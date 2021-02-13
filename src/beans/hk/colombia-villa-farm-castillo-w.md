@@ -21,7 +21,7 @@ price_1kg: 800
 price_dripbag: 310
 sweetness: '3'
 acidity: '2'
-body: '5'
+mouthfeel: '5'
 finish: '4'
 floral: '2'
 fruits: '5'

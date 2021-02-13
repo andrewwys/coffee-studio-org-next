@@ -5,7 +5,7 @@ import Layout from '../../components/layout'
 
 const ProductDetails = ({fm}) => {
   if (!fm) return <></>
-  const { country, display_name, process, flavors_main, flavors_desc, description, image, price_200g, price_500g, price_1kg, price_dripbag, sweetness, acidity, body, finish, floral, fruits, nuts, sugars} = fm;
+  const { country, display_name, process, flavors_main, flavors_desc, description, image, price_200g, price_500g, price_1kg, price_dripbag, sweetness, acidity, mouthfeel, finish, floral, fruits, nuts, sugars} = fm;
   return (
     <Layout pageTitle={`${fm.title}`}>
       <Link href="/">
@@ -29,7 +29,7 @@ const ProductDetails = ({fm}) => {
       </div>
       <div className='flavor-chart'>
         <div>{`花香 ${floral}    水果 ${fruits}    堅果 ${nuts}    糖香 ${sugars}`}</div>
-        <div>{`酸度 ${acidity}    甜度 ${sweetness}    醇厚 ${body}    餘韻 ${finish}`}</div>
+        <div>{`酸度 ${acidity}    甜度 ${sweetness}    醇厚 ${mouthfeel}    餘韻 ${finish}`}</div>
       </div>
     </Layout>
   );

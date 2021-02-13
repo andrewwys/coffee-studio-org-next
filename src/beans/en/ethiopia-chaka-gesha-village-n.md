@@ -11,7 +11,7 @@ flavors_main:
   - Honey
   - Cacao
 flavors_desc: Mango, Peach and Berries aromas. White flower, Orange, Honey,
-  Cacao in its flavours. Syrupy body and intense sweetness.
+  Cacao in its flavours. Syrupy mouthfeel and intense sweetness.
 highlight: true
 description: Ethiopia Chaka Gesha Village Natural
 image: /uploads/coffee-bean-delivery-hong-kong_0.jpg

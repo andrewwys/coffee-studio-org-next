@@ -1,8 +1,8 @@
 const ProductCard = ({productProps}) => {
-  const {country, display_name, process, flavors_main, price_200g } = productProps;
+const {country, display_name, process, flavors_main, price_200g } = productProps;
 // sample data:::  
 // acidity: "4"
-// body: "3"
+// mouthfeel: "3"
 // country: "埃塞俄比亞"
 // description: "埃塞俄比亞 查卡藝妓 日曬 Lot 19/004↵風味描述：白花、香橙、蜂蜜、可可"
 // display_name: "查卡藝妓村 Lot 19/004"
