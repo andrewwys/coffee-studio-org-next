@@ -1,0 +1,79 @@
+.productCard {
+  flex: 0 1 25%;
+  padding: 10px 8px;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+  .productCard {
+    flex: 0 1 33.3%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .productCard {
+    flex: 0 1 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .productCard {
+    flex: 0 1 100%;
+  }
+}
+
+.imageArea {
+  border-radius: 5px;
+  background: #d09797;
+  box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.25);
+  color: white;
+  height: 136px;
+  position: relative;
+  z-index: -2;
+}
+
+.bgPattern {
+  mix-blend-mode: multiply;
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+  right: 0px;
+}
+
+.country {
+  font-size: 0.9rem;
+  padding: 9.48% 0 0 5.38%;
+  font-weight: 400;
+  line-height: 22.5px;
+}
+
+.name {
+  font-size: 1.1rem;
+  padding-left: 5.38%;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.process {
+  font-size: 0.8rem;
+  padding: 5% 12% 8% 5.38%;
+  font-weight: 400;
+  line-height: 22.5px;
+}
+
+.infoArea {
+  text-align: right;
+  margin-top: 13px;
+}
+
+.flavorsMain {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 30px;
+}

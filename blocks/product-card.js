@@ -1,39 +1,49 @@
-const ProductCard = ({productProps}) => {
-const {country, display_name, process, flavors_main, price_200g } = productProps;
-// sample data:::  
-// acidity: "4"
-// mouthfeel: "3"
-// country: "埃塞俄比亞"
-// description: "埃塞俄比亞 查卡藝妓 日曬 Lot 19/004↵風味描述：白花、香橙、蜂蜜、可可"
-// display_name: "查卡藝妓村 Lot 19/004"
-// finish: "3"
-// flavors_desc: "乾香：芒果、水蜜桃、莓果↵濕香：白花、香橙、蜂蜜、可可↵口感扎實，香甜"
-// flavors_main: (4) ["白花", "香橙", "蜂蜜", "可可"]
-// floral: "4"
-// fruits: "5"
-// highlight: true
-// image: "/uploads/coffee-bean-delivery-hong-kong_0.jpg"
-// nuts: "2"
-// pid: 1001
-// price_1kg: 800
-// price_200g: 280
-// price_500g: 480
-// price_dripbag: 320
-// process: "日曬"
-// sugars: "3"
-// sweetness: "5"
-// title: "Ethiopia Chaka Gesha Village N"
+import styles from './product-card.module.css'
+
+const ProductCard = ({ productProps, slug }) => {
+const {pid, category, country, display_name, process, flavors_main, price_200g, image } = productProps;
+const flavorStr = flavors_main.reduce((str, flavor, i)=>{ //break flavors array into one line
+  if (i < flavors_main.length -1) {
+    return (str + flavor + ' - ')
+  } else return str + flavor
+}, '');
   return (
-    <div className='product-card'>
-      <div className='image-area'>
-        <div className='country'>{country}</div>
-        <div className='name'>{display_name}</div>
-        <div className='process'>{process}</div>
+    <div className={styles.productCard}>
+      <div className='snipcart-add-item'
+        data-item-id={pid}
+        data-item-price={price_200g}
+        data-item-url={`/products/${slug}`}
+        data-item-description={category}
+        data-item-image={image}
+        data-item-name={`${country} ${display_name} ${process}`}
+        data-item-weight='200'
+        data-item-custom1-name="研磨度"
+        data-item-custom1-options="不需要研磨|粗 (手沖)|中 (Aeropress)|幼 (Espresso)"
+        data-item-custom1-value="不需要研磨"
+        data-item-custom1-required="true"
+      >
+        <div className={styles.imageArea}>
+          <img className={styles.bgPattern} src='/patternBG_SO.svg' alt='background pattern' />
+          <div className={styles.country}>{country}</div>
+          <div className={styles.name}>{display_name}</div>
+          <div className={styles.process}>{process}</div>
+        </div>
       </div>
-      <div className='flavors-main'>
-        {flavors_main.map((flavor)=>(<div key={flavor.toString()}>{flavor}</div>))}
+      <div className={styles.infoArea}>
+        <div className={styles.flavorsMain}>{flavorStr}</div>
+        <div className={styles.price}>{`HKD ${price_200g}`}</div>
       </div>
-      <div className='price'>{price_200g}</div>
+      <style jsx> {`
+        .snipcart-add-item {
+          transition: all 500ms ease;
+        }
+        .snipcart-add-item:hover {
+          -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+      `} </style>
     </div>
   );
 }

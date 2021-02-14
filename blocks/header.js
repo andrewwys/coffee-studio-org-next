@@ -1,22 +1,45 @@
-import Link from 'next/link'
+// import Link from 'next/link'
+import styles from './header.module.css'
 
 const Header = () => {
   return (
     <header>
-      <nav className="nav">
-        <Link href="/">
+      <nav className={styles.nav}>
+        {/* <Link href="/">
           <a>Home</a>
         </Link>
         <Link href="/product-preview">
           <a>Products</a>
-        </Link>
+        </Link> */}
+        <img className={styles.bgPattern} src='/coffeeBeansBG.svg' alt='header-background-image' />
+        <div className='snipcart-checkout'>
+          <div className='snipcart-items-count' ></div>
+        </div>
       </nav>
       <style jsx>{`
-        nav {
+        .snipcart-checkout {
+          height: 30px;
+          width: 30px;
+          position: absolute;
+          right: 50px;
+          bottom: 17.5px;
+          border: 3px solid white;
+          background-color: transparent;
           display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          z-index: 100;
         }
-        a {
-          margin: 10px 5px;
+        .snipcart-checkout:active {
+          -webkit-transform: scale(0.9);
+          -ms-transform: scale(0.9);
+          transform: scale(0.9);
+        }
+        .snipcart-items-count {
+          color: white;
+          z-index: 101;
+          font-size: 0.8rem;
         }
       `}</style>
     </header>

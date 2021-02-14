@@ -1,4 +1,15 @@
 {
   "title": "Coffee Studio | Education & Online Shop",
-  "description": "Coffee Studio - Know your coffee. You may shop our freshly roast-to-order coffee. We ship within Hong Kong."
+  "description": "Coffee Studio - Know your coffee. You may shop our freshly roast-to-order coffee. We ship within Hong Kong.",
+  "snipcartAPIKey": "MzIyY2I3MWQtNTFmZC00N2JlLWFmYWQtY2ZkYjQzMDdiOWNlNjM3NDc3ODQ2Njc5MjU5MzQx",
+  "en": {
+    "homeTitle": "Coffee Studio | Education & Online Shop",
+    "heroLine1": "Freshly Roasted", 
+    "heroLine2": "to your door"
+  },
+  "hk": {
+    "homeTitle": "Coffee Studio | Education & Online Shop",
+    "heroLine1": "Freshly Roasted", 
+    "heroLine2": "to your door"
+  }
 }
