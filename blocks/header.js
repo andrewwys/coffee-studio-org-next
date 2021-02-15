@@ -11,7 +11,8 @@ const Header = () => {
         <Link href="/product-preview">
           <a>Products</a>
         </Link> */}
-        <img className={styles.bgPattern} src='/coffeeBeansBG.svg' alt='header-background-image' />
+        <div className={styles.bgPattern}></div>
+        <img className={styles.logo} src='/coffeebb-logo-1.png' alt='logo'></img>
         <div className='snipcart-checkout'>
           <div className='snipcart-items-count' ></div>
         </div>

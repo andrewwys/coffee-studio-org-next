@@ -36,6 +36,7 @@ const flavorStr = flavors_main.reduce((str, flavor, i)=>{ //break flavors array 
       <style jsx> {`
         .snipcart-add-item {
           transition: all 500ms ease;
+          background-color: transparent;
         }
         .snipcart-add-item:hover {
           -webkit-transform: scale(1.05);

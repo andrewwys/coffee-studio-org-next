@@ -1,0 +1,12 @@
+.footer {
+  background: #d0ae97;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.copyright {
+  margin: 0 0 0 auto;
+  padding: 40px 20px;
+}

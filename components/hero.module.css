@@ -1,0 +1,36 @@
+.hero {
+  position: relative;
+  height: 110vh;
+  background-image: url('/hero1.png');
+  background-size: auto 100%;
+  background-position: right top;
+  background-repeat: no-repeat;
+  color: var(--green-header);
+  z-index: 0;
+}
+
+.headlines {
+  margin: 0 0 0 64px;
+  padding-top: 40vh;
+}
+
+.line1 {
+  margin: 0;
+  font-size: var(--fsize-1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.line2 {
+  margin: 5px 0;
+  font-size: var(--fsize-2);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.marker {
+  background-color: #fffbf8bd;
+  color: var(--green-header);
+}

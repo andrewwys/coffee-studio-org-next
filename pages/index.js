@@ -1,8 +1,11 @@
 import matter from 'gray-matter'
+import Hero from '../components/hero';
 import Layout from '../components/layout'
 import ProductHighlights from '../components/product-highlights'
+import {labels} from '../siteConfig.json'
 
-export default function Home({title, description, productList}) {
+export default function Home({productList}) {
+  const {hk} = labels;
   return (
     <div>
       {/* <Head>
@@ -12,10 +15,8 @@ export default function Home({title, description, productList}) {
         <script async src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"></script>
       </Head>
       <div id="snipcart" data-config-modal-style="side" data-api-key="MzIyY2I3MWQtNTFmZC00N2JlLWFmYWQtY2ZkYjQzMDdiOWNlNjM3NDc3ODQ2Njc5MjU5MzQx" hidden></div> */}
-      <Layout pageTitle={title}>
-        <main>
-          <h1>{description}</h1>
-        </main>
+      <Layout pageTitle={hk.homeTitle}>
+        <Hero/>
         <ProductHighlights productList={productList}/>
       </Layout>
       

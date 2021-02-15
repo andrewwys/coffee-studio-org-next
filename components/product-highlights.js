@@ -1,26 +1,17 @@
 import ProductCard from '../blocks/product-card'
+import styles from './product-highlights.module.css'
+import { labels } from '../siteConfig.json'
 
 const ProductHighlights = ({productList}) => {
   if (!productList) return null;
   return(
-    <div className='product-highlights'>
-      <div className='highlight-header'>精選豆</div>
-      <div className='product-wrapper'>
+    <div className={styles.productHighlights}>
+      <div className={styles.highlightHeader}>{labels.hk.prductHighlights}</div>
+      <div className={styles.productWrapper}>
         {productList.map((product)=>(<ProductCard key={product.slug} productProps={product.fm} slug={product.slug}/>))}
       </div>
-      <style jsx>{`
-        .product-wrapper {
-          display: flex;
-          justify-content: flex-start;
-          align-items: flex-start;
-          flex-wrap: wrap;
-          margin: 10px 64px;
-        }
-      `}</style>
     </div>
   )
 }
-
-//
 
 export default ProductHighlights;
