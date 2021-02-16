@@ -45,7 +45,7 @@
 .country {
   font-size: 0.9rem;
   padding: 9.48% 0 0 5.38%;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: 22.5px;
   position: relative;
   z-index: 2;
@@ -66,7 +66,7 @@
 .name {
   font-size: 1.1rem;
   padding-left: 5.38%;
-  font-weight: 500;
+  /* font-weight: 500; */
   line-height: 30px;
   text-overflow: ellipsis;
   position: relative;
@@ -76,7 +76,7 @@
 .process {
   font-size: 0.8rem;
   padding: 5% 12% 8% 5.38%;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: 22.5px;
   position: relative;
   z-index: 2;
@@ -89,13 +89,13 @@
 
 .flavorsMain {
   font-size: 0.8rem;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: 22px;
   text-overflow: ellipsis;
 }
 
 .price {
   font-size: 1.1rem;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: 30px;
 }
