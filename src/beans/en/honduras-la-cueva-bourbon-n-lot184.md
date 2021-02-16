@@ -19,7 +19,7 @@ price_500g: 380
 price_1kg: 620
 price_dripbag: 300
 sweetness: '3'
-acidity: '2'
+acidity: '5'
 mouthfeel: '3'
 finish: '3'
 floral: '4'

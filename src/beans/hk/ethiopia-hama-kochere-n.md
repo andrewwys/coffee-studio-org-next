@@ -21,7 +21,7 @@ price_dripbag: 300
 sweetness: '4'
 acidity: '3'
 mouthfeel: '3'
-finish: '3'
+finish: '5'
 floral: '3'
 fruits: '5'
 nuts: '1'

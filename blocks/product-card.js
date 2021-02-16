@@ -1,12 +1,16 @@
+import CardColor from '../src/utils/cardColor'
 import styles from './product-card.module.css'
 
 const ProductCard = ({ productProps, slug }) => {
 const {pid, category, country, display_name, process, flavors_main, price_200g, image } = productProps;
+console.log('pProps: ', productProps);
 const flavorStr = flavors_main.reduce((str, flavor, i)=>{ //break flavors array into one line
   if (i < flavors_main.length -1) {
-    return (str + flavor + ' - ')
-  } else return str + flavor
-}, '');
+      return (str + flavor + ' - ')
+    } else return str + flavor
+  }, '');
+  const color = CardColor(productProps);
+  console.log(display_name, ' : ', color);
   return (
     <div className={styles.productCard}>
       <div className='snipcart-add-item'
@@ -22,7 +26,7 @@ const flavorStr = flavors_main.reduce((str, flavor, i)=>{ //break flavors array 
         data-item-custom1-value="不需要研磨"
         data-item-custom1-required="true"
       >
-        <div className={styles.imageArea}>
+        <div className={styles.imageArea} style={{backgroundColor: color}}>
           <img className={styles.bgPattern} src='/patternBG_SO.svg' alt='background pattern' />
           <div className={styles.country}>{country}</div>
           <div className={styles.name}>{display_name}</div>
@@ -40,7 +44,7 @@ const flavorStr = flavors_main.reduce((str, flavor, i)=>{ //break flavors array 
         }
         .snipcart-add-item:hover {
           -webkit-transform: scale(1.05);
-          -ms-transform: scale(1.05);
+          -ms-transform: scale(1.05); 
           transform: scale(1.05);
           cursor: pointer;
         }
