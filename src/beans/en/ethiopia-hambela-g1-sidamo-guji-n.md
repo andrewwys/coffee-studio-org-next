@@ -17,6 +17,8 @@ price_200g: 220
 price_500g: 380
 price_1kg: 620
 price_dripbag: 300
+price_gb: 350
+price_wholesale: 500
 sweetness: '4'
 acidity: '3'
 mouthfeel: '3'

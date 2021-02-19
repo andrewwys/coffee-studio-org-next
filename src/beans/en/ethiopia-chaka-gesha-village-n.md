@@ -19,13 +19,15 @@ price_200g: 280
 price_500g: 480
 price_1kg: 800
 price_dripbag: 320
-sweetness: "5"
-acidity: "4"
-finish: "3"
-floral: "4"
-fruits: "5"
-nuts: "2"
-sugars: "3"
+price_gb: 350
+price_wholesale: 500
+sweetness: '5'
+acidity: '4'
+finish: '3'
+floral: '4'
+fruits: '5'
+nuts: '2'
+sugars: '3'
 ---
 
 5
