@@ -113,6 +113,20 @@ collections:
           i18n: duplicate,
         }
       - {
+          label: '價錢(生豆)',
+          name: 'price_gb',
+          widget: 'number',
+          value_type: 'float',
+          i18n: duplicate,
+        }
+      - {
+          label: '價錢(批發)',
+          name: 'price_wholesale',
+          widget: 'number',
+          value_type: 'float',
+          i18n: duplicate,
+        }
+      - {
           label: '甜度',
           name: 'sweetness',
           widget: 'select',

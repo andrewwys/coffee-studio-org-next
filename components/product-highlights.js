@@ -3,7 +3,6 @@ import styles from './product-highlights.module.css'
 import { labels } from '../siteConfig.json'
 
 const ProductHighlights = ({productList}) => {
-  console.log('p: ', productList)
   if (!productList) return null;
   return(
     <div className={styles.productHighlights}>

@@ -3,7 +3,6 @@ import styles from './product-card.module.css'
 
 const ProductCard = ({ productProps, slug }) => {
 const {pid, category, country, display_name, process, flavors_main, price_200g, image } = productProps;
-console.log('pProps: ', productProps);
 const flavorStr = flavors_main.reduce((str, flavor, i)=>{ //break flavors array into one line
   if (i < flavors_main.length -1) {
       return (str + flavor + ' - ')
