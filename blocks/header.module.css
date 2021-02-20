@@ -22,6 +22,22 @@
   top: 0;
 }
 
+.langWrapper {
+  position: absolute;
+  top: 22.5px;
+  right: 100px;
+  color: white;
+  cursor: pointer;
+}
+
+.langWrapper:hover {
+  font-weight: 450;
+}
+
+.langWrapper:active {
+  font-weight: 200;
+}
+
 /* .cartIcon {
   width: 30px;
   height: 30px;

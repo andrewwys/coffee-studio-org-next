@@ -3,6 +3,7 @@ import Hero from '../components/hero';
 import Layout from '../components/layout'
 import ProductHighlights from '../components/product-highlights'
 import {labels} from '../siteConfig.json'
+import { useAppContext } from '../src/context/state' 
 
 export default function Home({productList}) {
   const {hk} = labels;
@@ -42,7 +43,7 @@ export async function getStaticProps() {
       }
     })
     return data
-  })(require.context('../src/beans/hk', true, /\.md$/))
+  })(require.context('../src/beans/en', true, /\.md$/))
 
   return {
     props: {

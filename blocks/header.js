@@ -1,4 +1,5 @@
 // import Link from 'next/link'
+import LanguageSwitch from '../bits/language-switch'
 import styles from './header.module.css'
 
 const Header = () => {
@@ -13,6 +14,9 @@ const Header = () => {
         </Link> */}
         <div className={styles.bgPattern}></div>
         <img className={styles.logo} src='/coffeebb-logo-1.png' alt='logo'></img>
+        <div className={styles.langWrapper}>
+          <LanguageSwitch />
+        </div>
         <div className='snipcart-checkout'>
           <div className='snipcart-items-count' ></div>
         </div>
@@ -31,6 +35,9 @@ const Header = () => {
           justify-content: center;
           cursor: pointer;
           z-index: 100;
+        }
+        .snipcart-checkout:hover {
+          font-weight: 450;
         }
         .snipcart-checkout:active {
           -webkit-transform: scale(0.9);
