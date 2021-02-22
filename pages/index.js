@@ -31,9 +31,12 @@ export async function getStaticProps() {
   
   const products = ((context) => { 
     const keys = context.keys()
+    console.log('keys: ', keys);
     const values = keys.map(context)
+    console.log('values: ', values);
     const data = keys.map((key, index) => {
-      let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3)
+      let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3) + '-' + key.slice(2, 4)
+      console.log('slug: ', slug)
       const value = values[index]
       const document = matter(value.default)
       return {
@@ -43,7 +46,7 @@ export async function getStaticProps() {
       }
     })
     return data
-  })(require.context('../src/beans/en', true, /\.md$/))
+  })(require.context('../src/beans', true, /\.md$/))
 
   return {
     props: {
