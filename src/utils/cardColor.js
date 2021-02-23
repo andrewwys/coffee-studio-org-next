@@ -1,3 +1,5 @@
+// determine color theme based on produt properties
+
 const CardColor = ( { finish, mouthfeel, sugars, nuts, floral, acidity, sweetness, fruits  } ) => {
   let position = 0;
   let color = '#8B6953';

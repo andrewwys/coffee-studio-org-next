@@ -36,9 +36,11 @@ const ProductDetails = ({fm}) => {
 }
 
 export async function getStaticProps({ ...ctx }) {
+  console.log('ctx: ', ctx);
   const { productName } = ctx.params
-
-  const content = await import(`../../src/beans/hk/${productName}.md`)
+  const lang = productName.slice(-2)
+  const productNameSliced = productName.slice(0, -3)
+  const content = await import(`../../src/beans/${lang}/${productNameSliced}.md`)
   const data = matter(content.default)
 
   return {
@@ -52,14 +54,15 @@ export async function getStaticPaths() {
   const productSlugs = ((context) => {
     const keys = context.keys()
     const data = keys.map((key, index) => {
-      let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3)
-
+      let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3) + '-' + key.slice(2, 4)
+      console.log('slug: ', slug);
       return slug
     })
     return data
-  })(require.context('../../src/beans/hk', true, /\.md$/))
+  })(require.context('../../src/beans', true, /\.md$/))
 
   const paths = productSlugs.map((slug) => `/products/${slug}`)
+  // path example: "/products/ethiopia-chaka-gesha-village-n-hk"
 
   return {
     paths,

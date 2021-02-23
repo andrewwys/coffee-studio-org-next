@@ -3,7 +3,6 @@ import Hero from '../components/hero';
 import Layout from '../components/layout'
 import ProductHighlights from '../components/product-highlights'
 import {labels} from '../siteConfig.json'
-import { useAppContext } from '../src/context/state' 
 
 export default function Home({productList}) {
   const {hk} = labels;
@@ -31,12 +30,9 @@ export async function getStaticProps() {
   
   const products = ((context) => { 
     const keys = context.keys()
-    console.log('keys: ', keys);
     const values = keys.map(context)
-    console.log('values: ', values);
     const data = keys.map((key, index) => {
       let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3) + '-' + key.slice(2, 4)
-      console.log('slug: ', slug)
       const value = values[index]
       const document = matter(value.default)
       return {

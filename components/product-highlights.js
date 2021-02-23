@@ -11,7 +11,8 @@ const ProductHighlights = ({productList}) => {
       <div className={styles.highlightHeader}>{labels[lang].prductHighlights}</div>
       <div className={styles.productWrapper}>
         {productList.map((product)=>
-          { if (product.fm.highlight && product.slug.slice(-2) === lang)
+          { 
+            if (product.fm.highlight && product.slug.slice(-2) === lang)
             return <ProductCard key={product.slug} productProps={product.fm} slug={product.slug}/>}
         )}
       </div>
