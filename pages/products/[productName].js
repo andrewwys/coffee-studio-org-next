@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import matter from 'gray-matter'
-
+import { useAppContext } from '../../src/context/state'
 import Layout from '../../components/layout'
 
 const ProductDetails = ({fm}) => {
+  const {lang} = useAppContext();
   if (!fm) return <></>
-  const { country, display_name, process, flavors_main, flavors_desc, description, image, price_200g, price_500g, price_1kg, price_dripbag, sweetness, acidity, mouthfeel, finish, floral, fruits, nuts, sugars} = fm;
+  const { country, display_name, process, flavors_main, flavors_desc, description, image, price_200g, price_500g, price_1kg, price_dripbag, sweetness, acidity, mouthfeel, finish, floral, fruits, nuts, sugars} = fm[lang];
   return (
     <Layout pageTitle={`${fm.title}`}>
       <Link href="/">
@@ -36,11 +37,10 @@ const ProductDetails = ({fm}) => {
 }
 
 export async function getStaticProps({ ...ctx }) {
-  console.log('ctx: ', ctx);
   const { productName } = ctx.params
-  const lang = productName.slice(-2)
-  const productNameSliced = productName.slice(0, -3)
-  const content = await import(`../../src/beans/${lang}/${productNameSliced}.md`)
+  //console.log('product name: ', productName)
+  //const productNameSliced = productName.slice(0, -3)
+  const content = await import(`../../src/beans/${productName}.md`)
   const data = matter(content.default)
 
   return {
@@ -54,7 +54,7 @@ export async function getStaticPaths() {
   const productSlugs = ((context) => {
     const keys = context.keys()
     const data = keys.map((key, index) => {
-      let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3) + '-' + key.slice(2, 4)
+      let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3)
       console.log('slug: ', slug);
       return slug
     })

@@ -38,7 +38,7 @@ collections:
           name: 'category',
           widget: 'select',
           i18n: duplicate,
-          options: ['SO', 'Blend'],
+          options: ['Single Origin', 'Blend', 'Course'],
         }
       - { label: '國家', name: 'country', widget: 'string', i18n: true }
       - {

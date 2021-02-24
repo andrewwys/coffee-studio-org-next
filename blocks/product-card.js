@@ -1,9 +1,10 @@
-
+import { useAppContext } from '../src/context/state'
 import CardColor from '../src/utils/cardColor'
 import styles from './product-card.module.css'
 
 const ProductCard = ({ productProps, slug }) => {
-  const {pid, category, country, display_name, process, flavors_main, price_200g, price_500g, price_1kg, price_dripbag, price_gb, image } = productProps;
+  const {lang} = useAppContext();
+  const { [lang]: { pid, category, country, display_name, process, flavors_main, price_200g, price_500g, price_1kg, price_dripbag, price_gb, image} } = productProps;
   const flavorStr = flavors_main.reduce((str, flavor, i)=>{ //break flavors array into one line
     if (i < flavors_main.length -1) {
         return (str + flavor + ' - ')

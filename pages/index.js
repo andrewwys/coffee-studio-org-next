@@ -5,6 +5,7 @@ import ProductHighlights from '../components/product-highlights'
 import {labels} from '../siteConfig.json'
 
 export default function Home({productList}) {
+  console.log(productList)
   const {hk} = labels;
   return (
     <div>
@@ -32,7 +33,7 @@ export async function getStaticProps() {
     const keys = context.keys()
     const values = keys.map(context)
     const data = keys.map((key, index) => {
-      let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3) + '-' + key.slice(2, 4)
+      let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3)
       const value = values[index]
       const document = matter(value.default)
       return {
