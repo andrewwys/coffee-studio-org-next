@@ -10,7 +10,7 @@ const ProductCard = ({ productProps, slug }) => {
         return (str + flavor + ' - ')
       } else return str + flavor
     }, '');
-    const color = CardColor(productProps);
+    const color = CardColor(productProps[lang]);
     return (
       <div className={styles.productCard}>
         <div className='snipcart-add-item'
