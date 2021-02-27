@@ -2,6 +2,8 @@ import matter from 'gray-matter'
 import { useAppContext } from '../../src/context/state'
 import Layout from '../../components/layout'
 import NavPath from '../../bits/nav-path'
+import ProductDetailCard from '../../blocks/product-detail-card'
+import styles from './[productName].module.css'
 
 const ProductDetails = ({fm}) => {
   const {lang} = useAppContext();
@@ -9,26 +11,31 @@ const ProductDetails = ({fm}) => {
   const { country, display_name, process, flavors_main, flavors_desc, description, image, price_200g, price_500g, price_1kg, price_dripbag, sweetness, acidity, mouthfeel, finish, floral, fruits, nuts, sugars} = fm[lang];
   return (
     <Layout pageTitle={`${fm[lang].title}`}>
-      <NavPath />
-      <div>
-        <div>{country}</div>
-        <h3>{display_name}</h3>
-        <div>{process}</div>
-        <div className='favors-wrapper' style={{display: 'flex'}}>
-          {flavors_main.map((flavor)=>(
-          <div className='flavor' key={flavor.toString()}>{flavor}</div>
-        ))}
-        </div> 
+      <div className={styles.wrapper}>
+        <NavPath />
+        <div className={styles.main}>
+          {/* <img className={styles.bgImg} src='/images/bg-product-details.png' alt='coffee beans'/> */}
+          <div className={styles.title}>{display_name}</div>
+          <ProductDetailCard country={country} process={process} color='#D09797' />
+          <div>{country}</div>
+          <div>{process}</div>
+          <div className='favors-wrapper' style={{display: 'flex'}}>
+            {flavors_main.map((flavor)=>(
+            <div className='flavor' key={flavor.toString()}>{flavor}</div>
+          ))}
+          </div> 
+          <div>{description}</div>
+          <div>{flavors_desc}</div>
+          <div className='prices'>
+            {`200g: HKD${price_200g} 500g:   HKD${price_500g}    1kg: HKD${price_1kg}    Dripbag: HKD${price_dripbag}`}
+          </div>
+          <div className='flavor-chart'>
+            <div>{`花香 ${floral}    水果 ${fruits}    堅果 ${nuts}    糖香 ${sugars}`}</div>
+            <div>{`酸度 ${acidity}    甜度 ${sweetness}    醇厚 ${mouthfeel}    餘韻 ${finish}`}</div>
+          </div>
+        </div>
       </div>
-      <div>{description}</div>
-      <div>{flavors_desc}</div>
-      <div className='prices'>
-        {`200g: HKD${price_200g} 500g:   HKD${price_500g}    1kg: HKD${price_1kg}    Dripbag: HKD${price_dripbag}`}
-      </div>
-      <div className='flavor-chart'>
-        <div>{`花香 ${floral}    水果 ${fruits}    堅果 ${nuts}    糖香 ${sugars}`}</div>
-        <div>{`酸度 ${acidity}    甜度 ${sweetness}    醇厚 ${mouthfeel}    餘韻 ${finish}`}</div>
-      </div>
+      
     </Layout>
   );
 }

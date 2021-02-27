@@ -1,0 +1,20 @@
+.wrapper {
+  background-image: url(/images/bg-product-details.png);
+  background-repeat: no-repeat;
+  background-position: 100% 55%;
+  background-size: 944px;
+}
+
+.main {
+  margin: auto var(--width-margin);
+  min-height: 380px;
+}
+.bgImg {
+  display: absolute;
+}
+.title {
+  margin: 15px 0;
+  font-size: var(--fsize-3);
+  font-weight: 300;
+  color: var(--gold-subtitle);
+}

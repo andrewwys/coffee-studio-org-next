@@ -9,7 +9,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: auto var(--width-margin);
   padding: 40px 0 0 0;
 }
@@ -18,8 +18,8 @@
 .info,
 .social,
 .languages {
-  flex-grow: 1;
-  padding: 10px;
+  /* flex-grow: 1; */
+  padding: 20px 60px;
   margin-bottom: 10px;
 }
 

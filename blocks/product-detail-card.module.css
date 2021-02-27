@@ -1,0 +1,32 @@
+.card {
+  border-radius: 5px;
+  box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.25);
+  color: white;
+  width: 487px;
+  height: 213px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.bgPattern {
+  mix-blend-mode: multiply;
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+  right: 0px;
+}
+
+.col1 {
+  font-size: var(--fsize-5);
+  line-height: 40px;
+  padding: 25px 20px;
+}
+
+.col2 {
+  font-size: var(--fsize-4);
+  line-height: 40px;
+  padding: 30px 20px;
+}
