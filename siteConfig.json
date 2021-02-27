@@ -3,17 +3,47 @@
   "description": "自家新鮮烘焙咖啡",
   "snipcartAPIKey": "MzIyY2I3MWQtNTFmZC00N2JlLWFmYWQtY2ZkYjQzMDdiOWNlNjM3NDc3ODQ2Njc5MjU5MzQx", 
   "labels": {
-      "hk": {
-        "homeTitle": "Coffee Studio | 新鮮烘焙 | 咖啡教學",
-        "heroLine1": "自家新鮮烘焙咖啡", 
-        "heroLine2": "歡迎訂購",
-        "prductHighlights": "精選豆"
+    "hk": {
+      "homeTitle": "Coffee Studio | 新鮮烘焙 | 咖啡教學",
+      "heroLine1": "自家新鮮烘焙咖啡", 
+      "heroLine2": "歡迎訂購",
+      "prductHighlights": "精選豆",
+      "singleOrigin": "Single Origin",
+      "houseBlend": "House Blend",
+      "dripBags": "Drip Bags", 
+      "greenBeans": "Green Beans"
     },
     "en": {
         "homeTitle": "Coffee Studio | Education & Online Shop",
         "heroLine1": "Freshly Roasted", 
         "heroLine2": "coffee to your door",
-        "prductHighlights": "Pruduct Highlights"
+        "prductHighlights": "Pruduct Highlights",
+        "singleOrigin": "Single Origin",
+        "houseBlend": "House Blend",
+        "dripBags": "Drip Bags", 
+        "greenBeans": "Green Beans"
+    }, 
+    "footer": {
+      "hk": {
+        "shop": "Shop",
+        "information": "Infomation", 
+        "social": "Social Media",
+        "copyright1": "Copyright ©  2010-",
+        "copyright2": " Coffee Studio. All rights reserved."
+      }, 
+      "en": {
+        "shop": "Shop",
+        "information": "Infomation", 
+        "social": "Social Media",
+        "copyright1": "Copyright ©  2010-",
+        "copyright2": " Coffee Studio. All rights reserved."
+      }
     }
+  },
+  "display": {
+    "mobileWidth": "470px",
+    "tabletWidth": "960px",
+    "desktopWidth": "1140px",
+    "widthMargin": "150px"
   }
 }

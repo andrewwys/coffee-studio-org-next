@@ -1,9 +1,36 @@
 .footer {
   background: #d0ae97;
+  height: 200px;
+  color: white;
   height: auto;
+}
+
+.wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: var(--width-margin);
+}
+
+.columnTitle1 {
+  flex-grow: 1;
+}
+
+.columnTitle2 {
+  flex-grow: 2;
+}
+
+.iconGroup {
+  display: flex;
+  flex-direction: row;
   justify-content: flex-start;
+}
+
+.socialIcons {
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .copyright {

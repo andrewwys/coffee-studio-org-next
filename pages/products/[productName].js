@@ -1,18 +1,15 @@
-import Link from 'next/link'
 import matter from 'gray-matter'
 import { useAppContext } from '../../src/context/state'
 import Layout from '../../components/layout'
+import NavPath from '../../bits/nav-path'
 
 const ProductDetails = ({fm}) => {
   const {lang} = useAppContext();
   if (!fm) return <></>
   const { country, display_name, process, flavors_main, flavors_desc, description, image, price_200g, price_500g, price_1kg, price_dripbag, sweetness, acidity, mouthfeel, finish, floral, fruits, nuts, sugars} = fm[lang];
   return (
-    <Layout pageTitle={`${fm.title}`}>
-      <Link href="/">
-        <a>Back to homepage</a>
-      </Link>
-      <img src={image}/>
+    <Layout pageTitle={`${fm[lang].title}`}>
+      <NavPath />
       <div>
         <div>{country}</div>
         <h3>{display_name}</h3>

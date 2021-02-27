@@ -22,6 +22,11 @@ export default function Layout({ children, pageTitle }) {
       <Footer/>
       <script async src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"></script>
       <div id="snipcart" data-config-modal-style="side" data-api-key={snipcartAPIKey} hidden></div>
+      <style jsx>{`
+        section {
+          min-height: calc(100vh - 265px);
+        }
+      `} </style>
     </div> 
   )
 }

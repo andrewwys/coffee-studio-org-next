@@ -1,13 +1,15 @@
 :root {
   --green-header: #6e7556;
+  --peach-footer: #b3886e; /* d0ae97 */
   --white-bg: #fffbf8;
-  --fsize-1: 4.2rem;
-  --fsize-2: 3.17rem;
-  --fsize-3: 2.39rem;
-  --fsize-4: 1.78rem;
-  --fsize-5: 1.33rem;
-  --fsize-6: 1rem;
+  --fsize-1: 4.2rem; /* 76px */
+  --fsize-2: 3.17rem; /* 57px */
+  --fsize-3: 2.39rem; /* 43px */
+  --fsize-4: 1.78rem; /* 32px */
+  --fsize-5: 1.33rem; /* 24px */
+  --fsize-6: 1rem; /* 18px */
   font-size: 18px;
+  --width-margin: 64px;
 }
 
 html,

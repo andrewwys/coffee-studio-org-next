@@ -5,7 +5,6 @@ import ProductHighlights from '../components/product-highlights'
 import {labels} from '../siteConfig.json'
 
 export default function Home({productList}) {
-  console.log(productList)
   const {hk} = labels;
   return (
     <div>
