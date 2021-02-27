@@ -8,10 +8,14 @@
       "heroLine1": "自家新鮮烘焙咖啡", 
       "heroLine2": "歡迎訂購",
       "prductHighlights": "精選豆",
-      "singleOrigin": "Single Origin",
-      "houseBlend": "House Blend",
-      "dripBags": "Drip Bags", 
-      "greenBeans": "Green Beans"
+      "singleOrigin": "單品",
+      "houseBlend": "綜合",
+      "dripBags": "掛耳包", 
+      "greenBeans": "生豆",
+      "subscription": "訂購計劃",
+      "aboutUs": "關於我們",
+      "contact": "聯絡",
+      "photoAttribution": "圖片來源"
     },
     "en": {
         "homeTitle": "Coffee Studio | Education & Online Shop",
@@ -19,15 +23,20 @@
         "heroLine2": "coffee to your door",
         "prductHighlights": "Pruduct Highlights",
         "singleOrigin": "Single Origin",
-        "houseBlend": "House Blend",
+        "houseBlend": "Blended",
         "dripBags": "Drip Bags", 
-        "greenBeans": "Green Beans"
+        "greenBeans": "Green Beans",
+        "subscription": "Subscription",
+        "aboutUs": "About Us",
+        "contact": "Contact",
+        "photoAttribution": "Photo Attribution"
     }, 
     "footer": {
       "hk": {
-        "shop": "Shop",
-        "information": "Infomation", 
-        "social": "Social Media",
+        "shop": "商店",
+        "information": "資訊", 
+        "social": "媒體",
+        "languages": "語言",
         "copyright1": "Copyright ©  2010-",
         "copyright2": " Coffee Studio. All rights reserved."
       }, 
@@ -35,6 +44,7 @@
         "shop": "Shop",
         "information": "Infomation", 
         "social": "Social Media",
+        "languages": "Languages",
         "copyright1": "Copyright ©  2010-",
         "copyright2": " Coffee Studio. All rights reserved."
       }
