@@ -1,8 +1,21 @@
 .wrapper {
   background-image: url(/images/bg-product-details.png);
   background-repeat: no-repeat;
-  background-position: 100% 55%;
+  background-position: 100% -420%;
   background-size: 944px;
+}
+
+@media screen and (max-width: 1270px) {
+  .wrapper {
+    background-position: 100% -22%;
+    background-size: 600px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .wrapper {
+    background-image: none;
+  }
 }
 
 .main {
@@ -17,4 +30,15 @@
   font-size: var(--fsize-3);
   font-weight: 300;
   color: var(--gold-subtitle);
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.lineBreak {
+  height: 25px;
 }

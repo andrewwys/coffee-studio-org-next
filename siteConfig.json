@@ -48,6 +48,24 @@
         "copyright1": "Copyright ©  2010-",
         "copyright2": " Coffee Studio. All rights reserved."
       }
+    },
+    "details": {
+      "hk": {
+        "country": "國家",
+        "process": "處理",
+        "altitude": "海拔", 
+        "varietal": "品種",
+        "flavors": "風味",
+        "profile": "特色"
+      }, 
+      "en": {
+        "country": "Country",
+        "process": "Process",
+        "altitude": "Altitude", 
+        "varietal": "Varietal",
+        "flavors": "Flavours",
+        "profile": "Profile"
+      }
     }
   },
   "display": {

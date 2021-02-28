@@ -11,6 +11,11 @@
   --fsize-6: 1rem; /* 18px */
   font-size: 18px;
   --width-margin: 64px;
+  --mobile-width: 470px;
+  /* "mobileWidth": "470px",
+    "tabletWidth": "960px",
+    "desktopWidth": "1140px",
+    "widthMargin": "150px" */
 }
 
 html,
