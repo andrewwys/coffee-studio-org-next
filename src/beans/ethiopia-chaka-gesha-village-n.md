@@ -61,7 +61,9 @@ en:
   flavors_desc: |-
     Mango, Peach and Berries aromas. White flower, Orange, Honey,
     Cacao in its flavours. Syrupy mouthfeel and intense sweetness.
-  description: Ethiopia Chaka Gesha Village Natural
+  description: |-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   price_dripbag: 320
   sugars: '4'
   category: Single Origin

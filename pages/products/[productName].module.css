@@ -5,19 +5,6 @@
   background-size: 944px;
 }
 
-@media screen and (max-width: 1270px) {
-  .wrapper {
-    background-position: 100% -22%;
-    background-size: 600px;
-  }
-}
-
-@media screen and (max-width: 1020px) {
-  .wrapper {
-    background-image: none;
-  }
-}
-
 .main {
   margin: auto var(--width-margin);
   min-height: 380px;
@@ -41,4 +28,32 @@
 
 .lineBreak {
   height: 25px;
+}
+
+@media screen and (max-width: 1270px) {
+  .wrapper {
+    background-position: 100% -22%;
+    background-size: 600px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .wrapper {
+    background-image: none;
+  }
+  .title {
+    font-size: var(--fsize-4);
+  }
+  .main {
+    margin: auto 15px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .title {
+    font-size: var(--fsize-5);
+  }
+  .main {
+    margin: auto 30px;
+  }
 }
