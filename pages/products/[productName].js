@@ -25,18 +25,13 @@ const ProductDetails = ({fm}) => {
           <ProductDetailCard country={country} process={process} color='#D09797' />
           <div className={styles.lineBreak}></div>
           <InfoRow name={details[lang].profile}>{flavorStr}</InfoRow>
-          <InfoRow name={details[lang].flavors}>{'Flavour Chart'}</InfoRow>
+          <InfoRow name={details[lang].flavors}>
+            <FlavorProfileChart floral={floral} fruits={fruits} nuts={nuts} sugars={sugars} acidity={acidity} sweetness={sweetness} mouthfeel={mouthfeel} finish={finish} />
+          </InfoRow>
           <InfoRow name={details[lang].details}>{description}</InfoRow>
           <InfoRow name={details[lang].flavorDesc}>{flavors_desc}</InfoRow>
           <InfoRow name={details[lang].package}>{details[lang].packageText}</InfoRow>
           <InfoRow name={details[lang].price}>{`HKD ${price_200g} / ${price_500g} / ${price_1kg} / ${price_dripbag} / ${price_gb}`}</InfoRow>
-
-          <FlavorProfileChart floral={floral} fruits={fruits} nuts={nuts} sugars={sugars} acidity={acidity} sweetness={sweetness} mouthfeel={mouthfeel} finish={finish} />
-
-          <div className='flavor-chart'>
-            <div>{`花香 ${floral}    水果 ${fruits}    堅果 ${nuts}    糖香 ${sugars}`}</div>
-            <div>{`酸度 ${acidity}    甜度 ${sweetness}    醇厚 ${mouthfeel}    餘韻 ${finish}`}</div>
-          </div>
         </div>
       </div>
       
@@ -63,7 +58,6 @@ export async function getStaticPaths() {
     const keys = context.keys()
     const data = keys.map((key, index) => {
       let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3)
-      console.log('slug: ', slug);
       return slug
     })
     return data

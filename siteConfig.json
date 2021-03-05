@@ -61,7 +61,15 @@
         "flavorDesc": "描述",
         "package": "包裝", 
         "packageText": "200g / 500g / 1kg / 掛耳包 / 生豆",
-        "price": "價錢"
+        "price": "價錢",
+        "floral": "花香",
+        "fruits": "水果",
+        "nuts": "堅果",
+        "sugars": "糖香",
+        "acidity": "酸度",
+        "sweetness": "甜度",
+        "mouthfeel": "醇厚",
+        "finish": "餘韻"
       }, 
       "en": {
         "country": "Country",
@@ -74,7 +82,15 @@
         "flavorDesc": "Description",
         "package": "Package", 
         "packageText": "200g / 500g / 1kg / Drip bags / Green beans",
-        "price": "Price"
+        "price": "Price",
+        "floral": "Floral",
+        "fruits": "Fruits",
+        "nuts": "Nuts",
+        "sugars": "Sugars",
+        "acidity": "Acidity",
+        "sweetness": "Sweetness",
+        "mouthfeel": "Body",
+        "finish": "Finish"
       }
     }
   },
