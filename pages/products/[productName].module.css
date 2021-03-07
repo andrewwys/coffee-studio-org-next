@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-position: 100% -420%;
   background-size: 944px;
+  padding-bottom: 100px;
 }
 
 .main {
@@ -28,6 +29,27 @@
 
 .lineBreak {
   height: 25px;
+}
+
+.addToCart {
+  /* display: flex;
+  align-items: flex-end;
+  justify-content: flex-end; */
+  margin-top: 80px;
+}
+
+.addToCartText {
+  text-decoration: underline;
+  font-size: var(--fsize-5);
+  color: var(--green-header);
+  padding-right: 190px;
+  text-align: right;
+}
+
+.addToCartButton {
+  position: fixed;
+  bottom: 10%;
+  right: 90px;
 }
 
 @media screen and (max-width: 1270px) {

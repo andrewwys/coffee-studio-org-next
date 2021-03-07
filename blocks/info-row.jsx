@@ -10,7 +10,7 @@ const InfoRow = ({ name, children }) => {
           .info-row {
             display: flex;
             align-items: flex-start;
-            margin: 10px 0 10px 40px;
+            margin: 40px 0 40px 40px;
           }
           .name {
             font-size: 1.2rem;

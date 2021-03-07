@@ -4,6 +4,7 @@ import Layout from '../../components/layout'
 import NavPath from '../../bits/nav-path'
 import flavorFormatter from '../../src/utils/flavor-formatter'
 import ProductDetailCard from '../../blocks/product-detail-card'
+import AddToCartButton from '../../bits/add-to-cart-button'
 import InfoRow from '../../blocks/info-row'
 import FlavorProfileChart from '../../components/flavor-profile-chart'
 
@@ -32,6 +33,10 @@ const ProductDetails = ({fm}) => {
           <InfoRow name={details[lang].flavorDesc}>{flavors_desc}</InfoRow>
           <InfoRow name={details[lang].package}>{details[lang].packageText}</InfoRow>
           <InfoRow name={details[lang].price}>{`HKD ${price_200g} / ${price_500g} / ${price_1kg} / ${price_dripbag} / ${price_gb}`}</InfoRow>
+        </div>
+        <div className={styles.addToCart}>
+          <div className={styles.addToCartText} >add to cart &gt;</div>
+          <div className={styles.addToCartButton} ><AddToCartButton size='70' /></div>
         </div>
       </div>
       
