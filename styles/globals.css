@@ -4,6 +4,16 @@
   --gold-subtitle: #c1882f;
   --white-bg: #fffbf8;
   --grey-tag: #6e7556;
+  /* Theme colors for coffee beans */
+  --pink-floral: #d09797;
+  --orange-fruits: #e8a438;
+  --brown-nuts: #8b6953;
+  --brown-sugars: #b3886e;
+  --yellow-acidity: #ecbf2e;
+  --red-sweetness: #c87070;
+  --green-mouthfeel: #809146;
+  --blue-finish: #5d80a7;
+  /* Font sizes */
   --fsize-1: 4.2rem; /* 76px */
   --fsize-2: 3.17rem; /* 57px */
   --fsize-3: 2.39rem; /* 43px */
