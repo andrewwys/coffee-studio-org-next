@@ -51,6 +51,20 @@
   z-index: 2;
 }
 
+.addToCart {
+  position: absolute;
+  top: 30%;
+  left: 22.5%;
+  z-index: 3;
+}
+
+.detailButton {
+  position: absolute;
+  top: 30%;
+  right: 22.5%;
+  z-index: 3;
+}
+
 .infoArea {
   text-align: right;
   margin-top: 13px;

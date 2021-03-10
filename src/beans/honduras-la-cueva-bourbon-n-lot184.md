@@ -2,7 +2,7 @@
 hk:
   pid: 1005
   title: La Cueva Bourbon Lot184
-  category: 'SO'
+  category: Single Origin
   country: 洪多拉斯
   display_name: La Cueva 波旁 Lot184
   process: 日曬

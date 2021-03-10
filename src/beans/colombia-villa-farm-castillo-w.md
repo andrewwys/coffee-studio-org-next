@@ -2,7 +2,7 @@
 hk:
   pid: 1006
   title: Colombia Villa Farm Castillo W
-  category: 'SO'
+  category: Single Origin
   country: 哥倫比亞
   display_name: 別墅莊園
   process: 酒香水洗

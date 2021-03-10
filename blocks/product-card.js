@@ -2,6 +2,8 @@ import { useAppContext } from '../src/context/state'
 import CardColor from '../src/utils/cardColor'
 import flavorFormatter from '../src/utils/flavor-formatter'
 import styles from './product-card.module.css'
+import AddToCartShortcut from '../bits/add-to-cart-shortcut'
+import DetailButton from '../bits/details-button'
 
 const ProductCard = ({ productProps, slug }) => {
   const {lang} = useAppContext();
@@ -32,6 +34,8 @@ const ProductCard = ({ productProps, slug }) => {
             <div className={styles.country}>{country}</div>
             <div className={styles.name}>{display_name}</div>
             <div className={styles.process}>{process}</div>
+            <div className={styles.addToCart}><AddToCartShortcut color={color} width={60} /></div>
+            <div className={styles.detailButton}><DetailButton color={color} width={60} /></div>
           </div>
         </div>
         <div className={styles.infoArea}>

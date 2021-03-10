@@ -43,7 +43,7 @@ const InfoRow = ({ name, children }) => {
           }
           @media screen and (max-width: ${display.mobileWidth} ) {
             .info-row {
-              margin: 10px 0;
+              margin: 30px 0;
             }
             .name {
               font-size: var(--fsize-6);

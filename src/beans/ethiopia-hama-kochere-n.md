@@ -2,7 +2,7 @@
 hk:
   pid: 1002
   title: Ethiopia Hama Kochere N
-  category: 'SO'
+  category: Single Origin
   country: 埃塞俄比亞
   display_name: 哈瑪 科契爾
   process: 日曬
