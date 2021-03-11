@@ -13,6 +13,11 @@
   height: 136px;
   position: relative;
   z-index: 1;
+  transition: filter 300ms ease;
+}
+
+.imageArea:hover > * {
+  filter: blur(1px);
 }
 
 .bgPattern {
@@ -52,17 +57,41 @@
 }
 
 .addToCart {
+  display: none;
   position: absolute;
   top: 30%;
   left: 22.5%;
   z-index: 3;
+  transition: all 500ms ease;
 }
 
 .detailButton {
+  display: none;
   position: absolute;
   top: 30%;
   right: 22.5%;
   z-index: 3;
+  transition: all 300ms ease;
+}
+
+.imageArea:hover .addToCart,
+.imageArea:hover .detailButton {
+  display: block;
+  filter: blur(0);
+}
+
+.addToCart:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.detailButton:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .infoArea {

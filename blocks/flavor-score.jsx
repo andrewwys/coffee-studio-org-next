@@ -4,8 +4,8 @@ const FlavorScore = ({ color, score, inverted}) => {
   const dots = [];
   for (let i=0; i<5; i++) {
     if ( score > i ) 
-      dots.push(<FlavorDot color={color} filled={true}/>)
-    else dots.push(<FlavorDot color={color} filled={false} />)
+      dots.push(<FlavorDot color={color} filled={true} key={i}/>)
+    else dots.push(<FlavorDot color={color} filled={false} key={i}/>)
   }
   return (
     <div className='scores'>

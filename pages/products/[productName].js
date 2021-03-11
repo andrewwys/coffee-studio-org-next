@@ -1,4 +1,5 @@
 import matter from 'gray-matter'
+// import Head from 'next/head'
 import { useAppContext } from '../../src/context/state'
 import Layout from '../../components/layout'
 import NavPath from '../../bits/nav-path'
@@ -18,29 +19,33 @@ const ProductDetails = ({fm}) => {
   const { country, display_name, process, flavors_main, flavors_desc, description, image, price_200g, price_500g, price_1kg, price_dripbag, price_gb, sweetness, acidity, mouthfeel, finish, floral, fruits, nuts, sugars} = fm[lang];
   const flavorStr = flavorFormatter(flavors_main);
   return (
-    <Layout pageTitle={`${fm[lang].title}`}>
-      <div className={styles.wrapper}>
-        <NavPath />
-        <div className={styles.main}>
-          <div className={styles.title}>{display_name}</div>
-          <ProductDetailCard country={country} process={process} color='#D09797' />
-          <div className={styles.lineBreak}></div>
-          <InfoRow name={details[lang].profile}>{flavorStr}</InfoRow>
-          <InfoRow name={details[lang].flavors}>
-            <FlavorProfileChart floral={floral} fruits={fruits} nuts={nuts} sugars={sugars} acidity={acidity} sweetness={sweetness} mouthfeel={mouthfeel} finish={finish} />
-          </InfoRow>
-          <InfoRow name={details[lang].details}>{description}</InfoRow>
-          <InfoRow name={details[lang].flavorDesc}>{flavors_desc}</InfoRow>
-          <InfoRow name={details[lang].package}>{details[lang].packageText}</InfoRow>
-          <InfoRow name={details[lang].price}>{`HKD ${price_200g} / ${price_500g} / ${price_1kg} / ${price_dripbag} / ${price_gb}`}</InfoRow>
-        </div>
-        <div className={styles.addToCart}>
-          <div className={styles.addToCartText} >add to cart &gt;</div>
-          <div className={styles.addToCartButton} ><AddToCartButton size='70' /></div>
-        </div>
-      </div>
+    <div>
       
-    </Layout>
+      <Layout pageTitle={`${fm[lang].title}`}>
+        <div className={styles.wrapper}>
+          <NavPath />
+          <div className={styles.main}>
+            <div className={styles.title}>{display_name}</div>
+            <ProductDetailCard country={country} process={process} color='#D09797' />
+            <div className={styles.lineBreak}></div>
+            <InfoRow name={details[lang].profile}>{flavorStr}</InfoRow>
+            <InfoRow name={details[lang].flavors}>
+              <FlavorProfileChart floral={floral} fruits={fruits} nuts={nuts} sugars={sugars} acidity={acidity} sweetness={sweetness} mouthfeel={mouthfeel} finish={finish} />
+            </InfoRow>
+            <InfoRow name={details[lang].details}>{description}</InfoRow>
+            <InfoRow name={details[lang].flavorDesc}>{flavors_desc}</InfoRow>
+            <InfoRow name={details[lang].package}>{details[lang].packageText}</InfoRow>
+            <InfoRow name={details[lang].price}>{`HKD ${price_200g} / ${price_500g} / ${price_1kg} / ${price_dripbag} / ${price_gb}`}</InfoRow>
+          </div>
+          <div className={styles.addToCart}>
+            <div className={styles.addToCartText} >add to cart &gt;</div>
+            <div className={styles.addToCartButton} ><AddToCartButton size='70' /></div>
+          </div>
+        </div>
+        
+      </Layout>
+    </div>
+    
   );
 }
 

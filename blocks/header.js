@@ -18,7 +18,7 @@ const Header = () => {
           <LanguageSwitch />
         </div>
         <div className='snipcart-checkout'>
-          <div className='snipcart-items-count' ></div>
+          {/* <div className='snipcart-items-count' ></div> */}
         </div>
       </nav>
       <style jsx>{`
