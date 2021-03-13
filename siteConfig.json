@@ -15,10 +15,7 @@
       "subscription": "訂購計劃",
       "aboutUs": "關於我們",
       "contact": "聯絡",
-      "photoAttribution": "圖片來源",
-      "signleOrigin": "Single Origin", 
-      "blended": "Blended",
-      "dripBag": "Drip Bag"
+      "photoAttribution": "圖片來源"
     },
     "en": {
         "homeTitle": "Coffee Studio | Education & Online Shop",
@@ -26,16 +23,13 @@
         "heroLine2": "coffee to your door",
         "prductHighlights": "Product Highlights",
         "singleOrigin": "Single Origin",
-        "houseBlend": "Blended",
+        "houseBlend": "Blends",
         "dripBags": "Drip Bags", 
         "greenBeans": "Green Beans",
         "subscription": "Subscription",
         "aboutUs": "About Us",
         "contact": "Contact",
-        "photoAttribution": "Photo Attribution",
-        "signleOrigin": "Single Origin", 
-        "blended": "Blended",
-        "dripBag": "Drip Bag"
+        "photoAttribution": "Photo Attribution"
     }, 
     "footer": {
       "hk": {
