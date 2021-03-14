@@ -33,7 +33,7 @@ hk:
 en:
   pid: 1002
   title: Ethiopia Hama Kochere N
-  category: 'SO'
+  category: Single Origin
   country: Ethiopia
   display_name: Hama Kochere
   process: Natural

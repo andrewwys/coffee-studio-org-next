@@ -1,14 +1,15 @@
 import ProductCard from '../blocks/product-card'
 import styles from './product-highlights.module.css'
-import { labels } from '../siteConfig.json'
+// import { labels } from '../siteConfig.json'
 import { useAppContext } from '../src/context/state'
 
-const ProductHighlights = ({productList}) => {
+const ProductHighlights = ({ productList, title }) => {
   const {lang} = useAppContext();
+  console.log('productHL: ', productList);
   if (!productList) return null;
   return(
     <div className={styles.productHighlights}>
-      <div className={styles.highlightHeader}>{labels[lang].prductHighlights}</div>
+      <div className={styles.highlightHeader}>{title}</div>
       <div className={styles.productWrapper}>
         {productList.map((product)=>
           { 

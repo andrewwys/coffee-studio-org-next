@@ -34,7 +34,7 @@ hk:
 en:
   pid: 1005
   title: La Cueva Bourbon Lot184
-  category: 'SO'
+  category: Single Origin
   country: Honduras
   display_name: La Cueva Bourbon Lot184
   process: Natural

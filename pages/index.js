@@ -5,15 +5,16 @@ import Layout from '../components/layout'
 import ProductHighlights from '../components/product-highlights'
 import CategoryMenu from '../components/category-menu'
 import {labels} from '../siteConfig.json'
+import { useAppContext } from '../src/context/state'
 
 export default function Home({productList}) {
-  const {hk} = labels;
+  const { lang } = useAppContext();
   return (
     <div>
-      <Layout pageTitle={hk.homeTitle}>
+      <Layout pageTitle={labels[lang].homeTitle}>
         <Hero/>
-        <ProductHighlights productList={productList}/>
-        <CategoryMenu />
+        <ProductHighlights productList={productList} title={labels[lang].prductHighlights}/>
+        <CategoryMenu productList={productList} />
       </Layout>
     </div>
   )

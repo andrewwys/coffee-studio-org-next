@@ -34,7 +34,7 @@ hk:
 en:
   pid: 1006
   title: Colombia Villa Farm Castillo W
-  category: 'SO'
+  category: Single Origin
   country: Colombia
   display_name: Villa Farm Castillo
   process: Winey Washed
