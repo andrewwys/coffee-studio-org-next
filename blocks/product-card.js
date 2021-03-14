@@ -5,6 +5,7 @@ import flavorFormatter from '../src/utils/flavor-formatter'
 import styles from './product-card.module.css'
 import AddToCartShortcut from '../bits/add-to-cart-shortcut'
 import DetailButton from '../bits/details-button'
+import SnipcartButton from '../bits/snipcart-button'
 
 const ProductCard = ({ productProps, slug }) => {
   const {lang} = useAppContext();
@@ -19,7 +20,7 @@ const ProductCard = ({ productProps, slug }) => {
             <div className={styles.country}>{country}</div>
             <div className={styles.name}>{display_name}</div>
             <div className={styles.process}>{process}</div>
-            <div className={`${styles.addToCart} snipcart-add-item`}
+            {/* <div className={`${styles.addToCart} snipcart-add-item`}
               data-item-id={pid}
               data-item-price={price_200g}
               data-item-url={`/products/${slug}`}
@@ -35,9 +36,13 @@ const ProductCard = ({ productProps, slug }) => {
               data-item-custom2-options={`200g|500g[+${price_500g-price_200g}]|1kg[+${price_1kg-price_200g}]|掛耳包[+${price_dripbag-price_200g}]|生豆[+${price_gb-price_200g}]`}
               data-item-custom2-value="200g"
               data-item-custom2-required="true"
-            >
-              <AddToCartShortcut color={color} width={60} />
+            > */}
+            <div className={`${styles.addToCart}`}>
+              <SnipcartButton pid={pid} url={`/products/${slug}`} category={category} country={country} display_name={display_name} process={process} price_200g={price_200g} price_500g={price_500g} price_1kg={price_1kg} price_dripbag={price_dripbag} price_gb={price_gb} image={image}>
+                <AddToCartShortcut color={color} width={60} />
+              </SnipcartButton>
             </div>
+            {/* </div> */}
             <Link href={`/products/${slug}`}>
               <div className={styles.detailButton}>
                   <DetailButton color={color} width={60} />

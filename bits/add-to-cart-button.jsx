@@ -1,3 +1,4 @@
+// This is the Add-to-cart button on product-details page
 const AddToCartButton = ({ size }) => {
   return (
     <div>

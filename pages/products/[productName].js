@@ -51,7 +51,6 @@ const ProductDetails = ({fm}) => {
 
 export async function getStaticProps({ ...ctx }) {
   const { productName } = ctx.params
-  //console.log('product name: ', productName)
   //const productNameSliced = productName.slice(0, -3)
   const content = await import(`../../src/beans/${productName}.md`)
   const data = matter(content.default)

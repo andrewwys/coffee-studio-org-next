@@ -5,7 +5,6 @@ import { useAppContext } from '../src/context/state'
 
 const ProductHighlights = ({ productList, title }) => {
   const {lang} = useAppContext();
-  console.log('productHL: ', productList);
   if (!productList) return null;
   return(
     <div className={styles.productHighlights}>

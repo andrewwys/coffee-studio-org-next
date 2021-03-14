@@ -1,3 +1,4 @@
+//The Add-to-cart shortcut icon shown on hover of the product card.
 const AddToCartShortcut = ({ color, width }) => {
   return (
     <svg width={width} height={width} viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
