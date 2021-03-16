@@ -30,6 +30,9 @@ hk:
   description: |-
     埃塞俄比亞 查卡藝妓 日曬 Lot 19/004
     風味描述：白花、香橙、蜂蜜、可可
+  varietal: Geisha
+  altitude: 1700
+  roast_level: 'Light'
   price_dripbag: 320
   sugars: '4'
   category: Single Origin
@@ -64,6 +67,9 @@ en:
   description: |-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  varietal: Geisha
+  altitude: 1700
+  roast_level: 'Light'
   price_dripbag: 320
   sugars: '4'
   category: Single Origin

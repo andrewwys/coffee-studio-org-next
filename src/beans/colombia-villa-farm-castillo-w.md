@@ -16,6 +16,9 @@ hk:
   highlight: true
   description: |-
     Colombia Villa Farm Castillo Washed
+  varietal: Castillo
+  altitude: 1800
+  roast_level: 'Medium'
   image: /uploads/coffee-bean-delivery-hong-kong_0.jpg
   price_200g: 260
   price_500g: 460
@@ -48,6 +51,9 @@ en:
   highlight: true
   description: |-
     Colombia Villa Farm Castillo Washed
+  varietal: Castillo
+  altitude: 1800
+  roast_level: 'Medium'
   image: /uploads/coffee-bean-delivery-hong-kong_0.jpg
   price_200g: 260
   price_500g: 460

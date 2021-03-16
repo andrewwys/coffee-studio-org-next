@@ -16,6 +16,9 @@ hk:
   highlight: true
   description: |-
     Honduras La Cueva Bourbon Natural Lot184
+  varietal: 波旁
+  altitude: 1900
+  roast_level: 'Medium'
   image: /uploads/coffee-bean-delivery-hong-kong_0.jpg
   price_200g: 220
   price_500g: 380
@@ -48,6 +51,9 @@ en:
   highlight: true
   description: |-
 
+  varietal: Bourbon
+  altitude: 1900
+  roast_level: 'Medium'
   image: /uploads/coffee-bean-delivery-hong-kong_0.jpg
   price_200g: 220
   price_500g: 380

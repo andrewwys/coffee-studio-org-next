@@ -15,6 +15,9 @@ hk:
   highlight: true
   description: |-
     Ethiopia Hama Kochere Natural
+  varietal: 原生種
+  altitude: 2100
+  roast_level: 'Light'
   image: /uploads/coffee-bean-delivery-hong-kong_0.jpg
   price_200g: 220
   price_500g: 380
@@ -46,6 +49,9 @@ en:
   highlight: true
   description: |-
     Ethiopia Hama Kochere Natural
+  varietal: Heirloom
+  altitude: 2100
+  roast_level: 'Light'
   image: /uploads/coffee-bean-delivery-hong-kong_0.jpg
   price_200g: 220
   price_500g: 380

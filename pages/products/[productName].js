@@ -16,7 +16,7 @@ const ProductDetails = ({fm}) => {
   const { details } = labels;
   const {lang} = useAppContext();
   if (!fm) return <></>
-  const { country, display_name, process, flavors_main, flavors_desc, description, image, price_200g, price_500g, price_1kg, price_dripbag, price_gb, sweetness, acidity, mouthfeel, finish, floral, fruits, nuts, sugars} = fm[lang];
+  const { country, display_name, process, flavors_main, flavors_desc, description, altitude, varietal, roast_level, image, price_200g, price_500g, price_1kg, price_dripbag, price_gb, sweetness, acidity, mouthfeel, finish, floral, fruits, nuts, sugars} = fm[lang];
   const flavorStr = flavorFormatter(flavors_main);
   return (
     <div>
@@ -26,7 +26,7 @@ const ProductDetails = ({fm}) => {
           <NavPath />
           <div className={styles.main}>
             <div className={styles.title}>{display_name}</div>
-            <ProductDetailCard country={country} process={process} color='#D09797' />
+            <ProductDetailCard country={country} process={process} color='#D09797' altitude={altitude} varietal={varietal} />
             <div className={styles.lineBreak}></div>
             <InfoRow name={details[lang].profile}>{flavorStr}</InfoRow>
             <InfoRow name={details[lang].flavors}>
@@ -35,6 +35,7 @@ const ProductDetails = ({fm}) => {
             <InfoRow name={details[lang].details}>{description}</InfoRow>
             <InfoRow name={details[lang].flavorDesc}>{flavors_desc}</InfoRow>
             <InfoRow name={details[lang].package}>{details[lang].packageText}</InfoRow>
+            <InfoRow name={details[lang].roastLevel}>{roast_level}</InfoRow>
             <InfoRow name={details[lang].price}>{`HKD ${price_200g} / ${price_500g} / ${price_1kg} / ${price_dripbag} / ${price_gb}`}</InfoRow>
           </div>
           <div className={styles.addToCart}>

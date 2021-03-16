@@ -3,7 +3,7 @@ import { labels } from '../siteConfig.json';
 // import {display} from '../siteConfig.json';
 import { useAppContext } from '../src/context/state';
 
-const ProductDetailCard = ({ country, process, color }) => {
+const ProductDetailCard = ({ country, process, color, altitude, varietal }) => {
   const { lang } = useAppContext();
   const { details } = labels;
   return (
@@ -18,8 +18,8 @@ const ProductDetailCard = ({ country, process, color }) => {
       <div className={styles.col2}>
         <div>{country}</div>
         <div>{process}</div>
-        <div>--</div>
-        <div>--</div>
+        <div>{altitude}</div>
+        <div>{varietal}</div>
       </div>
     </div>
   )

@@ -78,6 +78,28 @@ collections:
           required: false,
         }
       - {
+          label: '品種',
+          name: 'varietal',
+          widget: 'text',
+          i18n: true,
+          required: false,
+        }
+      - {
+          label: '海拔(m)',
+          name: 'altitude',
+          widget: 'number',
+          value_type: 'int',
+          i18n: duplicate,
+          required: false,
+        }
+      - {
+          label: '烘焙度',
+          name: 'roast_level',
+          widget: 'select',
+          i18n: duplicate,
+          options: ['Light', 'Medium', 'Dark'],
+        }
+      - {
           label: 'Image',
           name: 'image',
           widget: 'image',
