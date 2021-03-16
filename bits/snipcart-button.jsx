@@ -1,5 +1,4 @@
 const SnipcartButton = ({pid, url, category, country, display_name, process, image, price_200g, price_500g, price_1kg, price_dripbag, price_gb, children}) => {
-  console.log('item-price: ', price_200g);
   return (
     <button className="snipcart-add-item"
       data-item-id={pid}
@@ -19,6 +18,12 @@ const SnipcartButton = ({pid, url, category, country, display_name, process, ima
       data-item-custom2-required="true"
       >
       {children}
+      <style jsx>{`
+        .snipcart-add-item {
+          background: transparent;
+          border: 0;
+        }
+        `}</style>
     </button>
   );
 }
