@@ -34,8 +34,8 @@ const ProductDetails = ({fm}) => {
             </InfoRow>
             <InfoRow name={details[lang].details}>{description}</InfoRow>
             <InfoRow name={details[lang].flavorDesc}>{flavors_desc}</InfoRow>
-            <InfoRow name={details[lang].package}>{details[lang].packageText}</InfoRow>
             <InfoRow name={details[lang].roastLevel}>{roast_level}</InfoRow>
+            <InfoRow name={details[lang].package}>{details[lang].packageText}</InfoRow>
             <InfoRow name={details[lang].price}>{`HKD ${price_200g} / ${price_500g} / ${price_1kg} / ${price_dripbag} / ${price_gb}`}</InfoRow>
           </div>
           <div className={styles.addToCart}>
@@ -43,7 +43,6 @@ const ProductDetails = ({fm}) => {
             <div className={styles.addToCartButton} ><AddToCartButton size='70' /></div>
           </div>
         </div>
-        
       </Layout>
     </div>
     

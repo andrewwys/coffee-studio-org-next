@@ -204,6 +204,21 @@ collections:
           i18n: duplicate,
           options: ['1', '2', '3', '4', '5'],
         }
+      - {
+          label: '主題色調',
+          name: 'theme_color',
+          widget: 'select',
+          i18n: duplicate,
+          options: 
+            - { label: 'pink Floral', value: '#d09797' }
+            - { label: 'orange Fruits', value: '#e8a438' }
+            - { label: 'brown Nuts', value: '#8b6953' }
+            - { label: 'clay Sugars', value: '#b3886e' }
+            - { label: 'yellow Acidity', value: '#ecbf2e' }
+            - { label: 'red Sweetness', value: '#c87070' }
+            - { label: 'green Mouthfeel', value: '#809146' }
+            - { label: 'blue Finish', value: '#5d80a7' }
+        }
 
   - name: 'pages'
     label: 'Pages'
