@@ -33,6 +33,7 @@ hk:
   fruits: '5'
   nuts: '1'
   sugars: '4'
+  theme_color: 'blueFinish'
 en:
   pid: 1002
   title: Ethiopia Hama Kochere N
@@ -67,4 +68,5 @@ en:
   fruits: '5'
   nuts: '1'
   sugars: '4'
+  theme_color: 'blueFinish'
 ---

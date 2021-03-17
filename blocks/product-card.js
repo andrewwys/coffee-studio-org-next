@@ -1,22 +1,24 @@
 import { useAppContext } from '../src/context/state'
 import Link from 'next/link'
-import CardColor from '../src/utils/cardColor'
+// import CardColor from '../src/utils/cardColor'
+import CardPatternPicker from '../src/utils/card-pattern-picker'
 import flavorFormatter from '../src/utils/flavor-formatter'
 import styles from './product-card.module.css'
 import AddToCartShortcut from '../bits/add-to-cart-shortcut'
 import DetailButton from '../bits/details-button'
 import SnipcartButton from '../bits/snipcart-button'
+import { display } from '../siteConfig.json'
 
 const ProductCard = ({ productProps, slug }) => {
   const {lang} = useAppContext();
-  const { [lang]: { pid, category, country, display_name, process, flavors_main, price_200g, price_500g, price_1kg, price_dripbag, price_gb, image} } = productProps;
+  const { [lang]: { pid, category, country, display_name, process, flavors_main, price_200g, price_500g, price_1kg, price_dripbag, price_gb, image, theme_color} } = productProps;
     const flavorStr = flavorFormatter(flavors_main);
-    const color = CardColor(productProps[lang]);
+    // const color = CardColor(productProps[lang]);
+    const themeColorStr = display[theme_color];
     return (
-      <div className={styles.productCard}>
-        
-          <div className={styles.imageArea} style={{backgroundColor: color}}>
-            <img className={styles.bgPattern} src='/patternBG_SO.svg' alt='background pattern' />
+      <div className={styles.productCard}>      
+          <div className={styles.imageArea} style={{backgroundColor: themeColorStr}}>
+            <img className={styles.bgPattern} src={CardPatternPicker(category)} alt='background pattern' />
             <div className={styles.country}>{country}</div>
             <div className={styles.name}>{display_name}</div>
             <div className={styles.process}>{process}</div>
@@ -39,13 +41,13 @@ const ProductCard = ({ productProps, slug }) => {
             > */}
             <div className={`${styles.addToCart}`}>
               <SnipcartButton pid={pid} url={`/products/${slug}`} category={category} country={country} display_name={display_name} process={process} price_200g={price_200g} price_500g={price_500g} price_1kg={price_1kg} price_dripbag={price_dripbag} price_gb={price_gb} image={image}>
-                <AddToCartShortcut color={color} width={60} />
+                <AddToCartShortcut color={themeColorStr} width={60} />
               </SnipcartButton>
             </div>
             {/* </div> */}
             <Link href={`/products/${slug}`}>
               <div className={styles.detailButton}>
-                  <DetailButton color={color} width={60} />
+                  <DetailButton color={themeColorStr} width={60} />
               </div>
             </Link>
           </div>

@@ -34,6 +34,7 @@ hk:
   fruits: '5'
   nuts: '4'
   sugars: '5'
+  theme_color: 'greenMouthfeel'
 en:
   pid: 1006
   title: Colombia Villa Farm Castillo W
@@ -69,4 +70,5 @@ en:
   fruits: '5'
   nuts: '4'
   sugars: '5'
+  theme_color: 'greenMouthfeel'
 ---

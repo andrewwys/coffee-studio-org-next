@@ -2,7 +2,7 @@
 hk:
   pid: 1005
   title: La Cueva Bourbon Lot184
-  category: Single Origin
+  category: Blend
   country: 洪多拉斯
   display_name: La Cueva 波旁 Lot184
   process: 日曬
@@ -34,10 +34,11 @@ hk:
   fruits: '5'
   nuts: '3'
   sugars: '2'
+  theme_color: 'yellowAcidity'
 en:
   pid: 1005
   title: La Cueva Bourbon Lot184
-  category: Single Origin
+  category: Blend
   country: Honduras
   display_name: La Cueva Bourbon Lot184
   process: Natural
@@ -69,4 +70,5 @@ en:
   fruits: '5'
   nuts: '3'
   sugars: '2'
+  theme_color: 'yellowAcidity'
 ---

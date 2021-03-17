@@ -97,18 +97,18 @@
     }
   },
   "display": {
-  "mobileWidth": "470px",
-  "tabletWidth": "960px",
-  "desktopWidth": "1140px",
-  "widthMargin": "150px",
-  "pinkFloral": "#d09797",
-  "orangeFruits": "#e8a438",
-  "brownNuts": "#8b6953",
-  "brownSugars" : "#b3886e",
-  "yellowAcidity": "#ecbf2e",
-  "redSweetness": "#c87070",
-  "greenMouthfeel": "#809146",
-  "blueFinish": "#5d80a7",
-  "catMenuBrown": "#C1882F"
+    "mobileWidth": "470px",
+    "tabletWidth": "960px",
+    "desktopWidth": "1140px",
+    "widthMargin": "150px",
+    "pinkFloral": "#d09797",
+    "orangeFruits": "#e8a438",
+    "brownNuts": "#8b6953",
+    "brownSugars" : "#b3886e",
+    "yellowAcidity": "#ecbf2e",
+    "redSweetness": "#c87070",
+    "greenMouthfeel": "#809146",
+    "blueFinish": "#5d80a7",
+    "catMenuBrown": "#C1882F"
   }
 }

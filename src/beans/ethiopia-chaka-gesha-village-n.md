@@ -37,6 +37,7 @@ hk:
   sugars: '4'
   category: Single Origin
   fruits: '5'
+  theme_color: 'pinkFloral'
 en:
   flavors_main:
     - White flower
@@ -74,4 +75,5 @@ en:
   sugars: '4'
   category: Single Origin
   fruits: '5'
+  theme_color: 'pinkFloral'
 ---

@@ -3,12 +3,12 @@ import { labels } from '../siteConfig.json';
 // import {display} from '../siteConfig.json';
 import { useAppContext } from '../src/context/state';
 
-const ProductDetailCard = ({ country, process, color, altitude, varietal }) => {
+const ProductDetailCard = ({ country, process, color, altitude, varietal, patternStr }) => {
   const { lang } = useAppContext();
   const { details } = labels;
   return (
     <div className={styles.card} style={{backgroundColor: color}}>
-      <img className={styles.bgPattern} src='/patternBG_SO.svg' alt='background pattern' />
+      <img className={styles.bgPattern} src={patternStr} alt='background pattern' />
       <div className={styles.col1}>
         <div>{details[lang].country}</div>
         <div>{details[lang].process}</div>
