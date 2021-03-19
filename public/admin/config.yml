@@ -38,7 +38,7 @@ collections:
           name: 'category',
           widget: 'select',
           i18n: duplicate,
-          options: ['Single Origin', 'Blend', 'Course'],
+          options: ['Single Origin', 'Blend', 'Others'],
         }
       - { label: '國家', name: 'country', widget: 'string', i18n: true }
       - {
@@ -221,44 +221,43 @@ collections:
               'blueFinish',
             ],
         }
-
-  - name: 'pages'
-    label: 'Pages'
-    files:
-      - file: 'src/pages/about/index.md'
-        label: 'About'
-        name: 'about'
-        fields:
-          - {
-              label: 'Template Key',
-              name: 'templateKey',
-              widget: 'hidden',
-              default: 'about-page.template',
-            }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
-      - file: 'src/pages/index.md'
-        label: 'Home'
-        name: 'home'
-        fields:
-          - {
-              label: 'Template Key',
-              name: 'templateKey',
-              widget: 'hidden',
-              default: 'index-page.template',
-            }
-          - {
-              label: 'Smoothies Section Heading',
-              name: 'smoothiesHeading',
-              widget: 'string',
-            }
-          - {
-              label: 'Posts Section Heading',
-              name: 'postsHeading',
-              widget: 'string',
-            }
-          - {
-              label: 'Contact Section Heading',
-              name: 'contactHeading',
-              widget: 'string',
-            }
+  - name: 'classes'
+    label: 'classes'
+    label_singular: 'class'
+    folder: 'src/classes'
+    create: true
+    i18n: true
+    fields:
+      - {
+          label: 'Course-ID(不可重複)',
+          name: 'pid',
+          value_type: 'int',
+          widget: 'number',
+          i18n: duplicate,
+        }
+      - { label: '標題', name: 'title', widget: 'string', i18n: true }
+      - { label: '簡介', name: 'description', widget: 'text', i18n: true }
+      - {
+          label: '課程內容',
+          name: 'content',
+          widget: 'list',
+          min: 1,
+          max: 20,
+          i18n: true,
+        }
+      - {
+          label: 'Image',
+          name: 'image',
+          widget: 'image',
+          i18n: duplicate,
+          required: false,
+        }
+      - {
+          label: '價錢',
+          name: 'price',
+          widget: 'number',
+          value_type: 'float',
+          i18n: duplicate,
+        }
+      - { label: '時間', name: 'time', widget: 'text', i18n: true }
+      - { label: '備註', name: 'remarks', widget: 'text', i18n: true }

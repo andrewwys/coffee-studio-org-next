@@ -1,11 +1,12 @@
-import Head from 'next/head'
 import matter from 'gray-matter'
 import Hero from '../components/hero';
 import Layout from '../components/layout'
 import ProductHighlights from '../components/product-highlights'
 import CategoryMenu from '../components/category-menu'
+import CoffeeClassBanner from '../components/coffee-class-banner'
 import {labels} from '../siteConfig.json'
 import { useAppContext } from '../src/context/state'
+
 
 export default function Home({productList}) {
   const { lang } = useAppContext();
@@ -15,6 +16,7 @@ export default function Home({productList}) {
         <Hero/>
         <ProductHighlights productList={productList} title={labels[lang].prductHighlights}/>
         <CategoryMenu productList={productList} />
+        <CoffeeClassBanner />
       </Layout>
     </div>
   )
