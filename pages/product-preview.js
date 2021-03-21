@@ -18,7 +18,7 @@ const ProductPreview = ({ productList }) => {
       break;
     case 'blends':
       title = labels[lang].houseBlend;
-      filteredProducts = productList.filter((prod)=>(prod.fm[lang].category === 'Blends'));
+      filteredProducts = productList.filter((prod)=>(prod.fm[lang].category === 'Blend'));
       break;
     case 'drip-bags':
       title = labels[lang].dripBags;
