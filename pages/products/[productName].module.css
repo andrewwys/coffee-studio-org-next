@@ -32,27 +32,28 @@
 }
 
 .addToCart {
-  /* display: flex;
-  align-items: flex-end;
-  justify-content: flex-end; */
+  /* display: flex; */
+  /* align-items: flex-end;
+  justify-content: flex-end;  */
   margin-top: 80px;
 }
 
-.addToCartText {
+/* .addToCartText {
   text-decoration: underline;
   font-size: var(--fsize-5);
   color: var(--green-header);
-  padding-right: 190px;
+  padding-right: 20px;
   text-align: right;
   cursor: pointer;
-}
+  float: right;
+} */
 
-.addToCartButton {
+/* .addToCartButton {
   position: fixed;
   bottom: 10%;
   right: 90px;
   cursor: pointer;
-}
+} */
 
 @media screen and (max-width: 1270px) {
   .wrapper {
