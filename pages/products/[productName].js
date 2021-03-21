@@ -1,6 +1,6 @@
 import matter from 'gray-matter'
-// import Head from 'next/head'
 import { useAppContext } from '../../src/context/state'
+
 import Layout from '../../components/layout'
 import NavPath from '../../bits/nav-path'
 import flavorFormatter from '../../src/utils/flavor-formatter'
@@ -9,7 +9,6 @@ import AddToCartButton from '../../bits/add-to-cart-button'
 import InfoRow from '../../blocks/info-row'
 import FlavorProfileChart from '../../components/flavor-profile-chart'
 import CardPatternPicker from '../../src/utils/card-pattern-picker'
-
 
 import { labels, display } from '../../siteConfig.json'
 import styles from './[productName].module.css'
@@ -25,7 +24,7 @@ const ProductDetails = ({fm}) => {
   return (
     <div>
       
-      <Layout pageTitle={`${fm[lang].title}`}>
+      <Layout>
         <div className={styles.wrapper}>
           <NavPath />
           <div className={styles.main}>

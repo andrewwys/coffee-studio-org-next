@@ -3,7 +3,7 @@ import Header from '../blocks/header'
 import Footer from '../blocks/footer'
 import { snipcartAPIKey } from '../siteConfig.json'
 
-export default function Layout({ children, pageTitle }) {
+export default function Layout({ children }) {
   return (
     <div className='layout'>
       <Header/>

@@ -1,5 +1,5 @@
 import matter from 'gray-matter'
-import Hero from '../components/hero';
+import Hero from '../components/hero'
 import Layout from '../components/layout'
 import ProductHighlights from '../components/product-highlights'
 import CategoryMenu from '../components/category-menu'
@@ -12,8 +12,8 @@ export default function Home({productList}) {
   const { lang } = useAppContext();
   return (
     <div>
-      <Layout pageTitle={labels[lang].homeTitle}>
-        <Hero/>
+      <Layout>
+        <Hero bgImg='/images/hero1.png' heroLine1={labels[lang].heroLine1} heroLine2={labels[lang].heroLine2} />
         <ProductHighlights productList={productList} title={labels[lang].prductHighlights}/>
         <CategoryMenu productList={productList} />
         <CoffeeClassBanner />

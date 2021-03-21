@@ -44,12 +44,14 @@
   color: var(--green-header);
   padding-right: 190px;
   text-align: right;
+  cursor: pointer;
 }
 
 .addToCartButton {
   position: fixed;
   bottom: 10%;
   right: 90px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1270px) {

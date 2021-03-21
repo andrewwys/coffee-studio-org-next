@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   height: 110vh;
-  background-image: url('/hero1.png');
+  /* background-image: url('/hero1.png'); */
   background-size: auto 100%;
   background-position: right top;
   background-repeat: no-repeat;

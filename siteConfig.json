@@ -100,6 +100,22 @@
       }
     }
   },
+  "classes": {
+    "hk": {
+      "title": "咖啡興趣班",
+      "subtitle": "for Coffee Lovers", 
+      "content": "課程內容",
+      "duration": "課程長度",
+      "fee": "費用"
+    },
+    "en": {
+      "title": "Coffee Classes", 
+      "subtitle": "for Coffee Lovers",
+      "content": "Course Content",
+      "duration": "Duration",
+      "fee": "Fee"
+    }
+  },
   "display": {
     "mobileWidth": "470px",
     "tabletWidth": "960px",
