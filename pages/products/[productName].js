@@ -5,7 +5,9 @@ import Layout from '../../components/layout'
 import NavPath from '../../bits/nav-path'
 import flavorFormatter from '../../src/utils/flavor-formatter'
 import ProductDetailCard from '../../blocks/product-detail-card'
-import AddToCartButton from '../../bits/add-to-cart-button'
+// import AddToCartButton from '../../bits/add-to-cart-button'
+import SnipcartButton from '../../bits/snipcart-button'
+import AddToCartShortcut from '../../bits/add-to-cart-shortcut'
 import InfoRow from '../../blocks/info-row'
 import FlavorProfileChart from '../../components/flavor-profile-chart'
 import CardPatternPicker from '../../src/utils/card-pattern-picker'
@@ -15,7 +17,7 @@ import styles from './[productName].module.css'
 
 import  { useEffect, useRef, useState } from 'react';
 
-const ProductDetails = ({fm}) => {
+const ProductDetails = ({fm, productName}) => {
   const { details } = labels;
   const {lang} = useAppContext();
 
@@ -32,15 +34,12 @@ const ProductDetails = ({fm}) => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-    console.log('handle scroll added.');
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      console.log('handle scroll removed.');
     };
   }, []);
-  // console.log('is Sticky: ', isSticky);
   if (!fm) return <></>
-  const { country, display_name, process, flavors_main, flavors_desc, description, altitude, varietal, roast_level, image, price_200g, price_500g, price_1kg, price_dripbag, price_gb, sweetness, acidity, mouthfeel, finish, floral, fruits, nuts, sugars, theme_color, category } = fm[lang];
+  const { pid, country, display_name, process, flavors_main, flavors_desc, description, altitude, varietal, roast_level, image, price_200g, price_500g, price_1kg, price_dripbag, price_gb, sweetness, acidity, mouthfeel, finish, floral, fruits, nuts, sugars, theme_color, category } = fm[lang];
   const flavorStr = flavorFormatter(flavors_main);
   const themeColorStr = display[theme_color];
   const patternStr = CardPatternPicker(category);
@@ -64,36 +63,46 @@ const ProductDetails = ({fm}) => {
             <InfoRow name={details[lang].price}>{`HKD ${price_200g} / ${price_500g} / ${price_1kg} / ${price_dripbag} / ${price_gb}`}</InfoRow>
           </div>
           <div className={styles.addToCart}>
-            <div className={ isSticky ? 'cart-button-sticky' : 'cart-button'} ref={ref2} ><AddToCartButton size='70' /></div>
-            <div className={ isSticky ? 'cart-link' : 'cart-link cart-fix'} ref={ref1} >add to cart &gt;</div>
-            
+            {/* the floating icon to add product to cart */}
+            <div className={ isSticky ? 'cart-button-sticky' : 'cart-button'} ref={ref2} >
+              <SnipcartButton pid={pid} url={`/products/${productName}`} category={category} country={country} display_name={display_name} process={process} price_200g={price_200g} price_500g={price_500g} price_1kg={price_1kg} price_dripbag={price_dripbag} price_gb={price_gb} image={image}>
+                <AddToCartShortcut color={display.headerGreen} width={71} />
+              </SnipcartButton>  
+            </div>
+            {/* the link to add product to cart */}
+            <div className={ isSticky ? 'cart-link' : 'cart-link cart-fix'} ref={ref1} >
+              <SnipcartButton pid={pid} url={`/products/${productName}`} category={category} country={country} display_name={display_name} process={process} price_200g={price_200g} price_500g={price_500g} price_1kg={price_1kg} price_dripbag={price_dripbag} price_gb={price_gb} image={image}>
+                <div className='add-to-cart-text'>add to cart &gt;</div>
+              </SnipcartButton>        
+            </div>   
           </div>
         </div>
       </Layout>
       <style jsx>{`
         .cart-link {
-          text-decoration: underline;
-          font-size: var(--fsize-5);
-          color: var(--green-header);
           padding-right: 175px;
           text-align: right;
-          cursor: pointer;
           float: right;
         }
         .cart-button-sticky {
           position: fixed;
           bottom: 10%;
           right: 90px;
-          cursor: pointer;
         }
         .cart-fix {
-          padding-right: 15px;
+          padding-right: 2px;
         }
         .cart-button {
           float: right;
           padding-right: 90px;
           position: relative;
           bottom: 45px;
+        }
+        .add-to-cart-text {
+          text-decoration: underline;
+          font-size: var(--fsize-5);
+          color: var(--green-header);
+          cursor: pointer;
         }
       `}</style>
     </div>
@@ -102,13 +111,13 @@ const ProductDetails = ({fm}) => {
 
 export async function getStaticProps({ ...ctx }) {
   const { productName } = ctx.params
-  //const productNameSliced = productName.slice(0, -3)
   const content = await import(`../../src/beans/${productName}.md`)
   const data = matter(content.default)
 
   return {
     props: {
-      fm: data.data
+      fm: data.data,
+      productName: productName
     },
   }
 }
