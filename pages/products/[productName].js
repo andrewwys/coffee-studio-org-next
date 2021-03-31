@@ -12,7 +12,7 @@ import InfoRow from '../../blocks/info-row'
 import FlavorProfileChart from '../../components/flavor-profile-chart'
 import CardPatternPicker from '../../src/utils/card-pattern-picker'
 
-import { labels, display } from '../../siteConfig.json'
+import { labels, display, siteBaseUrl } from '../../siteConfig.json'
 import styles from './[productName].module.css'
 
 import  { useEffect, useRef, useState } from 'react';
@@ -65,13 +65,13 @@ const ProductDetails = ({fm, productName}) => {
           <div className={styles.addToCart}>
             {/* the floating icon to add product to cart */}
             <div className={ isSticky ? 'cart-button-sticky' : 'cart-button'} ref={ref2} >
-              <SnipcartButton pid={pid} url={`/products/${productName}`} category={category} country={country} display_name={display_name} process={process} price_200g={price_200g} price_500g={price_500g} price_1kg={price_1kg} price_dripbag={price_dripbag} price_gb={price_gb} image={image}>
+              <SnipcartButton pid={pid} url={`${siteBaseUrl}/products/${productName}`} category={category} country={country} display_name={display_name} process={process} price_200g={price_200g} price_500g={price_500g} price_1kg={price_1kg} price_dripbag={price_dripbag} price_gb={price_gb} image={image}>
                 <AddToCartShortcut color={display.headerGreen} width={71} />
               </SnipcartButton>  
             </div>
             {/* the link to add product to cart */}
             <div className={ isSticky ? 'cart-link' : 'cart-link cart-fix'} ref={ref1} >
-              <SnipcartButton pid={pid} url={`/products/${productName}`} category={category} country={country} display_name={display_name} process={process} price_200g={price_200g} price_500g={price_500g} price_1kg={price_1kg} price_dripbag={price_dripbag} price_gb={price_gb} image={image}>
+              <SnipcartButton pid={pid} url={`${siteBaseUrl}/products/${productName}`} category={category} country={country} display_name={display_name} process={process} price_200g={price_200g} price_500g={price_500g} price_1kg={price_1kg} price_dripbag={price_dripbag} price_gb={price_gb} image={image}>
                 <div className='add-to-cart-text'>add to cart &gt;</div>
               </SnipcartButton>        
             </div>   

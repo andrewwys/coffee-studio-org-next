@@ -1,4 +1,5 @@
 const SnipcartButton = ({pid, url, category, country, display_name, process, image, price_200g, price_500g, price_1kg, price_dripbag, price_gb, children}) => {
+  console.log('url=', url);
   return (
     <button className="snipcart-add-item"
       data-item-id={pid}

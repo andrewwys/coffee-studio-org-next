@@ -2,6 +2,7 @@
   "title": "Coffee Studio | Education & Online Shop",
   "description": "自家新鮮烘焙咖啡",
   "snipcartAPIKey": "MzIyY2I3MWQtNTFmZC00N2JlLWFmYWQtY2ZkYjQzMDdiOWNlNjM3NDc3ODQ2Njc5MjU5MzQx", 
+  "siteBaseUrl": "https://coffee-studio-org.netlify.app",
   "labels": {
     "hk": {
       "homeTitle": "Coffee Studio | 新鮮烘焙 | 咖啡教學",

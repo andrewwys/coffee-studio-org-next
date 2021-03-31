@@ -7,7 +7,7 @@ import styles from './product-card.module.css'
 import AddToCartShortcut from '../bits/add-to-cart-shortcut'
 import DetailButton from '../bits/details-button'
 import SnipcartButton from '../bits/snipcart-button'
-import { display } from '../siteConfig.json'
+import { display, siteBaseUrl } from '../siteConfig.json'
 
 const ProductCard = ({ productProps, slug }) => {
   const {lang} = useAppContext();
@@ -40,7 +40,7 @@ const ProductCard = ({ productProps, slug }) => {
               data-item-custom2-required="true"
             > */}
             <div className={`${styles.addToCart}`}>
-              <SnipcartButton pid={pid} url={`/products/${slug}`} category={category} country={country} display_name={display_name} process={process} price_200g={price_200g} price_500g={price_500g} price_1kg={price_1kg} price_dripbag={price_dripbag} price_gb={price_gb} image={image}>
+              <SnipcartButton pid={pid} url={`${siteBaseUrl}/products/${slug}`} category={category} country={country} display_name={display_name} process={process} price_200g={price_200g} price_500g={price_500g} price_1kg={price_1kg} price_dripbag={price_dripbag} price_gb={price_gb} image={image}>
                 <AddToCartShortcut color={themeColorStr} width={60} />
               </SnipcartButton>
             </div>
