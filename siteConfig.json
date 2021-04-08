@@ -107,14 +107,18 @@
       "subtitle": "for Coffee Lovers", 
       "content": "課程內容",
       "duration": "課程長度",
-      "fee": "費用"
+      "fee": "費用",
+      "signUp": "報名方法",
+      "signUpDetails": "請將這個課程加入購物籃，選擇數量為參加人數（最多8個）。完成付款後我們將以電話或Whatsapp聯絡您並預約時間。有效期為一個月，如有疑問歡迎查詢。"
     },
     "en": {
       "title": "Coffee Classes", 
       "subtitle": "for Coffee Lovers",
       "content": "Course Content",
       "duration": "Duration",
-      "fee": "Fee"
+      "fee": "Fee",
+      "signUp": "How to Sign Up?",
+      "signUpDetails": "Please add this item to shopping cart. Set quantity to match the number of participants (maximum 8) and the complete to payment process. You will be contacted by phone call or whatsapp. The purchase will be valid for 1 month."
     }
   },
   "display": {

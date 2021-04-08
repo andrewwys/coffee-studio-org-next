@@ -1,5 +1,6 @@
 import { display } from '../siteConfig.json'
 
+//display information used mainly on product page
 const InfoRow = ({ name, children }) => {
   if (children) {
     return (

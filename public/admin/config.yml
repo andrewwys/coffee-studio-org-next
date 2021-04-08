@@ -235,7 +235,18 @@ collections:
           widget: 'number',
           i18n: duplicate,
         }
-      - { label: '標題', name: 'title', widget: 'string', i18n: true }
+      - {
+          label: '標題(Engish)',
+          name: 'title',
+          widget: 'string',
+          i18n: duplicate,
+        }
+      - {
+          label: '工作坊名字',
+          name: 'courseName',
+          widget: 'string',
+          i18n: true,
+        }
       - { label: '簡介', name: 'description', widget: 'text', i18n: true }
       - { label: '課程內容', name: 'content', widget: 'text', i18n: true }
       - {

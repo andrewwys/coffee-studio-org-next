@@ -1,7 +1,8 @@
 ---
 hk:
   pid: 2001
-  title: 三類咖啡沖煮工作坊
+  title: 3-brewing-methods
+  courseName: 三類咖啡沖煮工作坊
   description: |-
     學習最常用的咖啡沖煮工作坊
     教授3種不同的咖啡沖煮方式,
@@ -25,7 +26,8 @@ en:
     - Pour-over coffee
     - Latte art
     - Cup tasting
-  title: 3 Brewing Methods in a Nutshell
+  title: 3-brewing-methods
+  courseName: 3 Brewing Methods
   description: Learn pour-over (hand drip) coffee, latte art and cup tasting in
     one single lesson.
   price: 360

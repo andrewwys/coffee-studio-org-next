@@ -31,7 +31,7 @@ const ProductPreview = ({ productList }) => {
   return (
     <Layout title='Coffee Studio | Products'>
       <div>
-        <Hero/>
+        <Hero bgImg='/images/hero1.png' heroLine1={labels[lang].heroLine1} heroLine2={labels[lang].heroLine2} />
         <ProductHighlights productList={filteredProducts} title={title}/>
       </div>
     </Layout>
