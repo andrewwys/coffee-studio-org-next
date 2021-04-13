@@ -1,7 +1,7 @@
-import Head from 'next/head'
+//import Head from 'next/head'
 import Header from '../blocks/header'
 import Footer from '../blocks/footer'
-import { snipcartAPIKey } from '../siteConfig.json'
+//import { snipcartAPIKey } from '../siteConfig.json'
 
 export default function Layout({ children }) {
   return (

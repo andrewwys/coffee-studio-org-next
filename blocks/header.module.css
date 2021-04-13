@@ -25,7 +25,7 @@
 .langWrapper {
   position: absolute;
   top: 22.5px;
-  right: 100px;
+  right: 150px;
   color: white;
   cursor: pointer;
 }
@@ -36,6 +36,13 @@
 
 .langWrapper:active {
   font-weight: 200;
+}
+
+.menuIconWrapper {
+  position: absolute;
+  top: 17px;
+  right: 50px;
+  cursor: pointer;
 }
 
 /* .cartIcon {

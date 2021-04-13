@@ -1,6 +1,7 @@
 import { useAppContext } from '../src/context/state'
 import styles from './footer.module.css'
 import { labels } from '../siteConfig.json'
+import Link from 'next/link'
 
 const Footer = () => {
   const {lang} = useAppContext();
@@ -12,9 +13,21 @@ const Footer = () => {
         <div className={styles.shop}>
           <div className={styles.columnTitle}>{shop}</div>
           <div className={`${styles.indent}`}>
-            <div className={styles.item}><a href='#'>{singleOrigin}</a></div>
-            <div className={styles.item}><a href='#'>{houseBlend}</a></div>
-            <div className={styles.item}><a href='#'>{dripBags}</a></div>
+            <div className={styles.item}>
+              <Link href={{ pathname: '/product-preview', query: {cat: 'single-origin'}, }}>
+                <a href="#">{singleOrigin}</a>
+              </Link>
+            </div>
+            <div className={styles.item}>
+              <Link href={{ pathname: '/product-preview', query: {cat: 'blends'}, }}>
+                <a href="#">{houseBlend}</a>
+              </Link>
+            </div>
+            <div className={styles.item}>
+              <Link href={{ pathname: '/product-preview', query: {cat: 'drip-bags'}, }}>
+                <a href="#">{dripBags}</a>
+              </Link>
+            </div>
             <div className={styles.item}><a href='#'>{subscription}</a></div>
           </div>
         </div>
@@ -29,8 +42,12 @@ const Footer = () => {
         <div className={styles.social}>
           <div className={styles.columnTitle}>{social}</div>
           <div className={`${styles.iconGroup} ${styles.indent}`}>
-            <img className={styles.socialIcons} src='/images/fb-icon.png' alt='facebook'/>
-            <img className={styles.socialIcons} src='/images/ig-icon.png' alt='instagram'/>
+            <a href='https://www.instagram.com/coffee_studio/' target='_blank'>
+              <img className={styles.socialIcons} src='/images/fb-icon.png' alt='facebook'/>
+            </a>
+            <a href='https://www.facebook.com/CoffeeStudio.org/' target='_blank'>
+              <img className={styles.socialIcons} src='/images/ig-icon.png' alt='instagram'/>
+            </a>
           </div>
         </div>
         <div className={styles.languages}>
