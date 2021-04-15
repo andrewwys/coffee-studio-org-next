@@ -1,4 +1,4 @@
-// import Link from 'next/link'
+import Link from 'next/link'
 import LanguageSwitch from '../bits/language-switch'
 import MenuIcon from '../bits/menu-icon'
 import SideMenu from '../components/side-menu'
@@ -13,14 +13,8 @@ const Header = () => {
   return (
     <header>
       <nav className={styles.nav}>
-        {/* <Link href="/">
-          <a>Home</a>
-        </Link>
-        <Link href="/product-preview">
-          <a>Products</a>
-        </Link> */}
         <div className={styles.bgPattern}></div>
-        <img className={styles.logo} src='/coffeebb-logo-1.png' alt='logo'></img>
+        <Link href='/'><img className={styles.logo} src='/coffeebb-logo-1.png' alt='logo'></img></Link>
         <div className={styles.langWrapper}>
           <LanguageSwitch />
         </div>

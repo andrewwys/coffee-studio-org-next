@@ -1,5 +1,10 @@
-const SnipcartButton = ({pid, url, category, country, display_name, process, image, price_200g, price_500g, price_1kg, price_dripbag, price_gb, children}) => {
-  console.log('url=', url);
+import { packageOptions } from '../siteConfig.json'
+import { useAppContext } from '../src/context/state'
+
+
+const SnipcartButton = ({pid, url, category, country, display_name, process, image, price_200g, price_500g, price_1kg, price_dripbag, price_gb, children, defaultPackageOpt}) => {
+  const {lang} = useAppContext();
+  const { PO_200g, PO_500g, PO_1kg, PO_dripbag, PO_gb } = packageOptions[lang];
   return (
     <button className="snipcart-add-item"
       data-item-id={pid}
@@ -14,8 +19,8 @@ const SnipcartButton = ({pid, url, category, country, display_name, process, ima
       data-item-custom1-value="不需要研磨 (Whole beans)"
       data-item-custom1-required="true"
       data-item-custom2-name="包裝/種類 Package/Type"
-      data-item-custom2-options={`200g|500g[+${price_500g-price_200g}]|1kg[+${price_1kg-price_200g}]|掛耳包 Drip Bag (研磨度不適用 Grind Size n/a)[+${price_dripbag-price_200g}]|生豆 Green Beans (研磨度不適用 Grind Size n/a)[+${price_gb-price_200g}]`}
-      data-item-custom2-value="200g"
+      data-item-custom2-options={`${PO_200g}|${PO_500g}[+${price_500g-price_200g}]|${PO_1kg}[+${price_1kg-price_200g}]|${PO_dripbag}[+${price_dripbag-price_200g}]|${PO_gb}[+${price_gb-price_200g}]`}
+      data-item-custom2-value={defaultPackageOpt}
       data-item-custom2-required="true"
       >
       {children}

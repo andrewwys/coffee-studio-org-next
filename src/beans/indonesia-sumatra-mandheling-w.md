@@ -3,7 +3,7 @@ hk:
   pid: 1203
   title: Indonesia Sumatra Mandheling W
   category: Single Origin
-  country: 印尼
+  country: 印度尼西亞
   display_name: 蘇門答臘曼特寧水洗
   process: 水洗
   flavors_main:

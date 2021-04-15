@@ -1,27 +1,34 @@
 // import { useState } from 'react'
 import Link from 'next/link'
+import { labels } from '../siteConfig.json'
+import { useAppContext } from '../src/context/state'
 
 const SideMenu = ({ menuWidth, changeWidth }) => {
 
-  // const [menuWidth, changeWidth] = useState('320px');
+  const { lang } = useAppContext();
+  const { homepage, singleOrigin, houseBlend, dripBags, aboutUs, faq } = labels[lang];
 
   return (
     <div className='side-menu' id='sideMenu'>
       <a href="javascript:void(0)" className="close-button" onClick={()=>changeWidth('0px')}>&times;</a>
       <Link href={{ pathname: '/'}}>
-        <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>Home</a>
+        <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>{homepage}</a>
       </Link>
       <Link href={{ pathname: '/product-preview', query: {cat: 'single-origin'}, }}>
-        <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>Single Origin</a>
+        <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>{singleOrigin}</a>
       </Link>
       <Link href={{ pathname: '/product-preview', query: {cat: 'blends'}, }}>
-        <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>Blends</a>
+        <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>{houseBlend}</a>
       </Link>
-      <Link href={{ pathname: '/product-preview', query: {cat: 'dripbags'}, }}>
-        <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>Dripbag</a>
+      <Link href={{ pathname: '/product-preview', query: {cat: 'drip-bags'}, }}>
+        <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>{dripBags}</a>
       </Link>
-      <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>About Us</a>
-      <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>FAQ</a>
+      <Link href={{ pathname: '/about' }}>
+        <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>{aboutUs}</a>
+      </Link>
+      <Link href={{ pathname: '/faq' }}>
+        <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>{faq}</a>
+      </Link>
       <div className='menu-item'>
         <a href='https://www.instagram.com/coffee_studio/' target='_blank'>
           <img className='social-icon' src='/images/fb-icon.png' alt='facebook'/>

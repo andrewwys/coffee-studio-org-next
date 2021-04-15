@@ -10,11 +10,14 @@
       "heroLine2": "歡迎訂購",
       "prductHighlights": "精選豆",
       "singleOrigin": "單品",
+      "homepage": "首頁",
       "houseBlend": "綜合",
       "dripBags": "掛耳包", 
+      "dripBagUnit": "10個掛耳包",
       "greenBeans": "生豆",
       "subscription": "訂購計劃",
       "aboutUs": "關於我們",
+      "faq": "常見問題",
       "contact": "聯絡",
       "photoAttribution": "圖片來源",
       "coffeeClasses": "咖啡班",
@@ -26,11 +29,14 @@
       "heroLine2": "coffee to your door",
       "prductHighlights": "Product Highlights",
       "singleOrigin": "Single Origin",
+      "homepage": "Home",
       "houseBlend": "Blends",
       "dripBags": "Drip Bags", 
+      "dripBagUnit": "10 Drip Bags",
       "greenBeans": "Green Beans",
       "subscription": "Subscription",
       "aboutUs": "About Us",
+      "faq": "FAQ",
       "contact": "Contact",
       "photoAttribution": "Photo Attribution",
       "coffeeClasses": "Coffee Classes",
@@ -119,6 +125,22 @@
       "fee": "Fee",
       "signUp": "How to Sign Up?",
       "signUpDetails": "Please add this item to shopping cart. Set quantity to match the number of participants (maximum 8) and the complete to payment process. You will be contacted by phone call or whatsapp. The purchase will be valid for 1 month."
+    }
+  },
+  "packageOptions": {
+    "hk": {
+      "PO_200g": "200g",
+      "PO_500g": "500g",
+      "PO_1kg": "1kg",
+      "PO_dripbag": "掛耳包 (10個) (研磨度不適用)",
+      "PO_gb": "生豆 (研磨度不適用)"
+    },
+    "en": {
+      "PO_200g": "200g",
+      "PO_500g": "500g",
+      "PO_1kg": "1kg",
+      "PO_dripbag": "Drip Bag (10pcs) (Grind Size n/a)",
+      "PO_gb": "Green Beans (Grind Size n/a)"
     }
   },
   "display": {

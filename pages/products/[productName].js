@@ -16,10 +16,12 @@ import { labels, display, siteBaseUrl } from '../../siteConfig.json'
 import styles from './[productName].module.css'
 
 import  { useEffect, useRef, useState } from 'react';
+import { useRouter } from 'next/router'
 
 const ProductDetails = ({fm, productName}) => {
   const { details } = labels;
   const {lang} = useAppContext();
+  const router = useRouter();
 
   const [isSticky, setSticky] = useState(true);
   const ref1 = useRef(null); //add to cart link
@@ -40,6 +42,10 @@ const ProductDetails = ({fm, productName}) => {
   }, []);
   if (!fm) return <></>
   const { pid, country, display_name, process, flavors_main, flavors_desc, description, altitude, varietal, roast_level, image, price_200g, price_500g, price_1kg, price_dripbag, price_gb, sweetness, acidity, mouthfeel, finish, floral, fruits, nuts, sugars, theme_color, category } = fm[lang];
+  const fAltitude = altitude ? altitude : '--'; //formatted in case of empty content
+  const fCountry = country ? country : '--';
+  const fProcess = process ? process : '--';
+  const fVarietal =  varietal ? varietal : '--';
   const flavorStr = flavorFormatter(flavors_main);
   const themeColorStr = display[theme_color];
   const patternStr = CardPatternPicker(category);
@@ -50,7 +56,7 @@ const ProductDetails = ({fm, productName}) => {
           <NavPath />
           <div className={styles.main}>
             <div className={styles.title}>{display_name}</div>
-            <ProductDetailCard country={country} process={process} color={themeColorStr} altitude={altitude} varietal={varietal} patternStr={patternStr}  />
+            <ProductDetailCard country={fCountry} process={fProcess} color={themeColorStr} altitude={fAltitude} varietal={fVarietal} patternStr={patternStr}  />
             <div className={styles.lineBreak}></div>
             <InfoRow name={details[lang].profile}>{flavorStr}</InfoRow>
             <InfoRow name={details[lang].flavors}>
@@ -71,7 +77,21 @@ const ProductDetails = ({fm, productName}) => {
             </div>
             {/* the link to add product to cart */}
             <div className={ isSticky ? 'cart-link' : 'cart-link cart-fix'} ref={ref1} >
-              <SnipcartButton pid={pid} url={`${siteBaseUrl}/products/${productName}`} category={category} country={country} display_name={display_name} process={process} price_200g={price_200g} price_500g={price_500g} price_1kg={price_1kg} price_dripbag={price_dripbag} price_gb={price_gb} image={image}>
+              <SnipcartButton 
+                pid={pid} 
+                url={`${siteBaseUrl}/products/${productName}`} 
+                category={category} 
+                country={country} 
+                display_name={display_name} 
+                process={process} 
+                price_200g={price_200g} 
+                price_500g={price_500g} 
+                price_1kg={price_1kg} 
+                price_dripbag={price_dripbag} 
+                price_gb={price_gb} 
+                image={image}
+                defaultPackageOpt={router.query.default}
+                >
                 <div className='add-to-cart-text'>add to cart &gt;</div>
               </SnipcartButton>        
             </div>   

@@ -3,7 +3,7 @@ import styles from './product-highlights.module.css'
 // import { labels } from '../siteConfig.json'
 import { useAppContext } from '../src/context/state'
 
-const ProductHighlights = ({ productList, title }) => {
+const ProductHighlights = ({ productList, title, defaultPackageOpt }) => {
   const {lang} = useAppContext();
   if (!productList) return null;
   return(
@@ -13,7 +13,7 @@ const ProductHighlights = ({ productList, title }) => {
         {productList.map((product)=>
           { 
             if (product.fm[lang].highlight)
-            return <ProductCard key={product.slug} productProps={product.fm} slug={product.slug}/>
+            return <ProductCard key={product.slug} productProps={product.fm} slug={product.slug} defaultPackageOpt={defaultPackageOpt}/>
           }
         )}
       </div>

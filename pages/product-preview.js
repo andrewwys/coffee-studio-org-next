@@ -1,16 +1,18 @@
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import ProductHighlights from '../components/product-highlights'
-import { labels } from '../siteConfig.json'
+import { labels, packageOptions } from '../siteConfig.json'
 import matter from 'gray-matter'
 import { useRouter } from 'next/router'
 import { useAppContext } from '../src/context/state'
 
 const ProductPreview = ({ productList }) => {
   const { lang } = useAppContext();
-  const router = useRouter()
+  const { PO_200g, PO_dripbag } = packageOptions[lang];
+  const router = useRouter();
   let title = '';
   let filteredProducts;
+  let defaultPackageOpt = PO_200g;
   switch (router.query.cat) {
     case 'single-origin': 
       title = labels[lang].singleOrigin;
@@ -23,6 +25,7 @@ const ProductPreview = ({ productList }) => {
     case 'drip-bags':
       title = labels[lang].dripBags;
       filteredProducts = productList.filter((prod)=>(prod.fm[lang].category === 'Single Origin' || prod.fm[lang].category === 'Blends'));
+      defaultPackageOpt = PO_dripbag;
       break;
     default: 
       title = labels[lang].singleOrigin;
@@ -32,7 +35,7 @@ const ProductPreview = ({ productList }) => {
     <Layout title='Coffee Studio | Products'>
       <div>
         <Hero bgImg='/images/hero1.png' heroLine1={labels[lang].heroLine1} heroLine2={labels[lang].heroLine2} />
-        <ProductHighlights productList={filteredProducts} title={title}/>
+        <ProductHighlights productList={filteredProducts} title={title} defaultPackageOpt={defaultPackageOpt}/>
       </div>
     </Layout>
   );

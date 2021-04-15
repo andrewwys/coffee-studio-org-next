@@ -4,17 +4,18 @@ import Layout from '../components/layout'
 import ProductHighlights from '../components/product-highlights'
 import CategoryMenu from '../components/category-menu'
 import CoffeeClassBanner from '../components/coffee-class-banner'
-import {labels} from '../siteConfig.json'
+import {labels, packageOptions} from '../siteConfig.json'
 import { useAppContext } from '../src/context/state'
 
 
 export default function Home({productList}) {
   const { lang } = useAppContext();
+  const { PO_200g } = packageOptions[lang];
   return (
     <div>
       <Layout>
         <Hero bgImg='/images/hero1.png' heroLine1={labels[lang].heroLine1} heroLine2={labels[lang].heroLine2} />
-        <ProductHighlights productList={productList} title={labels[lang].prductHighlights}/>
+        <ProductHighlights productList={productList} title={labels[lang].prductHighlights} defaultPackageOpt={PO_200g}/>
         <CategoryMenu productList={productList} />
         <CoffeeClassBanner />
       </Layout>
