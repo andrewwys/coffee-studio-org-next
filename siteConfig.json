@@ -18,7 +18,7 @@
       "subscription": "訂購計劃",
       "aboutUs": "關於我們",
       "faq": "常見問題",
-      "contact": "聯絡",
+      "contact": "聯絡我們",
       "photoAttribution": "圖片來源",
       "coffeeClasses": "咖啡班",
       "learnMore": "詳情" 
@@ -37,7 +37,7 @@
       "subscription": "Subscription",
       "aboutUs": "About Us",
       "faq": "FAQ",
-      "contact": "Contact",
+      "contact": "Contact Us",
       "photoAttribution": "Photo Attribution",
       "coffeeClasses": "Coffee Classes",
       "learnMore": "Learn More" 
@@ -94,7 +94,7 @@
         "flavorDesc": "Description",
         "package": "Package", 
         "packageText": "200g / 500g / 1kg / Drip bags / Green beans",
-        "roastLevel": "Roast Lv",
+        "roastLevel": "Roast Level",
         "price": "Price",
         "floral": "Floral",
         "fruits": "Fruits",

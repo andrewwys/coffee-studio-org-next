@@ -4,17 +4,17 @@ import Hero from '../components/hero'
 import { useAppContext } from '../src/context/state'
 import { labels } from '../siteConfig.json'
 
-const Faq = () => {
+const PhotoAttribution = () => {
   const {lang } = useAppContext();
-  const { faq } = labels[lang];
+  const { photoAttribution } = labels[lang];
   return (
     <div>
       <Layout>
-        <Hero bgImg='/images/bg-classes.png' heroLine1='yyy' heroLine2='zzz' />
-        <InfoBlock title={faq} content='blablalblalalal'/>
+        <Hero bgImg='/images/bg-classes.png' heroLine1='aaa' heroLine2='bbb' />
+        <InfoBlock title={photoAttribution} content='blablalblalalal'/>
       </Layout>
     </div>
   );
 }
 
-export default Faq;
+export default PhotoAttribution;

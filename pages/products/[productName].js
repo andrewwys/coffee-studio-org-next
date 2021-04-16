@@ -71,7 +71,7 @@ const ProductDetails = ({fm, productName}) => {
           <div className={styles.addToCart}>
             {/* the floating icon to add product to cart */}
             <div className={ isSticky ? 'cart-button-sticky' : 'cart-button'} ref={ref2} >
-              <SnipcartButton pid={pid} url={`${siteBaseUrl}/products/${productName}`} category={category} country={country} display_name={display_name} process={process} price_200g={price_200g} price_500g={price_500g} price_1kg={price_1kg} price_dripbag={price_dripbag} price_gb={price_gb} image={image}>
+              <SnipcartButton pid={pid} url={`${siteBaseUrl}/products/${productName}`} category={category} country={country} display_name={display_name} process={process} price_200g={price_200g} price_500g={price_500g} price_1kg={price_1kg} price_dripbag={price_dripbag} price_gb={price_gb} image={image} defaultPackageOpt={router.query.default}>
                 <AddToCartShortcut color={display.headerGreen} width={71} />
               </SnipcartButton>  
             </div>
