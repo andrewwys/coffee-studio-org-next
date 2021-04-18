@@ -2,11 +2,12 @@
   position: relative;
   height: 110vh;
   /* background-image: url('/hero1.png'); */
-  background-size: auto 100%;
-  background-position: right top;
+  background-size: 65% auto;
+  background-position: 100% 10%;
   background-repeat: no-repeat;
   color: var(--green-header);
   z-index: 0;
+  top: -50px;
 }
 
 .headlines {
@@ -23,11 +24,13 @@
 }
 
 .line2 {
-  margin: 5px 0;
+  margin: -5px 0 0 0;
+  max-width: 50vw;
+  height: 140px;
   font-size: var(--fsize-2);
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .marker {

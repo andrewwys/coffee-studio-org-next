@@ -47,19 +47,20 @@ const CoffeeClassBanner = () => {
         }
         .link {
           position: relative;
-          width: 100%;
           top: 75%;
-          font-size: var(--fsize-2);
-          color: white;
-          text-shadow: 2px 2px black;
-          display: none;
-          text-align: left;
+          font-size: var(--fsize-4);
+          padding: 10px 20px;
+          color: var(--green-header);
+          display: inline;
+          border: 5px solid var(--green-header);
+          background-color: var(--white-bg);
+          border-radius: 5px;
+          box-shadow: 6px 6px 9px rgb(0 0 0 / 75%);
+          transition: all 0.1s ease;
         }
-        .link:active {
-          left: 5px;
-        }
-        .main:hover .link {
-          display: inline-block;
+        .link:hover {
+          border-width: 6px;
+          font-weight: 400;
         }
         `}</style>
     </div>

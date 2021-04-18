@@ -62,7 +62,7 @@ en:
   altitude:
   roast_level: Light
   image: /uploads/coffee-bean-delivery-hong-kong_0.jpg
-  price_200g: 178
+  price_200g: 218
   price_500g: 380
   price_1kg: 550
   price_dripbag: 260

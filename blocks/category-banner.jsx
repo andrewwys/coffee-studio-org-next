@@ -44,12 +44,9 @@ const CategoryBanner = ({ imgPath, title }) => {
           }
         }
         @media screen and (max-width: 599px) {
-          .title {
-            font-size: var(--fsize-4);
-            top: 30%;
+          .banner {
+            width: 90%;
           }
-        }
-        @media screen and (max-width: 599px) {
           .title {
             font-size: var(--fsize-5);
             top: 30%;

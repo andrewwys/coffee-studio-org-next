@@ -8,7 +8,7 @@ const Hero = ({ bgImg, heroLine1, heroLine2 }) => {
         <h3 className={styles.line1}>
           <mark className={styles.marker}>{heroLine1}</mark>
         </h3>
-        <p className={styles.line2}><mark className={styles.marker}>{heroLine2}</mark></p>
+        <div className={styles.line2}><mark className={styles.marker}>{heroLine2}</mark></div>
       </div>
       <style jsx>{`
         .hero {
