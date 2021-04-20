@@ -2,7 +2,7 @@
   position: relative;
   height: 110vh;
   /* background-image: url('/hero1.png'); */
-  background-size: 65% auto;
+  background-size: auto 720px;
   background-position: 100% 10%;
   background-repeat: no-repeat;
   color: var(--green-header);
@@ -12,7 +12,7 @@
 
 .headlines {
   margin: 0 0 0 64px;
-  padding-top: 40vh;
+  padding-top: 280px;
 }
 
 .line1 {
@@ -21,12 +21,15 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: 'Noto Serif', serif;
+  font-weight: 300;
 }
 
 .line2 {
-  margin: -5px 0 0 0;
-  max-width: 50vw;
+  margin: 0 0 0 0;
+  max-width: 55vw;
   height: 140px;
+  max-height: 500px;
   font-size: var(--fsize-2);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -36,4 +39,38 @@
 .marker {
   background-color: #fffbf8bd;
   color: var(--green-header);
+}
+
+@media screen and (max-width: 960px) {
+  .hero {
+    background-size: auto 450px;
+  }
+  .headlines {
+    margin: 0 0 0 20px;
+    padding-top: 210px;
+  }
+  .line1 {
+    font-size: var(--fsize-3);
+  }
+  .line2 {
+    font-size: var(--fsize-4);
+    max-height: 80px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .hero {
+    background-size: auto 300px;
+  }
+  .headlines {
+    margin: 0 0 0 20px;
+    padding-top: 190px;
+  }
+  .line1 {
+    font-size: 28px;
+  }
+  .line2 {
+    font-size: 21px;
+    max-height: 80px;
+  }
 }

@@ -30,13 +30,17 @@ const CoffeeClasses = ({ classList }) => {
         <Hero bgImg='/images/bg-classes.png' heroLine1={classes[lang].title} heroLine2={classes[lang].subtitle} />
         <div className='wrapper'>
           <div className='menu'>
+            <div className='separator'>&#8727;</div>
             {courseMenu.map((course)=>{
               return(
-                <div 
-                  className='menu-link' 
-                  key={course.pid} 
-                  onClick={()=> setPid(course.pid) }>
-                  {course.courseName}
+                <div>
+                  <div 
+                    className='menu-link' 
+                    key={course.pid} 
+                    onClick={()=> setPid(course.pid) }>
+                    {course.courseName}
+                  </div>
+                  <div className='separator'>&#8727;</div>
                 </div>
               )
             })}
@@ -56,13 +60,15 @@ const CoffeeClasses = ({ classList }) => {
           display: flex;
           flex-wrap: wrap;
           width: 100%;
-          top: -250px;
+          top: -300px;
           padding: 0 128px 0 64px;
         }
         .menu {
           width: 30%;
           min-width: 250px;
           font-size: var(--fsize-5);
+          display: flex;
+          flex-direction: column;
         }
         .menu-link{
           cursor: pointer;
@@ -70,6 +76,9 @@ const CoffeeClasses = ({ classList }) => {
         }
         .menu-link:hover{
           text-decoration: underline;
+        }
+        .separator {
+          color: var(--peach-footer);
         }
         .content {
           width: 70%;
@@ -79,11 +88,29 @@ const CoffeeClasses = ({ classList }) => {
         @media screen and (max-width: 960px) {
           .wrapper{
             padding: 0 32px 0 64px;
+            top: -480px;
+          }
+          .menu {
+            width: auto;
+            font-size: var(--fsize-6);
+          }
+          .content {
+            padding-top: 64px;
+            width: auto;
+            font-size: var(--fsize-6);
           }
         }
         @media screen and (max-width: 470px) {
           .wrapper{
             padding: 0 16px 0 16px;
+            top: -440px;
+          }
+          .menu {
+            width: 100%;
+          }
+          .content {
+            padding-top: 20px;
+            width: 100%;
           }
         }
       `}</style>

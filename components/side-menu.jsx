@@ -60,7 +60,7 @@ const SideMenu = ({ menuWidth, changeWidth }) => {
         }
         .menu-item {
           padding: 8px 8px 8px 32px;
-          font-size: var(--fsize-4);
+          font-size: var(--fsize-5);
         }
         .close-button {
           padding: 0 32px 16px 0;
