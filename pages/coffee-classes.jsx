@@ -4,9 +4,12 @@ import Hero from '../components/hero'
 import InfoBlock from '../components/info-block'
 import InfoDetails from '../components/info-details'
 import InfoRowSingleLine from '../components/info-row-single-line'
+import SnipcartButtonClasses from '../bits/snipcart-button-classes'
+import AddToCartShortcut from '../bits/add-to-cart-shortcut'
+import  { useState } from 'react'
 import { useAppContext } from '../src/context/state'
-import { useState } from 'react'
 import { classes } from '../siteConfig.json'
+import { display, siteBaseUrl } from '../siteConfig.json'
 
 const CoffeeClasses = ({ classList }) => {
   const { lang } = useAppContext();
@@ -23,7 +26,9 @@ const CoffeeClasses = ({ classList }) => {
     course.fm[lang].pid === currentPid
   ));
   const courseOnDisplayLang = courseOnDisplay.fm[lang];
-  console.log(courseOnDisplayLang);
+  // console.log(courseOnDisplayLang);
+  const { courseName, description, time, content, price, pid } = courseOnDisplayLang;
+
   return (
     <div>
       <Layout>
@@ -46,13 +51,43 @@ const CoffeeClasses = ({ classList }) => {
             })}
           </div>
           <div className='content'>
-            <InfoBlock title={courseOnDisplayLang.courseName} content={courseOnDisplayLang.description}/>
-            <InfoDetails title={classes[lang].content} content={courseOnDisplayLang.content}/>
-            <InfoRowSingleLine title={classes[lang].duration} content={courseOnDisplayLang.time} />
-            <InfoRowSingleLine title={classes[lang].fee} content={'HKD ' + courseOnDisplayLang.price} />
+            <InfoBlock title={courseName} content={description}/>
+            <InfoDetails title={classes[lang].content} content={content}/>
+            <InfoRowSingleLine title={classes[lang].duration} content={time} />
+            <InfoRowSingleLine title={classes[lang].fee} content={'HKD ' + price} />
             <InfoBlock title={classes[lang].signUp} content={classes[lang].signUpDetails}/>
+
+            {/* add to cart button */}
+            <div className='add-to-cart'>
+              {/* the floating icon to add product to cart */}
+              <div className='cart-button'>
+                <SnipcartButtonClasses 
+                  pid={pid} 
+                  url={`${siteBaseUrl}/coffee-classes`} 
+                  display_name={courseName} 
+                  price={price} 
+                  description={content}
+                >
+                  <AddToCartShortcut color={display.headerGreen} width={71} />
+                </SnipcartButtonClasses>  
+              </div>
+              {/* the link to add product to cart */}
+              <div className='cart-link cart-fix'>
+                <SnipcartButtonClasses
+                  pid={pid} 
+                  url={`${siteBaseUrl}/coffee-classes`} 
+                  display_name={courseName} 
+                  price={price} 
+                  description={description}
+                >
+                  <div className='add-to-cart-text'>add to cart &gt;</div>
+                </SnipcartButtonClasses>        
+              </div>   
+            </div>
+
           </div>
         </div>
+        
       </Layout>
       <style jsx>{`
         .wrapper {
@@ -84,6 +119,28 @@ const CoffeeClasses = ({ classList }) => {
           width: 70%;
           font-size: var(--fsize-4);
           padding-top: 128px;
+        }
+        .add-to-cart {
+          margin-top: 130px;
+        }
+        .cart-link {
+          padding-right: 175px;
+          text-align: right;
+          float: right;
+        }
+        .cart-fix {
+          padding-right: 2px;
+        }
+        .cart-button {
+          float: right;
+          position: relative;
+          bottom: 45px;
+        }
+        .add-to-cart-text {
+          text-decoration: underline;
+          font-size: var(--fsize-5);
+          color: var(--green-header);
+          cursor: pointer;
         }
         @media screen and (max-width: 960px) {
           .wrapper{

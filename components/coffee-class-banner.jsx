@@ -47,13 +47,13 @@ const CoffeeClassBanner = () => {
         }
         .link {
           position: relative;
-          top: 75%;
+          top: 70%;
           font-size: var(--fsize-4);
           padding: 10px 20px;
-          color: var(--green-header);
+          color: white;
           display: inline;
-          border: 5px solid var(--green-header);
-          background-color: var(--white-bg);
+          border: 5px solid #C1882F;
+          background-color: #C1882F;
           border-radius: 5px;
           box-shadow: 6px 6px 9px rgb(0 0 0 / 75%);
           transition: all 0.1s ease;

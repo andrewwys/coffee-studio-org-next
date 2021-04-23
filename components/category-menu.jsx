@@ -9,24 +9,24 @@ const CategoryMenu = () => {
   return (
     <div>
       <div className='cat-menu'>
-        <Link href={{ pathname: '/product-preview', query: {cat: 'single-origin'}, }}>
+        <Link href='/product-preview?cat=single-origin#highlights' passHref>
           <div className='block-wrapper'><CategoryBlock title={labels[lang].singleOrigin} imgPath='/images/cat-single-origin-img.png' /></div>
         </Link>
-        <Link href={{ pathname: '/product-preview', query: {cat: 'blends'}, }}>
+        <Link href='/product-preview?cat=blends#highlights' passHref>
           <div className='block-wrapper'><CategoryBlock title={labels[lang].houseBlend} imgPath='/images/cat-blend-img.png' /></div>
         </Link>
-        <Link href={{ pathname: '/product-preview', query: {cat: 'drip-bags'}, }}>
+        <Link href='/product-preview?cat=drip-bags#highlights' passHref>
           <div className='block-wrapper'><CategoryBlock title={labels[lang].dripBags} imgPath='/images/cat-drip-bag-img.png' /></div>
         </Link>
       </div>
       <div className='cat-menu-m'>
-        <Link href={{ pathname: '/product-preview', query: {cat: 'single-origin'}, }}>
+        <Link href='/product-preview?cat=single-origin#highlights' passHref>
           <div className='banner-wrapper'><CategoryBanner title={labels[lang].singleOrigin} imgPath='/images/cat-m-single-origin-img.jpg' /></div>
         </Link>
-        <Link href={{ pathname: '/product-preview', query: {cat: 'blends'}, }}>
+        <Link href='/product-preview?cat=blends#highlights' passHref>
           <div className='banner-wrapper'><CategoryBanner title={labels[lang].houseBlend} imgPath='/images/cat-m-blended-img.jpg' /></div>
         </Link>
-        <Link href={{ pathname: '/product-preview', query: {cat: 'drip-bags'}, }}>
+        <Link href='/product-preview?cat=drip-bags#highlights' passHref>
           <div className='banner-wrapper'><CategoryBanner title={labels[lang].dripBags} imgPath='/images/cat-m-drip-bag-img.jpg' /></div>
         </Link>
       </div>

@@ -22,17 +22,17 @@ const Footer = () => {
           <div className={styles.columnTitle}>{shop}</div>
           <div className={`${styles.indent}`}>
             <div className={styles.item}>
-              <Link href={{ pathname: '/product-preview', query: {cat: 'single-origin'}, }}>
+              <Link href='/product-preview?cat=single-origin#highlights' passHref>
                 <a href="#">{singleOrigin}</a>
               </Link>
             </div>
             <div className={styles.item}>
-              <Link href={{ pathname: '/product-preview', query: {cat: 'blends'}, }}>
+              <Link href='/product-preview?cat=blends#highlights' passHref>
                 <a href="#">{houseBlend}</a>
               </Link>
             </div>
             <div className={styles.item}>
-              <Link href={{ pathname: '/product-preview', query: {cat: 'drip-bags'}, }}>
+              <Link href='/product-preview?cat=drip-bags#highlights' passHref>
                 <a href="#">{dripBags}</a>
               </Link>
             </div>

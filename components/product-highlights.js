@@ -8,7 +8,7 @@ const ProductHighlights = ({ productList, title, defaultPackageOpt }) => {
   if (!productList) return null;
   return(
     <div className={styles.productHighlights}>
-      <div className={styles.highlightHeader}>{title}</div>
+      <div className={styles.highlightHeader} id='highlights'>{title}</div>
       <div className={styles.productWrapper}>
         {productList.map((product)=>
           { 

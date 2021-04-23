@@ -14,14 +14,14 @@ const SideMenu = ({ menuWidth, changeWidth }) => {
       <Link href={{ pathname: '/'}}>
         <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>{homepage}</a>
       </Link>
-      <Link href={{ pathname: '/product-preview', query: {cat: 'single-origin'}, }}>
-        <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>{singleOrigin}</a>
+      <Link href='/product-preview?cat=single-origin#highlights' passHref>
+        <a href="#highlights" className="menu-item" onClick={()=>changeWidth('0px')}>{singleOrigin}</a>
       </Link>
-      <Link href={{ pathname: '/product-preview', query: {cat: 'blends'}, }}>
-        <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>{houseBlend}</a>
+      <Link href='/product-preview?cat=blends#highlights' passHref>
+        <a href="#highlights" className="menu-item" onClick={()=>changeWidth('0px')}>{houseBlend}</a>
       </Link>
-      <Link href={{ pathname: '/product-preview', query: {cat: 'drip-bags'}, }}>
-        <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>{dripBags}</a>
+      <Link href='/product-preview?cat=drip-bags#highlights' passHref>
+        <a href="#highlights" className="menu-item" onClick={()=>changeWidth('0px')}>{dripBags}</a>
       </Link>
       <Link href={{ pathname: '/about' }}>
         <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>{aboutUs}</a>
