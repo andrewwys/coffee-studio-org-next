@@ -6,7 +6,7 @@ import { useAppContext } from '../src/context/state'
 const SideMenu = ({ menuWidth, changeWidth }) => {
 
   const { lang } = useAppContext();
-  const { homepage, singleOrigin, houseBlend, dripBags, aboutUs, faq } = labels[lang];
+  const { homepage, singleOrigin, houseBlend, dripBags, aboutUs, faq, coffeeClasses } = labels[lang];
 
   return (
     <div className='side-menu' id='sideMenu'>
@@ -23,17 +23,20 @@ const SideMenu = ({ menuWidth, changeWidth }) => {
       <Link href='/product-preview?cat=drip-bags#highlights' passHref>
         <a href="#highlights" className="menu-item" onClick={()=>changeWidth('0px')}>{dripBags}</a>
       </Link>
-      <Link href={{ pathname: '/about' }}>
+      <Link href='/coffee-classes' passHref>
+        <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>{coffeeClasses}</a>
+      </Link>
+      <Link href='/about' passHref>
         <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>{aboutUs}</a>
       </Link>
-      <Link href={{ pathname: '/faq' }}>
+      <Link href='/faq' passHref>
         <a href="#" className="menu-item" onClick={()=>changeWidth('0px')}>{faq}</a>
       </Link>
       <div className='menu-item'>
-        <a href='https://www.instagram.com/coffee_studio/' target='_blank'>
+        <a href='https://www.facebook.com/CoffeeStudio.org/' target='_blank'>
           <img className='social-icon' src='/images/fb-icon.png' alt='facebook'/>
         </a>
-        <a href='https://www.facebook.com/CoffeeStudio.org/' target='_blank'>
+        <a href='https://www.instagram.com/coffee_studio/' target='_blank'>
           <img className='social-icon' src='/images/ig-icon.png' alt='instagram'/>
         </a>
       </div>

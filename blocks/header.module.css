@@ -16,7 +16,7 @@
 }
 
 .logo {
-  height: 20vh;
+  height: 128px;
   position: absolute;
   left: 64px;
   top: 0;
@@ -57,7 +57,7 @@
 
 @media screen and (max-width: 960px) {
   .logo {
-    height: 16vh;
+    height: 102px;
     /* top: 20px; */
     left: 48px;
   }
@@ -65,7 +65,7 @@
 
 @media screen and (max-width: 470px) {
   .logo {
-    height: 12vh;
+    height: 78px;
     top: 16px;
     left: 32px;
   }

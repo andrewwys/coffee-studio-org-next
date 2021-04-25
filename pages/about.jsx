@@ -5,8 +5,8 @@ import Hero from '../components/hero'
 const About = () => {
   return (
     <div>
-      <Layout>
-        <Hero bgImg='/images/bg-classes.png' heroLine1='www' heroLine2='sss' />
+      <Layout bgImg='/images/bg-classes.png'>
+        <Hero heroLine1='www' heroLine2='sss' />
         <InfoBlock title='About us...' content='flafalflaflalaflalaf'/>
       </Layout>
     </div>

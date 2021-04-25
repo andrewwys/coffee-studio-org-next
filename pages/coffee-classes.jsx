@@ -31,8 +31,8 @@ const CoffeeClasses = ({ classList }) => {
 
   return (
     <div>
-      <Layout>
-        <Hero bgImg='/images/bg-classes.png' heroLine1={classes[lang].title} heroLine2={classes[lang].subtitle} />
+      <Layout bgImg='/images/bg-classes.png'>
+        <Hero heroLine1={classes[lang].title} heroLine2={classes[lang].subtitle} />
         <div className='wrapper'>
           <div className='menu'>
             <div className='separator'>&#8727;</div>

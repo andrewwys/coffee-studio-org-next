@@ -10,11 +10,11 @@ const Hero = ({ bgImg, heroLine1, heroLine2 }) => {
         </h3>
         <div className={styles.line2}><mark className={styles.marker}>{heroLine2}</mark></div>
       </div>
-      <style jsx>{`
+      {/* <style jsx>{`
         .hero {
           background-image: url(${bgImg});
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 }

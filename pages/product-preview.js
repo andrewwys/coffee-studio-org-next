@@ -32,9 +32,9 @@ const ProductPreview = ({ productList }) => {
       filteredProducts = productList.filter((prod)=>(prod.fm[lang].category === 'Single Origin'))
   }
   return (
-    <Layout title='Coffee Studio | Products'>
+    <Layout  bgImg='/images/hero1.png'>
       <div>
-        <Hero bgImg='/images/hero1.png' heroLine1={labels[lang].heroLine1} heroLine2={labels[lang].heroLine2} />
+        <Hero heroLine1={labels[lang].heroLine1} heroLine2={labels[lang].heroLine2} />
         <ProductHighlights productList={filteredProducts} title={title} defaultPackageOpt={defaultPackageOpt}/>
       </div>
     </Layout>

@@ -9,8 +9,8 @@ const Faq = () => {
   const { faq } = labels[lang];
   return (
     <div>
-      <Layout>
-        <Hero bgImg='/images/bg-classes.png' heroLine1='yyy' heroLine2='zzz' />
+      <Layout bgImg='/images/bg-classes.png'>
+        <Hero heroLine1='yyy' heroLine2='zzz' />
         <InfoBlock title={faq} content='blablalblalalal'/>
       </Layout>
     </div>

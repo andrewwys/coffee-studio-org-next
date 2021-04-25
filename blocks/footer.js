@@ -2,6 +2,7 @@ import { useAppContext } from '../src/context/state'
 import styles from './footer.module.css'
 import { labels } from '../siteConfig.json'
 import Link from 'next/link'
+import CoffeeClasses from '../pages/coffee-classes'
 
 const Footer = () => {
   const {lang, toggleLang } = useAppContext();
@@ -13,7 +14,7 @@ const Footer = () => {
     }
   }
 
-  const { singleOrigin, houseBlend, dripBags, subscription, contact, aboutUs, faq, photoAttribution } = labels[lang];
+  const { singleOrigin, houseBlend, dripBags, subscription, contact, aboutUs, faq, photoAttribution, coffeeClasses } = labels[lang];
   const { shop, information, social, languages, copyright1, copyright2} = labels.footer[lang];
   return(
     <footer className={styles.footer}>
@@ -37,6 +38,11 @@ const Footer = () => {
               </Link>
             </div>
             {/* <div className={styles.item}><a href='#'>{subscription}</a></div> */}
+            <div className={styles.item}>
+              <Link href='/coffee-classes' passHref>
+                <a href="#">{coffeeClasses}</a>
+              </Link>
+            </div>
           </div>
         </div>
         <div className={styles.info}>
@@ -67,10 +73,10 @@ const Footer = () => {
         <div className={styles.social}>
           <div className={styles.columnTitle}>{social}</div>
           <div className={`${styles.iconGroup} ${styles.indent}`}>
-            <a href='https://www.instagram.com/coffee_studio/' target='_blank'>
+            <a href='https://www.facebook.com/CoffeeStudio.org/' target='_blank'>
               <img className={styles.socialIcons} src='/images/fb-icon.png' alt='facebook'/>
             </a>
-            <a href='https://www.facebook.com/CoffeeStudio.org/' target='_blank'>
+            <a href='https://www.instagram.com/coffee_studio/' target='_blank'>
               <img className={styles.socialIcons} src='/images/ig-icon.png' alt='instagram'/>
             </a>
           </div>

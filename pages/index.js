@@ -13,8 +13,8 @@ export default function Home({productList}) {
   const { PO_200g } = packageOptions[lang];
   return (
     <div>
-      <Layout>
-        <Hero bgImg='/images/hero1.png' heroLine1={labels[lang].heroLine1} heroLine2={labels[lang].heroLine2} />
+      <Layout bgImg='/images/bg-landing.png'>
+        <Hero heroLine1={labels[lang].heroLine1} heroLine2={labels[lang].heroLine2} />
         <ProductHighlights productList={productList} title={labels[lang].prductHighlights} defaultPackageOpt={PO_200g}/>
         <CategoryMenu productList={productList} />
         <CoffeeClassBanner />

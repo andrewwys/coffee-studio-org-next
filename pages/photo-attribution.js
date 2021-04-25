@@ -9,8 +9,8 @@ const PhotoAttribution = () => {
   const { photoAttribution } = labels[lang];
   return (
     <div>
-      <Layout>
-        <Hero bgImg='/images/bg-classes.png' heroLine1='aaa' heroLine2='bbb' />
+      <Layout bgImg='/images/bg-classes.png'>
+        <Hero heroLine1='aaa' heroLine2='bbb' />
         <InfoBlock title={photoAttribution} content='blablalblalalal'/>
       </Layout>
     </div>

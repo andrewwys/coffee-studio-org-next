@@ -3,7 +3,7 @@ import Header from '../blocks/header'
 import Footer from '../blocks/footer'
 //import { snipcartAPIKey } from '../siteConfig.json'
 
-export default function Layout({ children }) {
+export default function Layout({ bgImg, children }) {
   return (
     <div className='layout'>
       <Header/>
@@ -16,6 +16,8 @@ export default function Layout({ children }) {
           min-width: 460px;
         }
         section {
+          background: url(${bgImg}) no-repeat right top;
+          background-size: 60% auto;
           min-height: calc(100vh - 265px);
         }
       `} </style>

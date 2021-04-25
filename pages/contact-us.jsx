@@ -9,8 +9,8 @@ const ContactUs = () => {
   const { contact } = labels[lang];
   return (
     <div>
-      <Layout>
-        <Hero bgImg='/images/bg-classes.png' heroLine1='ccc' heroLine2='ddd' />
+      <Layout bgImg='/images/bg-classes.png'>
+        <Hero heroLine1='ccc' heroLine2='ddd' />
         <InfoBlock title={contact} content='blablalblalalal'/>
       </Layout>
     </div>
