@@ -10,9 +10,18 @@ const Faq = () => {
   return (
     <div>
       <Layout bgImg='/images/bg-classes.png'>
-        <Hero heroLine1='yyy' heroLine2='zzz' />
-        <InfoBlock title={faq} content='blablalblalalal'/>
+        <div className='info-wrapper'>
+          <InfoBlock title={faq} content='blablalblalalal'/>
+        </div>
       </Layout>
+      <style jsx>
+        {`
+          .info-wrapper {
+            margin-top: 80px;
+            padding-left: 30px;
+          }
+        `}
+      </style>
     </div>
   );
 }

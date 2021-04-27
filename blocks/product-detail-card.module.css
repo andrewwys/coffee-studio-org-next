@@ -23,13 +23,13 @@
 }
 
 .col1 {
-  font-size: var(--fsize-5);
+  font-size: var(--fsize-6);
   line-height: 40px;
   padding: 25px 20px;
 }
 
 .col2 {
-  font-size: var(--fsize-4);
+  font-size: var(--fsize-5);
   line-height: 40px;
   padding: 30px 20px;
 }

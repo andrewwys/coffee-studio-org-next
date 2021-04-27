@@ -10,9 +10,18 @@ const ContactUs = () => {
   return (
     <div>
       <Layout bgImg='/images/bg-classes.png'>
-        <Hero heroLine1='ccc' heroLine2='ddd' />
-        <InfoBlock title={contact} content='blablalblalalal'/>
+        <div className='info-wrapper'>
+          <InfoBlock title={contact} content='coming soon...'/>
+        </div>
       </Layout>
+      <style jsx>
+        {`
+          .info-wrapper {
+            margin-top: 80px;
+            padding-left: 30px;
+          }
+        `}
+      </style>
     </div>
   );
 }

@@ -38,7 +38,7 @@ collections:
           name: 'category',
           widget: 'select',
           i18n: duplicate,
-          options: ['Single Origin', 'Blend', 'Others'],
+          options: ['Single Origin', 'Blend', 'Special', 'Others'],
         }
       - { label: '國家', name: 'country', widget: 'string', i18n: true }
       - {
@@ -119,6 +119,7 @@ collections:
           widget: 'number',
           value_type: 'float',
           i18n: duplicate,
+          required: false,
         }
       - {
           label: '價錢(1kg)',
@@ -126,6 +127,7 @@ collections:
           value_type: 'float',
           widget: 'number',
           i18n: duplicate,
+          required: false,
         }
       - {
           label: '價錢(掛耳)',
@@ -133,6 +135,7 @@ collections:
           widget: 'number',
           value_type: 'float',
           i18n: duplicate,
+          required: false,
         }
       - {
           label: '價錢(生豆)',
@@ -140,6 +143,7 @@ collections:
           widget: 'number',
           value_type: 'float',
           i18n: duplicate,
+          required: false,
         }
       - {
           label: '價錢(批發)',
@@ -147,6 +151,7 @@ collections:
           widget: 'number',
           value_type: 'float',
           i18n: duplicate,
+          required: false,
         }
       - {
           label: '甜度',

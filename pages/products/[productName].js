@@ -66,7 +66,9 @@ const ProductDetails = ({fm, productName}) => {
             <InfoRow name={details[lang].flavorDesc}>{flavors_desc}</InfoRow>
             <InfoRow name={details[lang].roastLevel}>{roast_level}</InfoRow>
             <InfoRow name={details[lang].package}>{details[lang].packageText}</InfoRow>
-            <InfoRow name={details[lang].price}>{`HKD ${price_200g} / ${price_500g} / ${price_1kg} / ${price_dripbag} / ${price_gb}`}</InfoRow>
+            <InfoRow name={details[lang].price}>
+              {`HKD ${price_200g?price_200g:'--'} / ${price_500g?price_500g:'--'} / ${price_1kg?price_1kg:'--'} / ${price_dripbag?price_dripbag:'--'} / ${price_gb?price_gb:'--'}`}
+            </InfoRow>
           </div>
           <div className={styles.addToCart}>
             {/* the floating icon to add product to cart */}

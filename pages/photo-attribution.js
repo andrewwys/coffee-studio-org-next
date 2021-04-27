@@ -10,9 +10,18 @@ const PhotoAttribution = () => {
   return (
     <div>
       <Layout bgImg='/images/bg-classes.png'>
-        <Hero heroLine1='aaa' heroLine2='bbb' />
-        <InfoBlock title={photoAttribution} content='blablalblalalal'/>
+        <div className='info-wrapper'>
+          <InfoBlock title={photoAttribution} content='Coming soon...'/>
+        </div>
       </Layout>
+      <style jsx>
+        {`
+          .info-wrapper {
+            margin-top: 80px;
+            padding-left: 30px;
+          }
+        `}
+      </style>
     </div>
   );
 }

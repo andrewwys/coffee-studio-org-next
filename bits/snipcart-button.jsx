@@ -5,6 +5,11 @@ import { useAppContext } from '../src/context/state'
 const SnipcartButton = ({pid, url, category, country, display_name, process, image, price_200g, price_500g, price_1kg, price_dripbag, price_gb, children, defaultPackageOpt}) => {
   const {lang} = useAppContext();
   const { PO_200g, PO_500g, PO_1kg, PO_dripbag, PO_gb } = packageOptions[lang];
+  const str500g = price_500g ? `|${PO_500g}[+${price_500g-price_200g}]` : '';
+  const str1kg = price_1kg ? `|${PO_1kg}[+${price_1kg-price_200g}]` : '';
+  const strDripbag =  price_dripbag ? `|${PO_dripbag}[+${price_dripbag-price_200g}]` : '';
+  const strGreenBean = price_gb ? `|${PO_gb}[+${price_gb-price_200g}]` : '';
+  
   return (
     <button className="snipcart-add-item"
       data-item-id={pid}
@@ -19,7 +24,8 @@ const SnipcartButton = ({pid, url, category, country, display_name, process, ima
       data-item-custom1-value="不需要研磨 (Whole beans)"
       data-item-custom1-required="true"
       data-item-custom2-name="包裝/種類 Package/Type"
-      data-item-custom2-options={`${PO_200g}|${PO_500g}[+${price_500g-price_200g}]|${PO_1kg}[+${price_1kg-price_200g}]|${PO_dripbag}[+${price_dripbag-price_200g}]|${PO_gb}[+${price_gb-price_200g}]`}
+      // data-item-custom2-options={`${PO_200g}|${PO_500g}[+${price_500g-price_200g}]|${PO_1kg}[+${price_1kg-price_200g}]|${PO_dripbag}[+${price_dripbag-price_200g}]|${PO_gb}[+${price_gb-price_200g}]`}
+      data-item-custom2-options={PO_200g+str500g+str1kg+strDripbag+strGreenBean}
       data-item-custom2-value={defaultPackageOpt}
       data-item-custom2-required="true"
       >

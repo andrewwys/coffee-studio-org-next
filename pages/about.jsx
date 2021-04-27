@@ -6,9 +6,18 @@ const About = () => {
   return (
     <div>
       <Layout bgImg='/images/bg-classes.png'>
-        <Hero heroLine1='www' heroLine2='sss' />
-        <InfoBlock title='About us...' content='flafalflaflalaflalaf'/>
+        <div className='info-wrapper'>
+          <InfoBlock title='About us...' content='Coming soon...'/>
+        </div>
       </Layout>
+      <style jsx>
+        {`
+          .info-wrapper {
+            margin-top: 80px;
+            padding-left: 30px;
+          }
+        `}
+      </style>
     </div>
   );
 }
