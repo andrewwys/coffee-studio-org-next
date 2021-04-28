@@ -49,6 +49,9 @@ const ProductDetails = ({fm, productName}) => {
   const flavorStr = flavorFormatter(flavors_main);
   const themeColorStr = display[theme_color];
   const patternStr = CardPatternPicker(category);
+  const packageTxt = category === 'Special' ? details[lang].packageTextSpecial : details[lang].packageText ; //if category is Special, display 5x50g
+  const priceTxt = category === 'Special' ? `HKD ${price_200g}` :
+    `HKD ${price_200g?price_200g:'--'} / ${price_500g?price_500g:'--'} / ${price_1kg?price_1kg:'--'} / ${price_dripbag?price_dripbag:'--'} / ${price_gb?price_gb:'--'}`;
   return (
     <div>
       <Layout>
@@ -65,15 +68,29 @@ const ProductDetails = ({fm, productName}) => {
             <InfoRow name={details[lang].details}>{description}</InfoRow>
             <InfoRow name={details[lang].flavorDesc}>{flavors_desc}</InfoRow>
             <InfoRow name={details[lang].roastLevel}>{roast_level}</InfoRow>
-            <InfoRow name={details[lang].package}>{details[lang].packageText}</InfoRow>
-            <InfoRow name={details[lang].price}>
-              {`HKD ${price_200g?price_200g:'--'} / ${price_500g?price_500g:'--'} / ${price_1kg?price_1kg:'--'} / ${price_dripbag?price_dripbag:'--'} / ${price_gb?price_gb:'--'}`}
+            <InfoRow name={details[lang].package}>{packageTxt}</InfoRow>
+            <InfoRow name={details[lang].price}>{priceTxt}
+              {/* {`HKD ${price_200g?price_200g:'--'} / ${price_500g?price_500g:'--'} / ${price_1kg?price_1kg:'--'} / ${price_dripbag?price_dripbag:'--'} / ${price_gb?price_gb:'--'}`} */}
             </InfoRow>
           </div>
           <div className={styles.addToCart}>
             {/* the floating icon to add product to cart */}
             <div className={ isSticky ? 'cart-button-sticky' : 'cart-button'} ref={ref2} >
-              <SnipcartButton pid={pid} url={`${siteBaseUrl}/products/${productName}`} category={category} country={country} display_name={display_name} process={process} price_200g={price_200g} price_500g={price_500g} price_1kg={price_1kg} price_dripbag={price_dripbag} price_gb={price_gb} image={image} defaultPackageOpt={router.query.default}>
+              <SnipcartButton 
+                pid={pid} 
+                url={`${siteBaseUrl}/products/${productName}`} 
+                category={category} 
+                country={country} 
+                display_name={display_name} 
+                process={process} 
+                price_200g={price_200g} 
+                price_500g={price_500g} 
+                price_1kg={price_1kg} 
+                price_dripbag={price_dripbag} 
+                price_gb={price_gb} 
+                image={image} 
+                defaultPackageOpt={router.query.default}
+              >
                 <AddToCartShortcut color={display.headerGreen} width={71} />
               </SnipcartButton>  
             </div>

@@ -11,11 +11,12 @@ import { useAppContext } from '../src/context/state'
 export default function Home({productList}) {
   const { lang } = useAppContext();
   const { PO_200g } = packageOptions[lang];
+  const hProductList = productList.filter((product)=>(product.fm[lang].highlight === true));
   return (
     <div>
       <Layout bgImg='/images/bg-landing.png'>
         <Hero heroLine1={labels[lang].heroLine1} heroLine2={labels[lang].heroLine2} />
-        <ProductHighlights productList={productList} title={labels[lang].prductHighlights} defaultPackageOpt={PO_200g}/>
+        <ProductHighlights productList={hProductList} title={labels[lang].prductHighlights} defaultPackageOpt={PO_200g}/>
         <CategoryMenu productList={productList} />
         <CoffeeClassBanner />
       </Layout>

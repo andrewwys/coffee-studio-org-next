@@ -12,7 +12,7 @@ const ProductHighlights = ({ productList, title, defaultPackageOpt }) => {
       <div className={styles.productWrapper}>
         {productList.map((product)=>
           { 
-            if (product.fm[lang].highlight)
+            // if (product.fm[lang].highlight)
             return <ProductCard key={product.slug} productProps={product.fm} slug={product.slug} defaultPackageOpt={defaultPackageOpt}/>
           }
         )}

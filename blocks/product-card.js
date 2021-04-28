@@ -16,7 +16,14 @@ const ProductCard = ({ productProps, slug, defaultPackageOpt }) => {
   const { [lang]: { pid, category, country, display_name, process, flavors_main, price_200g, price_500g, price_1kg, price_dripbag, price_gb, image, theme_color} } = productProps;
     const flavorStr = flavorFormatter(flavors_main);
     const themeColorStr = display[theme_color];
-    const priceStr = defaultPackageOpt === PO_dripbag ? `${price_dripbag}/${dripBagUnit}` : `${price_200g}/200g`;
+    let priceStr; // = defaultPackageOpt === PO_dripbag ? `${price_dripbag}/${dripBagUnit}` : `${price_200g}/200g`;
+    if (defaultPackageOpt === PO_dripbag){
+      priceStr = `${price_dripbag}/${dripBagUnit}`;
+    } else if (category === 'Special') {
+      priceStr = `${price_200g}/250g`;
+    } else {
+      priceStr = `${price_200g}/200g`;
+    }
     return (
       <div className={styles.productCard}>      
           <div className={styles.imageArea} style={{backgroundColor: themeColorStr}}>

@@ -12,6 +12,8 @@ const ProductPreview = ({ productList }) => {
   const router = useRouter();
   let title = '';
   let filteredProducts;
+  const specialProducts = productList.filter((prod)=>(prod.fm[lang].category === 'Special'));
+  console.log(specialProducts);
   let defaultPackageOpt = PO_200g;
   switch (router.query.cat) {
     case 'single-origin': 
@@ -36,6 +38,10 @@ const ProductPreview = ({ productList }) => {
       <div>
         <Hero heroLine1={labels[lang].heroLine1} heroLine2={labels[lang].heroLine2} />
         <ProductHighlights productList={filteredProducts} title={title} defaultPackageOpt={defaultPackageOpt}/>
+        { ( title === labels[lang].singleOrigin && specialProducts.length > 0 ) ? 
+          <ProductHighlights productList={specialProducts} title={labels[lang].special}  defaultPackageOpt={defaultPackageOpt} />
+          : null
+        }
       </div>
     </Layout>
   );

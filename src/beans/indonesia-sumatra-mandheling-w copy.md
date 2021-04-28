@@ -41,7 +41,7 @@ hk:
   fruits: '2'
   nuts: '5'
   sugars: '1'
-  theme_color: brownNuts
+  theme_color: blueFinish
 en:
   pid: 1203
   title: Indonesia Sumatra Mandheling W
@@ -77,5 +77,5 @@ en:
   fruits: '2'
   nuts: '5'
   sugars: '1'
-  theme_color: brownNuts
+  theme_color: blueFinish
 ---
