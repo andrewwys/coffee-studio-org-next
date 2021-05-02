@@ -2,6 +2,7 @@ import Layout from '../components/layout'
 import Hero from '../components/hero'
 import ProductHighlights from '../components/product-highlights'
 import { labels, packageOptions } from '../siteConfig.json'
+import { productType } from '../src/utils/global-var'
 import matter from 'gray-matter'
 import { useRouter } from 'next/router'
 import { useAppContext } from '../src/context/state'
@@ -13,8 +14,8 @@ const ProductPreview = ({ productList }) => {
   let title = '';
   let filteredProducts;
   const specialProducts = productList.filter((prod)=>(prod.fm[lang].category === 'Special'));
-  console.log(specialProducts);
   let defaultPackageOpt = PO_200g;
+  let orderType = productType.ROASTED_BEANS;
   switch (router.query.cat) {
     case 'single-origin': 
       title = labels[lang].singleOrigin;
@@ -28,6 +29,7 @@ const ProductPreview = ({ productList }) => {
       title = labels[lang].dripBags;
       filteredProducts = productList.filter((prod)=>(prod.fm[lang].category === 'Single Origin' || prod.fm[lang].category === 'Blends'));
       defaultPackageOpt = PO_dripbag;
+      orderType = productType.DRIP_BAGS;
       break;
     default: 
       title = labels[lang].singleOrigin;
@@ -37,9 +39,9 @@ const ProductPreview = ({ productList }) => {
     <Layout  bgImg='/images/hero1.png'>
       <div>
         <Hero heroLine1={labels[lang].heroLine1} heroLine2={labels[lang].heroLine2} />
-        <ProductHighlights productList={filteredProducts} title={title} defaultPackageOpt={defaultPackageOpt}/>
-        { ( title === labels[lang].singleOrigin && specialProducts.length > 0 ) ? 
-          <ProductHighlights productList={specialProducts} title={labels[lang].special}  defaultPackageOpt={defaultPackageOpt} />
+        <ProductHighlights productList={filteredProducts} title={title} defaultPackageOpt={defaultPackageOpt} orderType={orderType} />
+        { ( title === labels[lang].singleOrigin && specialProducts.length > 0 ) ?  // show special S.O. products 
+          <ProductHighlights productList={specialProducts} title={labels[lang].special}  defaultPackageOpt={defaultPackageOpt} orderType={orderType} />
           : null
         }
       </div>

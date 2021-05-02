@@ -9,7 +9,7 @@ import DetailButton from '../bits/details-button'
 import SnipcartButton from '../bits/snipcart-button'
 import { display, siteBaseUrl, packageOptions, labels } from '../siteConfig.json'
 
-const ProductCard = ({ productProps, slug, defaultPackageOpt }) => {
+const ProductCard = ({ productProps, slug, defaultPackageOpt, orderType }) => {
   const {lang} = useAppContext();
   const { PO_dripbag } = packageOptions[lang];
   const { dripBagUnit } = labels[lang];
@@ -45,12 +45,13 @@ const ProductCard = ({ productProps, slug, defaultPackageOpt }) => {
                 price_gb={price_gb} 
                 image={image}
                 defaultPackageOpt={defaultPackageOpt}
+                orderType={orderType}
                 >
                 <AddToCartShortcut color={themeColorStr} width={60} />
               </SnipcartButton>
             </div>
             {/* </div> */}
-            <Link href={{ pathname: `/products/${slug}`, query: {default: defaultPackageOpt}, }}>
+            <Link href={{ pathname: `/products/${slug}`, query: {default: defaultPackageOpt, orderType: orderType}, }}>
               <div className={styles.detailButton}>
                   <DetailButton color={themeColorStr} width={60} />
               </div>

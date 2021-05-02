@@ -73,7 +73,7 @@
         "details": "簡介",
         "flavorDesc": "描述",
         "package": "包裝", 
-        "packageText": "200g / 500g / 1kg / 掛耳包 / 生豆",
+        "packageText": "200g / 500g / 1kg",
         "packageTextSpecial": "5 x 50g",
         "roastLevel": "烘焙度",
         "price": "價錢",
@@ -136,15 +136,15 @@
       "PO_200g": "200g",
       "PO_500g": "500g",
       "PO_1kg": "1kg",
-      "PO_dripbag": "掛耳包 (10個) (研磨度不適用)",
-      "PO_gb": "生豆 (研磨度不適用)"
+      "PO_dripbag": "掛耳包 (10個)",
+      "PO_gb": "生豆"
     },
     "en": {
       "PO_200g": "200g",
       "PO_500g": "500g",
       "PO_1kg": "1kg",
-      "PO_dripbag": "Drip Bag (10pcs) (Grind Size n/a)",
-      "PO_gb": "Green Beans (Grind Size n/a)"
+      "PO_dripbag": "Drip Bag (10pcs)",
+      "PO_gb": "Green Beans"
     }
   },
   "display": {

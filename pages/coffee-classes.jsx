@@ -95,7 +95,7 @@ const CoffeeClasses = ({ classList }) => {
           display: flex;
           flex-wrap: wrap;
           width: 100%;
-          top: -300px;
+          top: 0px;
           padding: 0 128px 0 64px;
         }
         .menu {
@@ -145,7 +145,7 @@ const CoffeeClasses = ({ classList }) => {
         @media screen and (max-width: 960px) {
           .wrapper{
             padding: 0 32px 0 64px;
-            top: -480px;
+            top: -50px;
           }
           .menu {
             width: auto;
@@ -160,7 +160,7 @@ const CoffeeClasses = ({ classList }) => {
         @media screen and (max-width: 470px) {
           .wrapper{
             padding: 0 16px 0 16px;
-            top: -440px;
+            top: -70px;
           }
           .menu {
             width: 100%;
@@ -177,7 +177,6 @@ const CoffeeClasses = ({ classList }) => {
 
 export async function getStaticProps() {
   const classes = ((context) => { 
-    console.log('context:', context)
     const keys = context.keys()
     const values = keys.map(context)
     const data = keys.map((key, index) => {

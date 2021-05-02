@@ -22,7 +22,6 @@ const ProductDetails = ({fm, productName}) => {
   const { details } = labels;
   const {lang} = useAppContext();
   const router = useRouter();
-
   const [isSticky, setSticky] = useState(true);
   const ref1 = useRef(null); //add to cart link
   const ref2 = useRef(null); //add to cart icon
@@ -50,8 +49,10 @@ const ProductDetails = ({fm, productName}) => {
   const themeColorStr = display[theme_color];
   const patternStr = CardPatternPicker(category);
   const packageTxt = category === 'Special' ? details[lang].packageTextSpecial : details[lang].packageText ; //if category is Special, display 5x50g
-  const priceTxt = category === 'Special' ? `HKD ${price_200g}` :
-    `HKD ${price_200g?price_200g:'--'} / ${price_500g?price_500g:'--'} / ${price_1kg?price_1kg:'--'} / ${price_dripbag?price_dripbag:'--'} / ${price_gb?price_gb:'--'}`;
+  const priceTxt = category === 'Special' ? `HKD ${price_200g}` : //if category is "Speical", show price_200g. Otherwise display 3 prices (200g, 500g, 1kg).
+    `HKD ${price_200g?price_200g:'--'} / ${price_500g?price_500g:'--'} / ${price_1kg?price_1kg:'--'}`;
+    // / ${price_dripbag?price_dripbag:'--'} / ${price_gb?price_gb:'--'}`;
+  
   return (
     <div>
       <Layout>
@@ -90,6 +91,7 @@ const ProductDetails = ({fm, productName}) => {
                 price_gb={price_gb} 
                 image={image} 
                 defaultPackageOpt={router.query.default}
+                orderType={router.query.orderType}
               >
                 <AddToCartShortcut color={display.headerGreen} width={71} />
               </SnipcartButton>  
@@ -109,7 +111,8 @@ const ProductDetails = ({fm, productName}) => {
                 price_dripbag={price_dripbag} 
                 price_gb={price_gb} 
                 image={image}
-                defaultPackageOpt={router.query.default}
+                defaultPackageOpt={router.query.orderType}
+                orderType={router.query.orderType}
                 >
                 <div className='add-to-cart-text'>add to cart &gt;</div>
               </SnipcartButton>        
