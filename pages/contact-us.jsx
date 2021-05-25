@@ -1,6 +1,5 @@
 import InfoBlock from '../components/info-block'
 import Layout from '../components/layout'
-import Hero from '../components/hero'
 import { useAppContext } from '../src/context/state'
 import { labels } from '../siteConfig.json'
 
@@ -11,7 +10,7 @@ const ContactUs = () => {
     <div>
       <Layout bgImg='/images/bg-classes.png'>
         <div className='info-wrapper'>
-          <InfoBlock title={contact} content='coming soon...'/>
+          <InfoBlock title={contact} content={labels[lang].comingSoon}/>
         </div>
       </Layout>
       <style jsx>

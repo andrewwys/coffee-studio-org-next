@@ -30,7 +30,7 @@ hk:
   price_1kg: 550
   price_dripbag: 260
   price_gb: 210
-  price_wholesale: 500
+  price_wholesale: 385
   sweetness: '3'
   acidity: '3'
   mouthfeel: '3'
@@ -67,7 +67,7 @@ en:
   price_1kg: 550
   price_dripbag: 260
   price_gb: 210
-  price_wholesale: 500
+  price_wholesale: 385
   sweetness: '3'
   acidity: '3'
   mouthfeel: '3'

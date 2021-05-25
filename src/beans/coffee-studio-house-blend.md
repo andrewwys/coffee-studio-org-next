@@ -15,7 +15,8 @@ hk:
     本店綜合配方的三國綜合豆適用於任何沖煮方法，
     手沖主調風味為堅果，榛果，可可，而不失橘子香味。
     特濃意式咖啡則清甜順口，適合不同人士的口味。
-  highlight: true
+
+  highlight: false
   description: |-
 
   varietal:
@@ -51,12 +52,12 @@ en:
     - Orange Zest
   flavors_desc: |-
     The blend of 3 origins is highly versatile for a variety of coffee drink recipes.
-    Tasting notes is mainly
+    For pour over, the flavours are predominantly hazelnut and cocoa with a hint of orange zest, while it is refreshingly sweet and silky smooth on espresso.
 
-  highlight: true
+  highlight: false
   description: |-
 
-  varietal: Typica
+  varietal:
   altitude:
   roast_level: Dark
   image: /uploads/coffee-bean-delivery-hong-kong_0.jpg

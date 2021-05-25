@@ -11,7 +11,7 @@ const Faq = () => {
     <div>
       <Layout bgImg='/images/bg-classes.png'>
         <div className='info-wrapper'>
-          <InfoBlock title={faq} content='blablalblalalal'/>
+          <InfoBlock title={faq} content={labels[lang].comingSoon}/>
         </div>
       </Layout>
       <style jsx>

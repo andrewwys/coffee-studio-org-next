@@ -25,14 +25,14 @@ hk:
     樂天莊園在卓越獎杯比賽中是常客，並贏得了多次冠軍。卓越的咖啡品質，說明了保護生態環境的努力沒有白費。
   varietal: Bourbon
   altitude: 1550
-  roast_level: Medium
+  roast_level: 中
   image: /uploads/coffee-bean-delivery-hong-kong_0.jpg
-  price_200g: 175
-  price_500g: 300
-  price_1kg: 420
-  price_dripbag: 260
-  price_gb: 160
-  price_wholesale: 500
+  price_200g: 220
+  price_500g: 400
+  price_1kg: 590
+  price_dripbag: 320
+  price_gb:
+  price_wholesale: 413
   sweetness: '3'
   acidity: '4'
   mouthfeel: '3'
@@ -70,12 +70,12 @@ en:
   altitude: 1550
   roast_level: Medium
   image: /uploads/coffee-bean-delivery-hong-kong_0.jpg
-  price_200g: 175
-  price_500g: 300
-  price_1kg: 420
-  price_dripbag: 260
-  price_gb: 160
-  price_wholesale: 500
+  price_200g: 220
+  price_500g: 400
+  price_1kg: 590
+  price_dripbag: 320
+  price_gb:
+  price_wholesale: 413
   sweetness: '3'
   acidity: '4'
   mouthfeel: '3'

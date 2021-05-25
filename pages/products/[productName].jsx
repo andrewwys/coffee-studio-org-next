@@ -17,6 +17,7 @@ import styles from './[productName].module.css'
 
 import  { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/router'
+import { productType } from '../../src/utils/global-var'
 
 const ProductDetails = ({fm, productName}) => {
   const { details } = labels;
@@ -41,17 +42,22 @@ const ProductDetails = ({fm, productName}) => {
   }, []);
   if (!fm) return <></>
   const { pid, country, display_name, process, flavors_main, flavors_desc, description, altitude, varietal, roast_level, image, price_200g, price_500g, price_1kg, price_dripbag, price_gb, sweetness, acidity, mouthfeel, finish, floral, fruits, nuts, sugars, theme_color, category } = fm[lang];
-  const fAltitude = altitude ? altitude : '--'; //formatted in case of empty content
+  const fAltitude = altitude ? altitude+'m' : '--'; //formatted in case of empty content
   const fCountry = country ? country : '--';
   const fProcess = process ? process : '--';
   const fVarietal =  varietal ? varietal : '--';
   const flavorStr = flavorFormatter(flavors_main);
   const themeColorStr = display[theme_color];
   const patternStr = CardPatternPicker(category);
-  const packageTxt = category === 'Special' ? details[lang].packageTextSpecial : details[lang].packageText ; //if category is Special, display 5x50g
-  const priceTxt = category === 'Special' ? `HKD ${price_200g}` : //if category is "Speical", show price_200g. Otherwise display 3 prices (200g, 500g, 1kg).
+  let packageTxt = category === 'Special' ? details[lang].packageTextSpecial : details[lang].packageText ; //if category is Special, display 5x50g
+  let priceTxt = category === 'Special' ? `HKD ${price_200g}` : //if category is "Speical", show price_200g. Otherwise display 3 prices (200g, 500g, 1kg).
     `HKD ${price_200g?price_200g:'--'} / ${price_500g?price_500g:'--'} / ${price_1kg?price_1kg:'--'}`;
     // / ${price_dripbag?price_dripbag:'--'} / ${price_gb?price_gb:'--'}`;
+
+  if (router.query.orderType === productType.DRIP_BAGS) {
+    packageTxt = details[lang].packageTextDripBags;
+    priceTxt = price_dripbag;
+  }
   
   return (
     <div>
@@ -113,7 +119,7 @@ const ProductDetails = ({fm, productName}) => {
                 image={image}
                 defaultPackageOpt={router.query.orderType}
                 orderType={router.query.orderType}
-                >
+              >
                 <div className='add-to-cart-text'>add to cart &gt;</div>
               </SnipcartButton>        
             </div>   

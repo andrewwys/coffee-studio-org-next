@@ -32,7 +32,7 @@ hk:
   price_1kg: 520
   price_dripbag: 260
   price_gb: 180
-  price_wholesale: 500
+  price_wholesale: 364
   sweetness: '4'
   acidity: '1'
   mouthfeel: '4'
@@ -68,7 +68,7 @@ en:
   price_1kg: 520
   price_dripbag: 260
   price_gb: 180
-  price_wholesale: 500
+  price_wholesale: 364
   sweetness: '4'
   acidity: '1'
   mouthfeel: '4'

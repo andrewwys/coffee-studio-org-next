@@ -38,7 +38,7 @@ const CoffeeClasses = ({ classList }) => {
             <div className='separator'>&#8727;</div>
             {courseMenu.map((course)=>{
               return(
-                <div>
+                <div key={course.pid}>
                   <div 
                     className='menu-link' 
                     key={course.pid} 
@@ -58,8 +58,9 @@ const CoffeeClasses = ({ classList }) => {
             <InfoBlock title={classes[lang].signUp} content={classes[lang].signUpDetails}/>
 
             {/* add to cart button */}
+            {/*
             <div className='add-to-cart'>
-              {/* the floating icon to add product to cart */}
+              //  the floating icon to add product to cart 
               <div className='cart-button'>
                 <SnipcartButtonClasses 
                   pid={pid} 
@@ -71,7 +72,7 @@ const CoffeeClasses = ({ classList }) => {
                   <AddToCartShortcut color={display.headerGreen} width={71} />
                 </SnipcartButtonClasses>  
               </div>
-              {/* the link to add product to cart */}
+              // the link to add product to cart 
               <div className='cart-link cart-fix'>
                 <SnipcartButtonClasses
                   pid={pid} 
@@ -84,6 +85,7 @@ const CoffeeClasses = ({ classList }) => {
                 </SnipcartButtonClasses>        
               </div>   
             </div>
+            */}
 
           </div>
         </div>

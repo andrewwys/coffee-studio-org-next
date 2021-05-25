@@ -66,7 +66,7 @@ en:
     - Berries
   flavors_desc: |-
 
-  highlight: true
+  highlight: false
   description: |-
     A set of 5 beans 50g each:
     Ethiopia Guji Ana Sora Anaerobic Natural G1

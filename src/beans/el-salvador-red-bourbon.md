@@ -15,14 +15,14 @@ hk:
 
   varietal: Red Bourbon
   altitude:
-  roast_level: Medium
+  roast_level: 中
   image: /uploads/coffee-bean-delivery-hong-kong_0.jpg
   price_200g: 198
   price_500g: 380
   price_1kg: 550
   price_dripbag: 260
   price_gb: 210
-  price_wholesale: 500
+  price_wholesale: 385
   sweetness: '0'
   acidity: '0'
   mouthfeel: '0'
@@ -55,7 +55,7 @@ en:
   price_1kg: 550
   price_dripbag: 260
   price_gb: 210
-  price_wholesale: 500
+  price_wholesale: 385
   sweetness: '0'
   acidity: '0'
   mouthfeel: '0'

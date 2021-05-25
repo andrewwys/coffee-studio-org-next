@@ -22,7 +22,8 @@
       "contact": "聯絡我們",
       "photoAttribution": "圖片來源",
       "coffeeClasses": "咖啡班",
-      "learnMore": "詳情" 
+      "learnMore": "詳情" ,
+      "comingSoon": "正在努力。。。"
     },
     "en": {
       "homeTitle": "Coffee Studio | Education & Online Shop",
@@ -42,7 +43,8 @@
       "contact": "Contact Us",
       "photoAttribution": "Photo Attribution",
       "coffeeClasses": "Coffee Classes",
-      "learnMore": "Learn More" 
+      "learnMore": "Learn More",
+      "comingSoon": "Coming Soon..." 
     }, 
     "footer": {
       "hk": {
@@ -75,6 +77,7 @@
         "package": "包裝", 
         "packageText": "200g / 500g / 1kg",
         "packageTextSpecial": "5 x 50g",
+        "packageTextDripBags": "掛耳包 12g x 10個",
         "roastLevel": "烘焙度",
         "price": "價錢",
         "floral": "花香",
@@ -96,8 +99,9 @@
         "details": "Details",
         "flavorDesc": "Description",
         "package": "Package", 
-        "packageText": "200g / 500g / 1kg / Drip bags / Green beans",
+        "packageText": "200g / 500g / 1kg",
         "packageTextSpecial": "5 x 50g",
+        "packageTextDripBags": "Drip Bags 12g x 10pcs",
         "roastLevel": "Roast Level",
         "price": "Price",
         "floral": "Floral",
@@ -119,7 +123,7 @@
       "duration": "課程長度",
       "fee": "費用",
       "signUp": "報名方法",
-      "signUpDetails": "請將這個課程加入購物籃，選擇數量為參加人數（最多8個）。完成付款後我們將以電話或Whatsapp聯絡您並預約時間。有效期為一個月，如有疑問歡迎查詢。"
+      "signUpDetails": "網上報名即將開啟。"
     },
     "en": {
       "title": "Coffee Classes", 
@@ -128,7 +132,7 @@
       "duration": "Duration",
       "fee": "Fee",
       "signUp": "How to Sign Up?",
-      "signUpDetails": "Please add this item to shopping cart. Set quantity to match the number of participants (maximum 8) and the complete to payment process. You will be contacted by phone call or whatsapp. The purchase will be valid for 1 month."
+      "signUpDetails": "Online enrollment is coming soon."
     }
   },
   "packageOptions": {
