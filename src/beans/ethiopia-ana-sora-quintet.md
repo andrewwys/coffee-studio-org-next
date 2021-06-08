@@ -36,20 +36,20 @@ hk:
   altitude:
   roast_level: Light
   image: /uploads/coffee-bean-delivery-hong-kong_0.jpg
-  price_200g: 180
+  price_200g: 230
   price_500g:
   price_1kg:
   price_dripbag:
   price_gb:
   price_wholesale:
-  sweetness: '0'
-  acidity: '0'
-  mouthfeel: '0'
-  finish: '0'
-  floral: '0'
-  fruits: '0'
-  nuts: '0'
-  sugars: '0'
+  sweetness: '5'
+  acidity: '5'
+  mouthfeel: '5'
+  finish: '5'
+  floral: '5'
+  fruits: '5'
+  nuts: '5'
+  sugars: '5'
   theme_color: yellowAcidity
 en:
   pid: 1501
@@ -78,19 +78,19 @@ en:
   altitude:
   roast_level: Light
   image: /uploads/coffee-bean-delivery-hong-kong_0.jpg
-  price_200g: 180
+  price_200g: 230
   price_500g:
   price_1kg:
   price_dripbag:
   price_gb:
   price_wholesale:
-  sweetness: '0'
-  acidity: '0'
-  mouthfeel: '0'
-  finish: '0'
-  floral: '0'
-  fruits: '0'
-  nuts: '0'
-  sugars: '0'
+  sweetness: '5'
+  acidity: '5'
+  mouthfeel: '5'
+  finish: '5'
+  floral: '5'
+  fruits: '5'
+  nuts: '5'
+  sugars: '5'
   theme_color: yellowAcidity
 ---

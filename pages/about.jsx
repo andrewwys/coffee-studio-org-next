@@ -17,7 +17,8 @@ const About = () => {
         {`
           .info-wrapper {
             padding: 80px 0 0 30px;
-            white-space: pre;
+            white-space: pre-wrap;
+            margin-bottom: 100px;
           }
         `}
       </style>

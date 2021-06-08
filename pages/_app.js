@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
           <link rel="preconnect" href="https://cdn.snipcart.com"/>
           <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.css" />
         </Head>
-        <div id="snipcart" data-config-modal-style="side" data-api-key="MzIyY2I3MWQtNTFmZC00N2JlLWFmYWQtY2ZkYjQzMDdiOWNlNjM3NDc3ODQ2Njc5MjU5MzQx" hidden></div>
+        <div id="snipcart" data-config-modal-style="side" data-api-key="OTBlOGYzYTktNjMyZC00ZThiLWJjODgtMzI1OTZjZWYyMzM1NjM3NDc3ODQ2Njc5MjU5MzQx" hidden></div>
         <script async src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"></script>
         <Component {...pageProps} />
       </AppWrapper>

@@ -3,9 +3,9 @@ hk:
   pid: 1204
   title: El Salvador Red Bourbon
   category: Single Origin
-  country: El Salvador
-  display_name: Red Bourbon
-  process: Washed
+  country: 薩爾瓦多
+  display_name: 紅波旁
+  process: 水洗
   flavors_main:
 
   flavors_desc: |-
@@ -23,14 +23,14 @@ hk:
   price_dripbag: 260
   price_gb: 210
   price_wholesale: 385
-  sweetness: '0'
-  acidity: '0'
-  mouthfeel: '0'
-  finish: '0'
-  floral: '0'
-  fruits: '0'
-  nuts: '0'
-  sugars: '0'
+  sweetness: '3'
+  acidity: '3'
+  mouthfeel: '3'
+  finish: '2'
+  floral: '3'
+  fruits: '4'
+  nuts: '3'
+  sugars: '3'
   theme_color: redSweetness
 en:
   pid: 1204
@@ -56,13 +56,13 @@ en:
   price_dripbag: 260
   price_gb: 210
   price_wholesale: 385
-  sweetness: '0'
-  acidity: '0'
-  mouthfeel: '0'
-  finish: '0'
-  floral: '0'
-  fruits: '0'
-  nuts: '0'
-  sugars: '0'
+  sweetness: '3'
+  acidity: '3'
+  mouthfeel: '3'
+  finish: '2'
+  floral: '3'
+  fruits: '4'
+  nuts: '3'
+  sugars: '3'
   theme_color: redSweetness
 ---
