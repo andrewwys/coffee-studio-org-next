@@ -15,7 +15,7 @@ hk:
     - <手沖咖啡>沖煮方法及品嚐
     - <咖啡拉花>咖啡機應用及拉花技巧;需練習及制作獨特圖案的拉花咖啡
     - <咖啡杯測>簡單學習品嚐咖啡風味的杯測方法，為味覺打好基礎
-  price: 360
+  price: 380
   time: 2小時
   remarks: Remarks.
 en:
@@ -30,7 +30,7 @@ en:
   courseName: 3 Brewing Methods
   description: Learn pour-over (hand drip) coffee, latte art and cup tasting in
     one single lesson.
-  price: 360
+  price: 380
   time: 2 hours
   remarks: Remarks.
 ---

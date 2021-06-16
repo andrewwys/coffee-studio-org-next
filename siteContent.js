@@ -47,33 +47,42 @@ export const faqList = {
   hk: [
     {
       q: '運費點計㗎？',
-      a: 'Ans 1...'
+      a: '我哋用順豐速運到付嘅方式，如果送貨時你唔喺屋企，送貨員會聯絡你預約送貨時間或者到順豐站取貨。'
     },
     {
       q: '幾時會送到？',
-      a: 'Ans 2...'
+      a: '每個星期日中午十二點截單，我哋會喺星期一開始烘焙，星期三寄出。寄出後大概一兩個工作日送到。'
     },
     {
       q: '點俾錢？',
-      a: 'Ans 3...'
+      a: '目前我哋只收轉數快／銀行轉帳。成功付款後，麻煩Cap圖回覆確認電郵。'
     },
     {
       q: '咖啡豆有冇「賞味期限」？',
-      a: ''
+      a: '官方答案係烘焙後半年。不過，視乎烘焙程度，咖啡豆在烘焙日後一般有2－10日養豆時間，然後風味達頂峰。隨後味道會逐漸變得平淡。'
     }
   ], 
   en: [
       {
-      q: 'chiQuestion 1: ',
-      a: 'chiAns 1...'
+      q: 'What are the shipping arrangement?',
+      a: 'We use SF Express to deliver our goods. You have to pay the shipping fee upon delivery. In case you are not at home, their staff will contact you to make another appointment or you may choose to pick it up at an SF service point.'
     },
     {
-      q: 'chi Question 2: ',
-      a: 'chi Ans 2...'
+      q: 'When will I receive my coffee?',
+      a: 'We cut the order at noon every Sunday and start roasting on Monday. Normally, the order will be shipped out on the following Wednesday and it will be at your door after 1-2 working days.'
     },
     {
-      q: 'chi Question 3: ',
-      a: 'chi Ans 3...'
+      q: 'What payment do you accept?',
+      a: 'We take payment through FPS or bank transfer. Unfortunately, we do not accept cards, sorry!'
     },
+    {
+      q: 'When does coffee expire?',
+      a: 'Officially, 6 months after roasting date. But after the 2-10 days of developing stage, flavors of the coffee beans will reach the climax and then start to decline with time.'
+    }
   ]
 };
+
+export const contactInfo = {
+  hk: `歡迎查詢及預約`,
+  en: `For enquiry and booking, drop us a message`
+}

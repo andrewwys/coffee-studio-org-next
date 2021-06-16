@@ -6,11 +6,11 @@ import { labels } from '../siteConfig.json'
 
 const attrLinks = () => (
   <div>
-    <a href="https://www.freepik.com/photos/coffee">Coffee photo created by freepik - www.freepik.com</a><br/>
-    <a href="https://www.freepik.com/photos/background">Background photo created by jcomp - www.freepik.com</a><br/>
-    <a href="https://www.freepik.com/photos/food">Food photo created by jcomp - www.freepik.com</a><br/>
-    <a href="https://www.freepik.com/photos/vintage">Vintage photo created by jcomp - www.freepik.com</a><br/>
-    <a href="https://www.freepik.com/photos/frame">Frame photo created by master1305 - www.freepik.com</a>
+    <p className='attrLink'><a href="https://www.freepik.com/photos/coffee">Coffee photo created by freepik - www.freepik.com</a></p>
+    <p className='attrLink'><a href="https://www.freepik.com/photos/background">Background photo created by jcomp - www.freepik.com</a></p>
+    <p className='attrLink'><a href="https://www.freepik.com/photos/food">Food photo created by jcomp - www.freepik.com</a></p>
+    <p className='attrLink'><a href="https://www.freepik.com/photos/vintage">Vintage photo created by jcomp - www.freepik.com</a></p>
+    <p className='attrLink'></p><a href="https://www.freepik.com/photos/frame">Frame photo created by master1305 - www.freepik.com</a>
   </div>
 );
 
@@ -27,8 +27,8 @@ const PhotoAttribution = () => {
       <style jsx>
         {`
           .info-wrapper {
-            margin-top: 80px;
-            padding-left: 30px;
+            padding: 80px 30px;
+            max-width: 750px;
           }
         `}
       </style>

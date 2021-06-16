@@ -11,7 +11,7 @@ hk:
     - 不同練習方法令學員易於在短時間內掌握拉花技巧
     - 輕鬆學習三款拉花圖案
   time: 2小時
-  price: 360
+  price: 380
   remarks: 備註
 en:
   pid: 2002
@@ -23,6 +23,6 @@ en:
     - Grasp the skills of making good latte art
     - Easily learn 3 latte art patterns
   time: 2 hours
-  price: 360
+  price: 380
   remarks: Remarks
 ---

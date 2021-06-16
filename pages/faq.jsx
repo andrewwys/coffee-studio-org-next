@@ -32,8 +32,8 @@ const Faq = () => {
       <style jsx>
         {`
           .info-wrapper {
-            margin-top: 80px;
-            padding-left: 30px;
+            padding: 80px 30px;
+            max-width: 600px;
           }
           .content {
             margin-left: 50px;
