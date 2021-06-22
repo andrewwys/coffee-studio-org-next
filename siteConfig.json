@@ -166,5 +166,13 @@
     "blueFinish": "#5d80a7",
     "catMenuBrown": "#C1882F",
     "headerGreen": "#6e7556"
+  },
+  "metaData": {
+    "hk": {
+      "siteDesc" : "精品咖啡烘焙。單品及綜合豆新鮮烘焙。咖啡興趣班教學。"
+    },
+    "en": {
+      "siteDesc" : "Specialty coffee roastery in Hong Kong. Roast-to-order. Premium single origin and blended beans. Coffee workshops."
+    }
   }
 }
