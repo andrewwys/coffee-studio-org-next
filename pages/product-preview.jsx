@@ -36,7 +36,7 @@ const ProductPreview = ({ productList }) => {
       filteredProducts = productList.filter((prod)=>(prod.fm[lang].category === 'Single Origin'))
   }
   return (
-    <Layout  bgImg='/images/hero1.png'>
+    <Layout  bgImg='/images/bg-landing.png'>
       <div>
         <Hero heroLine1={labels[lang].heroLine1} heroLine2={labels[lang].heroLine2} />
         <ProductHighlights productList={filteredProducts} title={title} defaultPackageOpt={defaultPackageOpt} orderType={orderType} />
