@@ -24,7 +24,24 @@ function MyApp({ Component, pageProps }) {
           <link rel="preconnect" href="https://cdn.snipcart.com"/>
           <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.css" />
         </Head>
-        <div id="snipcart" data-config-modal-style="side" data-api-key="OTBlOGYzYTktNjMyZC00ZThiLWJjODgtMzI1OTZjZWYyMzM1NjM3NDc3ODQ2Njc5MjU5MzQx" data-currency="hkd" hidden></div>
+        <div 
+          id="snipcart" 
+          data-config-modal-style="side" 
+          data-api-key="OTBlOGYzYTktNjMyZC00ZThiLWJjODgtMzI1OTZjZWYyMzM1NjM3NDc3ODQ2Njc5MjU5MzQx" 
+          data-currency="hkd" 
+          hidden>
+            
+            <address-fields section="top">
+              <div>
+                  <snipcart-label class="snipcart__font--tiny" for="phone">
+                    Mobile Number / 手提電話
+                  </snipcart-label>
+                  <snipcart-input name="phone">
+                  </snipcart-input>
+              </div>
+            </address-fields>
+
+          </div>
         <script async src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"></script>
         <Component {...pageProps} />
       </AppWrapper>
