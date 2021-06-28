@@ -36,6 +36,34 @@ function MyApp({ Component, pageProps }) {
               <div>
                 <fieldset class="snipcart-form__set">
 
+                  <div class="snipcart-form__row">
+                    <div class="snipcart-form__field snipcart-form__cell--large">
+                      <snipcart-label
+                        class="snipcart__font--tiny"
+                        for="address1"
+                      >Address</snipcart-label>
+                      <snipcart-input name="address1"></snipcart-input>
+                      <snipcart-error-message name="address1"></snipcart-error-message>
+                    </div>
+                  </div>
+
+                  <div class="snipcart-form__row">
+                    <div class="snipcart-form__field snipcart-form__cell--large">
+                      <snipcart-label class="snipcart__font--tiny" for="phone">
+                        City
+                      </snipcart-label>
+                      <snipcart-input name="city"></snipcart-input>
+                      <snipcart-error-message name="city"></snipcart-error-message>
+                    </div>
+                    <div class="snipcart-form__field snipcart-form__cell--large">
+                      <snipcart-label class="snipcart__font--tiny" for="phone">
+                        Province
+                      </snipcart-label>
+                      <snipcart-input name="province"></snipcart-input>
+                      <snipcart-error-message name="province"></snipcart-error-message>
+                    </div>
+                  </div>
+
                   <div class="snipcart-form__field">
                     <snipcart-label
                       class="snipcart__font--tiny"
@@ -47,20 +75,17 @@ function MyApp({ Component, pageProps }) {
                   <div class="snipcart-form__row">
                     <div class="snipcart-form__field snipcart-form__cell--large">
                       <snipcart-label class="snipcart__font--tiny" for="phone">
-                        Shipping Address / 郵寄地址
-                      </snipcart-label>
-                      <snipcart-input name="shipping-address">
-                      </snipcart-input>
-                    </div>
-                  </div>
-
-                  <div class="snipcart-form__row">
-                    <div class="snipcart-form__field snipcart-form__cell--large">
-                      <snipcart-label class="snipcart__font--tiny" for="phone">
-                        Mobile Number / 手提電話
+                        Mobile Number / 手提電話 **
                       </snipcart-label>
                       <snipcart-input name="phone">
                       </snipcart-input>
+                    </div>
+                    <div class="snipcart-form__field snipcart-form__cell--large">
+                      <snipcart-label class="snipcart__font--tiny" for="phone">
+                        Postal Code
+                      </snipcart-label>
+                      <snipcart-input name="postalCode"></snipcart-input>
+                      <snipcart-error-message name="postalCode"></snipcart-error-message>
                     </div>
                   </div>
 
