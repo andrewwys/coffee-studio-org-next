@@ -31,13 +31,40 @@ function MyApp({ Component, pageProps }) {
           data-currency="hkd" 
           hidden>
             
-            <address-fields section="top">
+            {/* Overriding snipcart default templates */}
+            <address-fields>
               <div>
-                  <snipcart-label class="snipcart__font--tiny" for="phone">
-                    Mobile Number / 手提電話
-                  </snipcart-label>
-                  <snipcart-input name="phone">
-                  </snipcart-input>
+                <fieldset class="snipcart-form__set">
+
+                  <div class="snipcart-form__field">
+                    <snipcart-label
+                      class="snipcart__font--tiny"
+                      for="country"
+                    >Country</snipcart-label>
+                    <snipcart-typeahead type="dropdown" name="country" autocomplete="country"></snipcart-typeahead>
+                  </div>
+
+                  <div class="snipcart-form__row">
+                    <div class="snipcart-form__field snipcart-form__cell--large">
+                      <snipcart-label class="snipcart__font--tiny" for="phone">
+                        Shipping Address / 郵寄地址
+                      </snipcart-label>
+                      <snipcart-input name="phone">
+                      </snipcart-input>
+                    </div>
+                  </div>
+
+                  <div class="snipcart-form__row">
+                    <div class="snipcart-form__field snipcart-form__cell--large">
+                      <snipcart-label class="snipcart__font--tiny" for="phone">
+                        Mobile Number / 手提電話
+                      </snipcart-label>
+                      <snipcart-input name="phone">
+                      </snipcart-input>
+                    </div>
+                  </div>
+
+                </fieldset>
               </div>
             </address-fields>
 
