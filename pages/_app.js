@@ -49,7 +49,7 @@ function MyApp({ Component, pageProps }) {
                       <snipcart-label class="snipcart__font--tiny" for="phone">
                         Shipping Address / 郵寄地址
                       </snipcart-label>
-                      <snipcart-input name="phone">
+                      <snipcart-input name="shipping-address">
                       </snipcart-input>
                     </div>
                   </div>
