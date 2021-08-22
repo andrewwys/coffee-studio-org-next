@@ -8,7 +8,7 @@ hk:
     教授3種不同的咖啡沖煮方式,
     讓你由最基本的咖啡知識開始,
     直到出品一杯親自拉花的咖啡,
-    愉快地過一個學習又有趣味的晚上！
+    在學習當中有趣味地歡渡時光！
   content: |-
     - 簡介咖啡的歷史及過程
     - 學習精品咖啡
@@ -24,12 +24,11 @@ en:
     - Introduce the history of coffee and its processing
     - Discuss qualities of specialty coffee
     - Pour-over coffee
+    - Siphon brewer
     - Latte art
-    - Cup tasting
   title: 3-brewing-methods
   courseName: 3 Brewing Methods
-  description: Learn pour-over (hand drip) coffee, latte art and cup tasting in
-    one single lesson.
+  description: In just a single lecture, you will start from the basic knowledge and learn the techniques of various coffee brewing methods!
   price: 380
   time: 2 hours
   remarks: Remarks.

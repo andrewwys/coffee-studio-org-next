@@ -23,7 +23,8 @@
       "photoAttribution": "圖片來源",
       "coffeeClasses": "咖啡班",
       "learnMore": "詳情" ,
-      "comingSoon": "正在努力。。。"
+      "comingSoon": "正在努力。。。",
+      "email": "電郵"
     },
     "en": {
       "homeTitle": "Coffee Studio | Education & Online Shop",
@@ -44,7 +45,8 @@
       "photoAttribution": "Photo Attribution",
       "coffeeClasses": "Coffee Classes",
       "learnMore": "Learn More",
-      "comingSoon": "Coming Soon..."
+      "comingSoon": "Coming Soon...",
+      "email": "Email"
     }, 
     "footer": {
       "hk": {
@@ -118,12 +120,12 @@
   "classes": {
     "hk": {
       "title": "咖啡興趣班",
-      "subtitle": "for Coffee Lovers", 
+      "subtitle": "for Coffee Lovers",
       "content": "課程內容",
       "duration": "課程長度",
       "fee": "費用",
       "signUp": "報名方法",
-      "signUpDetails": "網上報名即將開啟。"
+      "signUpDetails": "coming soon"
     },
     "en": {
       "title": "Coffee Classes", 

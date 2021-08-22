@@ -1,4 +1,5 @@
 const InfoBlock = ({ title, content }) => {
+  
   return (
     <div className='info-block'>
       <div className='title'>{title}</div>

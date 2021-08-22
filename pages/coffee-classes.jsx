@@ -2,14 +2,17 @@ import matter from 'gray-matter'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import InfoBlock from '../components/info-block'
+import InfoRegistration from '../components/info-registration'
 import InfoDetails from '../components/info-details'
 import InfoRowSingleLine from '../components/info-row-single-line'
-import SnipcartButtonClasses from '../bits/snipcart-button-classes'
-import AddToCartShortcut from '../bits/add-to-cart-shortcut'
+// import SnipcartButtonClasses from '../bits/snipcart-button-classes'
+// import AddToCartShortcut from '../bits/add-to-cart-shortcut'
 import  { useState } from 'react'
 import { useAppContext } from '../src/context/state'
 import { classes } from '../siteConfig.json'
-import { display, siteBaseUrl } from '../siteConfig.json'
+// import { display, siteBaseUrl } from '../siteConfig.json'
+import EmailLink from '../bits/link-email'
+import WhatsappLink from '../bits/link-whatsapp'
 
 const CoffeeClasses = ({ classList }) => {
   const { lang } = useAppContext();
@@ -28,6 +31,11 @@ const CoffeeClasses = ({ classList }) => {
   const courseOnDisplayLang = courseOnDisplay.fm[lang];
   // console.log(courseOnDisplayLang);
   const { courseName, description, time, content, price, pid } = courseOnDisplayLang;
+  const regLink = () =>(
+    <a href="https://wa.me/85269611689"
+           style={{marginRight: "12px", fontSize: "1.33rem", textDecoration: "underline"}}
+        >{"Whatsapp(Tommy)"}</a>
+  )
 
   return (
     <div>
@@ -55,8 +63,14 @@ const CoffeeClasses = ({ classList }) => {
             <InfoDetails title={classes[lang].content} content={content}/>
             <InfoRowSingleLine title={classes[lang].duration} content={time} />
             <InfoRowSingleLine title={classes[lang].fee} content={'HKD ' + price} />
-            <InfoBlock title={classes[lang].signUp} content={classes[lang].signUpDetails}/>
-
+            {/* <InfoBlock title={classes[lang].signUp} content={classes[lang].signUpDetails}/> */}
+            <InfoRegistration/>
+            {/* <InfoBlock title={classes[lang].signUp} />
+            <span style={{marginBottom: "30px"}}>
+              <WhatsappLink/>
+              <EmailLink/>   
+            </span> */}
+            
             {/* add to cart button */}
             {/*
             <div className='add-to-cart'>
