@@ -1,5 +1,5 @@
 import { useAppContext } from '../src/context/state'
-import { labels, classes } from '../siteConfig.json'
+import { classes } from '../siteConfig.json'
 import WhatsappLink from '../bits/link-whatsapp'
 import EmailLink from '../bits/link-email'
 

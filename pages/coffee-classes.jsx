@@ -65,11 +65,6 @@ const CoffeeClasses = ({ classList }) => {
             <InfoRowSingleLine title={classes[lang].fee} content={'HKD ' + price} />
             {/* <InfoBlock title={classes[lang].signUp} content={classes[lang].signUpDetails}/> */}
             <InfoRegistration/>
-            {/* <InfoBlock title={classes[lang].signUp} />
-            <span style={{marginBottom: "30px"}}>
-              <WhatsappLink/>
-              <EmailLink/>   
-            </span> */}
             
             {/* add to cart button */}
             {/*
