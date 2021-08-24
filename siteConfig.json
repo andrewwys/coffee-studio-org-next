@@ -22,7 +22,7 @@
       "contact": "聯絡我們",
       "photoAttribution": "圖片來源",
       "coffeeClasses": "咖啡班",
-      "learnMore": "詳情" ,
+      "learnMore": "詳情>>" ,
       "comingSoon": "正在努力。。。",
       "email": "電郵"
     },
@@ -44,7 +44,7 @@
       "contact": "Contact Us",
       "photoAttribution": "Photo Attribution",
       "coffeeClasses": "Coffee Classes",
-      "learnMore": "Learn More",
+      "learnMore": "Learn More>>",
       "comingSoon": "Coming Soon...",
       "email": "Email"
     }, 
@@ -125,7 +125,8 @@
       "duration": "課程長度",
       "fee": "費用",
       "signUp": "報名方法",
-      "signUpDetails": "coming soon"
+      "signUpDetails": "coming soon",
+      "joinOurClasses": "參與咖啡班"
     },
     "en": {
       "title": "Coffee Classes", 
@@ -134,7 +135,8 @@
       "duration": "Duration",
       "fee": "Fee",
       "signUp": "How to Sign Up?",
-      "signUpDetails": "Online enrollment is coming soon."
+      "signUpDetails": "Online enrollment is coming soon.",
+      "joinOurClasses": "Join our coffee classes"
     }
   },
   "packageOptions": {
