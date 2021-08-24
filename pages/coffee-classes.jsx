@@ -119,9 +119,10 @@ const CoffeeClasses = ({ classList }) => {
         .menu-link{
           cursor: pointer;
           color: var(--peach-footer);
+          text-decoration: underline;
         }
         .menu-link:hover{
-          text-decoration: underline;
+          font-weight: bold;
         }
         .separator {
           color: var(--peach-footer);
