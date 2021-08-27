@@ -36,8 +36,8 @@ const CategoryMenu = () => {
             display: flex;
             flex-wrap: nowrap;
             justify-content: space-evenly;
-            height: 568px;
-            background: url('/images/coffee-beans-bg.png') no-repeat 0px 173px;
+            height: 40vw;
+            background: url('/images/coffee-beans-bg.png') no-repeat 0px 12vw;
             background-size: 100% 74% ;
           }
           .block-wrapper{
@@ -46,7 +46,7 @@ const CategoryMenu = () => {
           .cat-menu-m {
             display: none;
           }
-          @media screen and (max-width: 1249px) {
+          @media screen and (max-width: 485px) {
             .cat-menu {
               display: none;
             }

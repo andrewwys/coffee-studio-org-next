@@ -67,12 +67,12 @@ const CoffeeClassBanner = () => {
         .button:active {
           right: -6vw
         }
-        @media screen and (max-width: 470px) {
+        @media screen and (max-width: 485px) {
           .circle {
-            border-color: transparent;
+            border-color: #fadaa250;
           }
           .join {
-            top: -50px;
+            top: 20px;
             font-size: 1.3rem;
             width: 140px;
           }
@@ -81,8 +81,12 @@ const CoffeeClassBanner = () => {
             height: 33px;
             font-size: 1.1rem;
             left: 60px;
-            top: 30px;
+            top: 70px;
           }
+          .button:hover, .button:active  {
+            right: -6vw;
+            transform: scale(1.05);
+        }
         }
         `}</style>
     </div>

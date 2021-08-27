@@ -7,10 +7,10 @@ const CategoryBlock = ({ title, imgPath }) => {
       <div className='color-area'>
         <div className='title'>{title}</div>
       </div>
-      <img className='image' src={imgPath} alt='menu-icon' width='405px' />
+      <img className='image' src={imgPath} alt='menu-icon' />
       <style jsx>{` 
         .cat-block {
-          width: 405px;
+          width: 28.1vw;
           display: flex;
           align-items: center;
           flex-direction: column;
@@ -27,8 +27,8 @@ const CategoryBlock = ({ title, imgPath }) => {
           height: 420px;
         }
         .color-area{
-          width: 355px;
-          height: 392px;
+          width: 24.6vw;
+          height: 27.2vw;
           background: ${catMenuBrown};
           border-radius: 10px;
           filter: grayscale(50%);
@@ -36,17 +36,19 @@ const CategoryBlock = ({ title, imgPath }) => {
         }
         .title {
           color: white;
-          font-size: var(--fsize-3);
+          font-size: 2.99vw;
           position: relative;
-          top: 46px;
+          top: 3vw;
           text-align: center;
         }
         .image {
+          width: 28.1vw;
           position: relative;
-          bottom: 268px;
+          bottom: 18.6vw;
           filter: grayscale(50%);
           transition: all 0.2s;
         }
+        
       `}</style>
     </div>
   );

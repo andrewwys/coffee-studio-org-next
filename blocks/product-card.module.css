@@ -35,6 +35,8 @@
   line-height: 22.5px;
   position: relative;
   z-index: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .name {
@@ -45,6 +47,8 @@
   text-overflow: ellipsis;
   position: relative;
   z-index: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .process {
