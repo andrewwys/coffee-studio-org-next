@@ -19,7 +19,7 @@ const Header = () => {
           <LanguageSwitch />
         </div>
         <div className='snipcart-checkout'>
-          {/* <div className='snipcart-items-count' ></div> */}
+          <div className='snipcart-items-count' ></div>
         </div>
         <div className={styles.menuIconWrapper} onClick={()=>changeWidth('320px')}>
           <MenuIcon />
@@ -44,7 +44,7 @@ const Header = () => {
           z-index: 100;
         }
         .snipcart-checkout:hover {
-          font-weight: 450;
+          border-width: 3.2px;
         }
         .snipcart-checkout:active {
           -webkit-transform: scale(0.9);

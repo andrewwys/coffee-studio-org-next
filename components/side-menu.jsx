@@ -57,7 +57,7 @@ const SideMenu = ({ menuWidth, changeWidth }) => {
         }
         .menu-item,.close-button {
           text-decoration: none;
-          color: white;
+          color: #CE9B83;
           display: block;
           transition: all 0.3s ease;
         }
@@ -72,7 +72,7 @@ const SideMenu = ({ menuWidth, changeWidth }) => {
         }
 
         .menu-item:hover,.close-button:hover {
-          font-weight: 500;
+          color: white;
         }
         .social-icon {
           width: 60px;
@@ -85,7 +85,7 @@ const SideMenu = ({ menuWidth, changeWidth }) => {
           filter: brightness(180%) hue-rotate(-5deg);
         }
         .social-icon:hover {
-          filter: brightness(180%) hue-rotate(-5deg) sepia(100%);
+          filter: brightness(350%) ;
         }
         
       `}</style>
