@@ -24,7 +24,8 @@
       "coffeeClasses": "咖啡班",
       "learnMore": "詳情>>" ,
       "comingSoon": "正在努力。。。",
-      "email": "電郵"
+      "email": "電郵",
+      "addToCart": "加入購物車 >>"
     },
     "en": {
       "homeTitle": "Coffee Studio | Education & Online Shop",
@@ -46,7 +47,8 @@
       "coffeeClasses": "Coffee Classes",
       "learnMore": "Learn More>>",
       "comingSoon": "Coming Soon...",
-      "email": "Email"
+      "email": "Email",
+      "addToCart": "Add to Cart >>"
     }, 
     "footer": {
       "hk": {

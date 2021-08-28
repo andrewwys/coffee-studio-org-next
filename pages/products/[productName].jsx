@@ -120,7 +120,7 @@ const ProductDetails = ({fm, productName}) => {
                 defaultPackageOpt={router.query.orderType}
                 orderType={router.query.orderType}
               >
-                <div className='add-to-cart-text'>add to cart &gt;</div>
+                <div className='add-to-cart-text'>{labels[lang].addToCart}</div>
               </SnipcartButton>        
             </div>   
           </div>
