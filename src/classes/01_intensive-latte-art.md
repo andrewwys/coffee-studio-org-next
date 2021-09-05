@@ -30,9 +30,6 @@ hk:
     平日班：每個星期二及四 12點-3點 共五堂15小時
     2021年10月5日、10月7日、10月12日、10月19日、10月21日
 
-    週末班：逢星期六下午 12點-3點 共五堂15小時
-    2021年9月25日、10月2日、10月9日、10月16日、10月23日
-
     ❤️課程費用：$4200 包括所有教學工具及食材，連筆記。
     ✨早起鳥價$3200 (9月15日前報名) ✨
 
@@ -70,9 +67,6 @@ en:
     Recent Course Schedule：
     Weekdays：Every Tue & Thu 12:00-15:00 (5 classes, 15 hours in total)
     Dates (2021): 5 Oct, 7 Oct, 12 Oct, 19 Oct, 21 Oct
-
-    Weekends: Every Sat 12:00-15:00 (5 classes, 15 hours in total)
-    Dates (2021): 25 Sep, 2 Oct, 9 Oct, 16 Oct, 23 Oct 
 
     ❤️Course Fee：$4200 (Ingredients and notes inclusive)
     ✨Early bird discount: $3200 (sign up before 15 Sep) ✨
