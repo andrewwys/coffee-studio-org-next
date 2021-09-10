@@ -35,8 +35,8 @@
   margin: 0 0 0 0;
   max-width: 55vw;
   height: 140px;
-  max-height: 500px;
-  font-size: var(--fsize-2);
+  /* max-height: 500px; */
+  font-size: var(--fsize-3);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
