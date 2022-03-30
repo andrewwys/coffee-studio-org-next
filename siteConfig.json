@@ -124,6 +124,7 @@
       "title": "咖啡興趣班",
       "subtitle": "for Coffee Lovers",
       "content": "課程內容",
+      "courseDesc": "課程介紹",
       "duration": "課程長度",
       "fee": "費用",
       "signUp": "報名方法",
@@ -136,6 +137,7 @@
     "en": {
       "title": "Coffee Classes", 
       "subtitle": "for Coffee Lovers",
+      "courseDesc": "Course Description",
       "content": "Course Content",
       "duration": "Duration",
       "fee": "Fee",

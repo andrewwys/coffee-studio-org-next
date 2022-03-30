@@ -31,7 +31,7 @@ const CoffeeClasses = ({ classList }) => {
   const courseOnDisplayLang = courseOnDisplay.fm[lang];
   // console.log(courseOnDisplayLang);
   const { courseName, description, time, content, price, pid, numParticipants,
-     instructor, location, remarks } = courseOnDisplayLang;
+     instructor, location, courseDesc, remarks } = courseOnDisplayLang;
   const regLink = () =>(
     <a href="https://wa.me/85269611689"
            style={{marginRight: "12px", fontSize: "1.33rem", textDecoration: "underline"}}
@@ -61,6 +61,7 @@ const CoffeeClasses = ({ classList }) => {
           </div>
           <div className='content'>
             <InfoBlock title={courseName} content={description}/>
+            <InfoDetails title={classes[lang].courseDesc} content={courseDesc}/>
             <InfoDetails title={classes[lang].instructor} content={instructor}/>
             <InfoDetails title={classes[lang].content} content={content}/>
             <InfoRowSingleLine title={classes[lang].duration} content={time} />
