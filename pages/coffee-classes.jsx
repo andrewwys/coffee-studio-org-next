@@ -30,7 +30,8 @@ const CoffeeClasses = ({ classList }) => {
   ));
   const courseOnDisplayLang = courseOnDisplay.fm[lang];
   // console.log(courseOnDisplayLang);
-  const { courseName, description, time, content, price, pid } = courseOnDisplayLang;
+  const { courseName, description, time, content, price, pid, numParticipants,
+     instructor, location, remarks } = courseOnDisplayLang;
   const regLink = () =>(
     <a href="https://wa.me/85269611689"
            style={{marginRight: "12px", fontSize: "1.33rem", textDecoration: "underline"}}
@@ -60,9 +61,12 @@ const CoffeeClasses = ({ classList }) => {
           </div>
           <div className='content'>
             <InfoBlock title={courseName} content={description}/>
+            <InfoDetails title={classes[lang].instructor} content={instructor}/>
             <InfoDetails title={classes[lang].content} content={content}/>
             <InfoRowSingleLine title={classes[lang].duration} content={time} />
-            <InfoRowSingleLine title={classes[lang].fee} content={'HKD ' + price} />
+            <InfoRowSingleLine title={classes[lang].location} content={location} />
+            <InfoRowSingleLine title={classes[lang].fee} content={price} />
+            <InfoRowSingleLine title={classes[lang].numParticipants} content={numParticipants} />
             {/* <InfoBlock title={classes[lang].signUp} content={classes[lang].signUpDetails}/> */}
             <InfoRegistration/>
             
@@ -115,6 +119,7 @@ const CoffeeClasses = ({ classList }) => {
           font-size: var(--fsize-5);
           display: flex;
           flex-direction: column;
+          padding-right: 30px;
         }
         .menu-link{
           cursor: pointer;
@@ -154,7 +159,7 @@ const CoffeeClasses = ({ classList }) => {
           color: var(--green-header);
           cursor: pointer;
         }
-        @media screen and (max-width: 960px) {
+        @media screen and (max-width: 1045px) {
           .wrapper{
             padding: 0 32px 0 64px;
             top: -50px;

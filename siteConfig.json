@@ -128,7 +128,10 @@
       "fee": "費用",
       "signUp": "報名方法",
       "signUpDetails": "coming soon",
-      "joinOurClasses": "參與咖啡班"
+      "joinOurClasses": "參與咖啡班",
+      "location": "地點",
+      "numParticipants": "人數",
+      "instructor": "導師介紹"
     },
     "en": {
       "title": "Coffee Classes", 
@@ -138,7 +141,10 @@
       "fee": "Fee",
       "signUp": "How to Sign Up?",
       "signUpDetails": "Online enrollment is coming soon.",
-      "joinOurClasses": "Join our coffee classes"
+      "joinOurClasses": "Join our coffee classes",
+      "location": "Venue",
+      "numParticipants": "Participants",
+      "instructor": "Instructor"
     }
   },
   "packageOptions": {
