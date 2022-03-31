@@ -18,7 +18,18 @@ hk:
   location: 觀塘
   price: $380／位
   numParticipants: 最多4人
-  remarks: 未揀定時間日期？想了解多啲先？可以先隨便揀個日子，再撳查詢預約，咁就可以直接聯絡導師了解多啲先再決定啦！
+  remarks: |-
+    本課程：
+    - 無需任何咖啡經驗
+    - 適合任何對咖啡有興趣嘅朋友
+
+    *友好環境：
+    - 本店已裝置醫療級商場用空氣淨化機！為同學們做好防護措施，學得安心！
+
+    注意事項：
+    - 一堂時間約為2小時，由於課程緊湊，參加者請準時到達
+    - 如於上課前3小時懸掛八號或以上強風信號 ; 或黑色暴雨警告信號已經生效，活動將改期
+
 en:
   pid: 2001
   content: |
@@ -28,11 +39,15 @@ en:
     - Mastering the basics of Latte art
   title: 3-brewing-methods
   courseName: 3 Ways of Coffee Brewing
-  description: Latte Art | Pour-over | Cupping
+  description:
+  courseDesc: Latte Art | Pour-over | Cupping
   time: ~2 hours
   location: Twun Tong
   price: $380/head
   numParticipants: max 4 pax.
-  instructor: Napolia Lee
-  remarks: 
+  instructor:
+  remarks: |-
+    - Conducted in Cantonese
+    - No prior experience required
+    - Suitable for all coffee lovers!
 ---

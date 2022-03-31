@@ -132,7 +132,8 @@
       "joinOurClasses": "參與咖啡班",
       "location": "地點",
       "numParticipants": "人數",
-      "instructor": "導師介紹"
+      "instructor": "導師介紹",
+      "remarks": "備註"
     },
     "en": {
       "title": "Coffee Classes", 
@@ -146,7 +147,8 @@
       "joinOurClasses": "Join our coffee classes",
       "location": "Venue",
       "numParticipants": "Participants",
-      "instructor": "Instructor"
+      "instructor": "Instructor",
+      "remarks": "remarks"
     }
   },
   "packageOptions": {

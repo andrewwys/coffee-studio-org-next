@@ -13,6 +13,7 @@ import { classes } from '../siteConfig.json'
 // import { display, siteBaseUrl } from '../siteConfig.json'
 import EmailLink from '../bits/link-email'
 import WhatsappLink from '../bits/link-whatsapp'
+import mitt from 'next/dist/next-server/lib/mitt'
 
 const CoffeeClasses = ({ classList }) => {
   const { lang } = useAppContext();
@@ -62,12 +63,13 @@ const CoffeeClasses = ({ classList }) => {
           <div className='content'>
             <InfoBlock title={courseName} content={description}/>
             <InfoDetails title={classes[lang].courseDesc} content={courseDesc}/>
-            <InfoDetails title={classes[lang].instructor} content={instructor}/>
-            <InfoDetails title={classes[lang].content} content={content}/>
+            {instructor? <InfoDetails title={classes[lang].instructor} content={instructor}/>:null}
+            {content? <InfoDetails title={classes[lang].content} content={content}/>:null}
             <InfoRowSingleLine title={classes[lang].duration} content={time} />
             <InfoRowSingleLine title={classes[lang].location} content={location} />
             <InfoRowSingleLine title={classes[lang].fee} content={price} />
             <InfoRowSingleLine title={classes[lang].numParticipants} content={numParticipants} />
+            <InfoDetails title={classes[lang].remarks} content={remarks}/>
             {/* <InfoBlock title={classes[lang].signUp} content={classes[lang].signUpDetails}/> */}
             <InfoRegistration/>
             
