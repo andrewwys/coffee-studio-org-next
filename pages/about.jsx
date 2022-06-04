@@ -19,6 +19,7 @@ const About = () => {
             padding: 80px 0 0 30px;
             white-space: pre-wrap;
             margin-bottom: 100px;
+            max-width: 700px;
           }
         `}
       </style>
