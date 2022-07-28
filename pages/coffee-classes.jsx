@@ -119,7 +119,7 @@ const CoffeeClasses = ({ classList }) => {
         .menu {
           width: 30%;
           min-width: 250px;
-          font-size: var(--fsize-5);
+          font-size: var(--fsize-6);
           display: flex;
           flex-direction: column;
           padding-right: 30px;

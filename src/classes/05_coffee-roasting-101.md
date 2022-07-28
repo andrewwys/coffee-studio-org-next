@@ -19,7 +19,7 @@ hk:
     費用已包括材料及導師費。快啲報名，一齊體驗新鮮烘焙嘅咖啡！
   time: 約3.5小時
   location: 觀塘
-  price: $780／位
+  price: $980／位
   numParticipants: 最多2人
   remarks: |-
     本課程：
@@ -49,7 +49,7 @@ en:
     - Cup tasting your roasted coffee
   time: ~3.5 hours
   location: Twun Tong
-  price: $780/head
+  price: $980/head
   numParticipants: max 2 pax.
   instructor:
   remarks: |-

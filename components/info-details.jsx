@@ -13,7 +13,7 @@ const InfoDetails = ({ title, content}) => {
           margin-bottom: 8px;
         }
         .content {
-          font-size: var(--fsize-5);
+          font-size: var(--fsize-6);
           white-space: pre-wrap;
           padding-left: 32px;
         }

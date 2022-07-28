@@ -19,11 +19,11 @@ const InfoRegistration = () => {
             }
             .title {
               color: var(--gold-subtitle);
-              font-size: var(--fsize-4);
+              font-size: var(--fsize-5);
               margin-bottom: 24px;
             }
             .content {
-              font-size: var(--fsize-5);
+              font-size: var(--fsize-6);
             }
             @media screen and (max-width: 470px) {
               .title {
