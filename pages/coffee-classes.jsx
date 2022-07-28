@@ -67,7 +67,7 @@ const CoffeeClasses = ({ classList }) => {
             {content? <InfoDetails title={classes[lang].content} content={content}/>:null}
             <InfoRowSingleLine title={classes[lang].duration} content={time} />
             <InfoRowSingleLine title={classes[lang].location} content={location} />
-            <InfoRowSingleLine title={classes[lang].fee} content={price} />
+            <InfoDetails title={classes[lang].fee} content={price} />
             <InfoRowSingleLine title={classes[lang].numParticipants} content={numParticipants} />
             <InfoDetails title={classes[lang].remarks} content={remarks}/>
             {/* <InfoBlock title={classes[lang].signUp} content={classes[lang].signUpDetails}/> */}

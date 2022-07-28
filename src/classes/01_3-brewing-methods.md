@@ -16,7 +16,11 @@ hk:
     - 導師教授拉花基礎圖形快速上手技巧
   time: 約2小時
   location: 觀塘
-  price: $380／位
+  price: |-
+    一人報名 $480／位
+    二人同行 $430／位
+    四人同行 $380／位
+    舊生重讀 $380／位
   numParticipants: 最多4人
   remarks: |-
     本課程：
@@ -43,7 +47,11 @@ en:
   courseDesc: Latte Art | Pour-over | Cupping
   time: ~2 hours
   location: Twun Tong
-  price: $380/head
+  price: |-
+    Single person: $480/head
+    Group of 2: $430/head
+    Group of 4: $380/head
+    Returning student: $380/head
   numParticipants: max 4 pax.
   instructor:
   remarks: |-
