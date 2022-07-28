@@ -8,7 +8,6 @@ const InfoBlock = ({ title, content }) => {
         {`
           .info-block {
             margin-bottom: 40px;
-            margin-left: 100px;
           }
           .title {
             color: var(--gold-subtitle);
@@ -18,21 +17,10 @@ const InfoBlock = ({ title, content }) => {
           .content {
             font-size: var(--fsize-6);
           }
-          @media screen and (max-width: 1220px) {
-            .info-block {
-              margin-top: 150px;
-            }
-          }
-          @media screen and (max-width: 680px) {
-            .info-block {
-              margin-left: 0;
-              margin-top: 130px;
-            }
-          }
           @media screen and (max-width: 470px) {
             .info-block {
               margin-left: 0;
-              margin-top: 100px;
+              margin-top: 80px;
             }
             .title {
               font-size: var(--fsize-5);
