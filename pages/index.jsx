@@ -16,9 +16,9 @@ export default function Home({productList}) {
     <div>
       <Layout bgImg='/images/bg-landing.png'>
         <Hero heroLine1={labels[lang].heroLine1} heroLine2={labels[lang].heroLine2} />
+        <CoffeeClassBanner />
         <ProductHighlights productList={hProductList} title={labels[lang].prductHighlights} defaultPackageOpt={PO_200g}/>
         <CategoryMenu productList={productList} />
-        <CoffeeClassBanner />
       </Layout>
     </div>
   )
